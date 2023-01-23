@@ -1,0 +1,65 @@
+FINISH
+/CLEAR
+/PREP7
+
+ET, 1,      186
+ET, 2,      186
+
+MP, EX,     1,  10E6
+MP, EX,     2,  10E6
+
+MP, NUXY,   1,  .4
+MP, NUXY,   1,  .4
+
+MP, CTEX,   1,  30E-6
+MP, CTEY,   1,  30E-6
+MP, CTEZ,   1,  30E-6
+
+MP, CTEX,   2,  30E-6
+MP, CTEY,   2,  30E-6
+MP, CTEZ,   2,  30E-6
+
+BLOCK,  -0.5,0.5,   -0.5,0.5,   -1,1
+
+MAT,    1
+TYPE,   1
+VSEL,   S,      LOC,    Z,  -1,  0 
+VMESH,  ALL
+
+MAT,    2
+TYPE,   2
+VSEL,   S,      LOC,    Z,  0,  1
+VMESH,  ALL
+
+NSEL,   S,      LOC,    X,  -0.5
+D,      ALL,    UX,     0
+
+NSEL,   S,      LOC,    Y,  -0.5
+D,      ALL,    UY,     0
+
+NSEL,   S,      LOC,    Z,  -1
+NSEL,   R,      LOC,    Y,  -0.5
+NSEL,   R,      LOC,    X,  -0.5
+D,      ALL,    UX,     0
+D,      ALL,    UY,     0
+D,      ALL,    UZ,     0
+
+TREF,   273
+TUNIF,  573
+
+ALLSEL, ALL
+FINISH
+
+/SOLU
+SOLVE
+FINISH
+
+/VIEW,1,1,2,3
+/EXPAND,2,RECT,HALF,-1E-6,0,0,2,RECT,HALF,0,-1E-6,0
+/POST1
+SET,LAST
+
+! PLNSOL, U,  X,    1
+! PLNSOL, U,  Y,    1
+! PLNSOL, U,  Z,    1
+PLNSOL, U,  SUM,    1
