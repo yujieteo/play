@@ -1,0 +1,145 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5462,        137]
+NotebookOptionsPosition[      4762,        116]
+NotebookOutlinePosition[      5164,        132]
+CellTagsIndexPosition[      5121,        129]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Export All As Various", "Title",
+ CellChangeTimes->{{3.910511602992197*^9, 
+  3.9105116065885878`*^9}},ExpressionUUID->"8d1717a2-4db7-4d5d-923f-\
+174941cf4956"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "Get", " ", "the", " ", "list", " ", "of", " ", "all", " ", "notebooks", 
+    " ", "in", " ", "the", " ", "current", " ", "directory"}], "*)"}], 
+  RowBox[{
+   RowBox[{
+    RowBox[{"notebooks", "=", 
+     RowBox[{"Select", "[", 
+      RowBox[{
+       RowBox[{"FileNames", "[", "\"\<*.nb\>\"", "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"FileExtension", "[", "#", "]"}], "===", "\"\<nb\>\""}], 
+        "&"}]}], "]"}]}], ";"}], "\n", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Export", " ", "each", " ", "notebook", " ", "as", " ", "a", " ", "PDF", 
+     " ", "in", " ", "the", " ", "same", " ", "directory"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"ExportPDF", "[", "nbPath_", "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"nb", ",", "pdfPath"}], "}"}], ",", 
+       RowBox[{
+        RowBox[{"nb", "=", 
+         RowBox[{"Get", "[", "nbPath", "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"pdfPath", "=", 
+         RowBox[{"FileNameJoin", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+            RowBox[{
+             RowBox[{"FileBaseName", "[", "nbPath", "]"}], "<>", 
+             "\"\<.pdf\>\""}]}], "}"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Export", "[", 
+         RowBox[{"pdfPath", ",", "nb", ",", "\"\<PDF\>\""}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"NotebookClose", "[", "nb", "]"}], ";"}]}], "]"}]}], ";"}], 
+   "\n", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "Apply", " ", "the", " ", "ExportPDF", " ", "function", " ", "to", " ", 
+     "each", " ", "notebook"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Map", "[", 
+    RowBox[{"ExportPDF", ",", "notebooks"}], "]"}], "\n", "\n"}]}]], "Input",
+ CellChangeTimes->{{3.910511611848113*^9, 3.9105116118491135`*^9}, {
+   3.9105118168224077`*^9, 3.910511821538219*^9}, {3.910511866781248*^9, 
+   3.9105119304163904`*^9}, 3.9105119629441776`*^9, {3.9105120139171906`*^9, 
+   3.9105120179804783`*^9}, 3.9105120992104406`*^9, 3.910512290461181*^9},
+ CellLabel->"In[18]:=",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.910512503927709*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"5634d6fb-4e9a-48c6-b5b2-a4400777f1a1"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9105123519755554`*^9, 
+  3.9105123546645365`*^9}},ExpressionUUID->"600cb184-040e-40f1-86f1-\
+fb082669f9dd"]
+}, Open  ]]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c4b3ee77-0a12-4840-9928-7ff88806e35b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 166, 3, 98, "Title",ExpressionUUID->"8d1717a2-4db7-4d5d-923f-174941cf4956"],
+Cell[CellGroupData[{
+Cell[771, 29, 2295, 54, 238, "Input",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"],
+Cell[3069, 85, 1506, 22, 71, "Output",ExpressionUUID->"5634d6fb-4e9a-48c6-b5b2-a4400777f1a1"]
+}, Open  ]],
+Cell[4590, 110, 156, 3, 28, "Input",ExpressionUUID->"600cb184-040e-40f1-86f1-fb082669f9dd"]
+}, Open  ]]
+}
+]
+*)
+
