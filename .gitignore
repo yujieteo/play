@@ -1,0 +1,15 @@
+# Exclude sensitive information and credentials
+*.env
+*.pem
+*.key
+*.cer
+
+# Exclude operating system files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Exclude documentation and notes
+Writings/
+**/ARCHIVE/
+**/Reading/

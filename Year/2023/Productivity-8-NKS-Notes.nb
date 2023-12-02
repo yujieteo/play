@@ -1,0 +1,138 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5954,        130]
+NotebookOptionsPosition[      5289,        111]
+NotebookOutlinePosition[      5690,        127]
+CellTagsIndexPosition[      5647,        124]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["NKS Notes", "Title",
+ CellChangeTimes->{{3.9076271509590864`*^9, 
+  3.9076271521803656`*^9}},ExpressionUUID->"26bff174-0177-4dce-97d5-\
+f58e76e5e58f"],
+
+Cell["Excerpts on Learning Philosophy", "Subtitle",
+ CellChangeTimes->{{3.907627205151689*^9, 
+  3.9076272128634005`*^9}},ExpressionUUID->"7c4a9dcb-06a6-4eb1-b077-\
+d002439f4983"],
+
+Cell[TextData[{
+ StyleBox["Developing the new kind of science\n",
+  FontWeight->"Bold"],
+ "One of my goals in this book has been to answer the most obvious questions \
+about each of the subjects I address. \n\nIn writing the book I have put \
+great effort into explaining things in straightforward ways.\n\n But to get \
+to the point of being able to do this has taken me twenty years of gradually \
+building up from specific detailed results and ideas. And I have no doubt \
+that in the future essentially all significant contributions will also be \
+made by building on foundations of specific detailed facts. \n \n",
+ StyleBox["Probably the single most important principle that I have followed \
+is just to try to keep everything as simple as possible. Study the simplest \
+systems. Ask the most obvious questions. Search for the most straightforward \
+explanations. ",
+  FontWeight->"Bold"],
+ "\n \nBut in many ways more central is whether there is a certain basic \
+level of clarity and simplicity to a piece of work.\n \nWhenever I am aware \
+of antecedents to major material in the main text I have indicated this in \
+the notes. Within the notes themselves, results that are given without \
+historical discussion and without statements such as \
+\[OpenCurlyDoubleQuote]it is known that\[CloseCurlyDoubleQuote] are generally \
+new to this book. Researchers seeking further information should consult the \
+website for the book."
+}], "Text",
+ CellChangeTimes->{{3.907627172728613*^9, 3.9076272431391525`*^9}, {
+   3.907627273967131*^9, 3.907627301400272*^9}, 
+   3.9076275210203056`*^9},ExpressionUUID->"d5b0c7b3-b854-454f-b7ca-\
+6eddd46b624a"],
+
+Cell["\<\
+Perhaps most annoying to those with a copyediting orientation will be my \
+predilection for starting sentences with conjunctions. The main reason I have \
+done this is to break up what would otherwise be extremely long sentences.
+
+Also annoying to some will be my widespread use of short paragraphs. In the \
+main text I normally follow the principle that any paragraph should \
+communicate just one basic idea. And my hope is then that after reading each \
+paragraph readers will pause a moment to absorb each idea before going on to \
+the next one.
+
+ So to make this book as broadly accessible as possible what I mostly do is \
+in the main text to discuss ideas as directly as I can\[LongDash]but then in \
+these notes to outline their historical context. 
+
+Sometimes clarity demands that I say explicitly that something from the past \
+is wrong, but generally I try to avoid this, preferring instead just to state \
+whatever I now believe is true.
+
+To get a deeper understanding, however, one invariably needs to try \
+formulating experiments for oneself. One might wonder, for example, what \
+would happen if some particular system were run for more steps than I show in \
+this book. Would the system go on doing what one sees in the book, or might \
+it start doing something quite different? With the appropriate setup, one can \
+immediately run a program to find out. Often one will have some kind of guess \
+about what the answer should be. At first\[LongDash]if my own experience is a \
+guide\[LongDash]this guess will quite often be wrong. But gradually, after \
+seeing what happens in enough cases, one will begin to develop a correct and \
+robust new intuition. Realistically this seems to take several months even \
+for the most talented and open-minded people. 
+
+When one learns a language - at least as a young child - one implicitly tends \
+to deduce simple grammatical rules that are in effect specific \
+generalisations of examples one has encountered. And I suspect that in doing \
+this the types of generalisations that one makes are essentially those that \
+correspond to the types of similarities that one readily recognizes in \
+retrieving data from memory.
+
+But most of the time nothing like it will be possible. And \
+instead\[LongDash]just as in any other framework\[LongDash]there will be no \
+choice but first to learn all sorts of details of a system, and then to use \
+judgement and creativity to see which of them are really essential to a model \
+and which are not.\
+\>", "Text",
+ CellChangeTimes->{{3.907627330176887*^9, 3.9076273779892287`*^9}, {
+  3.907627763466902*^9, 
+  3.9076278732231746`*^9}},ExpressionUUID->"852a6e01-1ef8-462c-b25b-\
+cb9a47966b6b"]
+}, Open  ]]
+},
+WindowSize->{718.5, 729.75},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"395c8324-5b2c-4805-8268-99c231eb8c98"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 156, 3, 98, "Title",ExpressionUUID->"26bff174-0177-4dce-97d5-f58e76e5e58f"],
+Cell[739, 27, 179, 3, 53, "Subtitle",ExpressionUUID->"7c4a9dcb-06a6-4eb1-b077-d002439f4983"],
+Cell[921, 32, 1650, 27, 495, "Text",ExpressionUUID->"d5b0c7b3-b854-454f-b7ca-6eddd46b624a"],
+Cell[2574, 61, 2699, 47, 794, "Text",ExpressionUUID->"852a6e01-1ef8-462c-b25b-cb9a47966b6b"]
+}, Open  ]]
+}
+]
+*)
+

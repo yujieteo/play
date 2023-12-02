@@ -1,0 +1,23 @@
+Notebook[{
+Cell[TextData[{"Examples from Wolfram Documentation on Integration"}],"Title"],
+Cell[BoxData[{RowBox[{"\[Integral]", RowBox[{RowBox[{"Sqrt", "[", RowBox[{"x", "+", RowBox[{"Sqrt", "[", "x", "]"}]}], "]"}], RowBox[{"\[DifferentialD]", "x"}]}]}]}],"Input",CellLabel->"In[1]:="],
+Cell[BoxData[RowBox[{RowBox[{FractionBox["1", "12"], " ", SqrtBox[RowBox[{SqrtBox["x"], "+", "x"}]], " ", RowBox[{"(", RowBox[{RowBox[{"-", "3"}], "+", RowBox[{"2", " ", SqrtBox["x"]}], "+", RowBox[{"8", " ", "x"}]}], ")"}]}], "+", RowBox[{FractionBox["1", "4"], " ", RowBox[{"ArcTanh", "[", FractionBox[SqrtBox[RowBox[{SqrtBox["x"], "+", "x"}]], SqrtBox["x"]], "]"}]}]}]],"Output",CellLabel->"Out[1]= "],
+Cell[TextData[{"Put the form traditionally for easier interpretation"}],"Text"],
+Cell[BoxData[{RowBox[{RowBox[{"\[Integral]", RowBox[{RowBox[{"Sqrt", "[", RowBox[{"x", "+", RowBox[{"Sqrt", "[", "x", "]"}]}], "]"}], RowBox[{"\[DifferentialD]", "x"}]}]}], ";"}], "\n", RowBox[{"TraditionalForm", "[", "%", "]"}]}],"Input",CellLabel->"In[2]:="],
+Cell[BoxData[RowBox[{RowBox[{FractionBox["1", "12"], " ", SqrtBox[RowBox[{"x", "+", SqrtBox["x"]}]], " ", RowBox[{"(", RowBox[{RowBox[{"8", " ", "x"}], "+", RowBox[{"2", " ", SqrtBox["x"]}], "-", "3"}], ")"}]}], "+", RowBox[{FractionBox["1", "4"], " ", RowBox[{SuperscriptBox["tanh", RowBox[{"-", "1"}]], "(", FractionBox[SqrtBox[RowBox[{"x", "+", SqrtBox["x"]}]], SqrtBox["x"]], ")"}]}]}], TraditionalForm],"Output",CellLabel->"Out[3]//TraditionalForm= "],
+Cell[BoxData[{-1/4*(Sqrt[Pi]*(EulerGamma + Log[4]))}],"Input",CellLabel->"In[4]:="],
+Cell[BoxData[RowBox[{RowBox[{"-", FractionBox["1", "4"]}], " ", RowBox[{"(", RowBox[{SqrtBox["\[Pi]"], " ", RowBox[{"(", RowBox[{"EulerGamma", "+", RowBox[{"Log", "[", "4", "]"}]}], ")"}]}], ")"}]}]],"Output",CellLabel->"Out[4]= "],
+Cell[TextData[{"Why use Mathematica? Use it to be grounded in facts for a topic. Example: Ramanujan's special integrals."}],"Text"],
+Cell[BoxData[{RowBox[{"Integrate", "[", RowBox[{RowBox[{RowBox[{"Log", "[", RowBox[{RowBox[{"(", RowBox[{"1", "+", RowBox[{"Sqrt", "[", RowBox[{"1", "+", RowBox[{"4", "x"}]}], "]"}]}], ")"}], "/", "2"}], "]"}], "/", "x"}], ",", RowBox[{"{", RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}]}],"Input",CellLabel->"In[5]:="],
+Cell[BoxData[FractionBox[SuperscriptBox["\[Pi]", "2"], "15"]],"Output",CellLabel->"Out[5]= "],
+Cell[TextData[{"Some integrals converge under only imaginary values."}],"Text"],
+Cell[BoxData[{RowBox[{RowBox[{"Integrate", "[", RowBox[{RowBox[{"Exp", "[", RowBox[{RowBox[{"-", "a"}], RowBox[{"x", "^", "2"}]}], "]"}], ",", RowBox[{"{", RowBox[{"x", ",", RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}], ",", RowBox[{"Assumptions", "->", RowBox[{RowBox[{"Re", "[", "a", "]"}], "==", "0"}]}]}], "]"}], "//", "FullSimplify"}]}],"Input",CellLabel->"In[7]:="],
+Cell[BoxData[FractionBox[RowBox[{SuperscriptBox[RowBox[{"(", RowBox[{"-", "a"}], ")"}], RowBox[{"3", "/", "4"}]], " ", SqrtBox[FractionBox["\[Pi]", "2"]], " ", RowBox[{"(", RowBox[{RowBox[{"-", "1"}], "+", RowBox[{"Sign", "[", "a", "]"}]}], ")"}]}], SuperscriptBox["a", RowBox[{"5", "/", "4"}]]]],"Output",CellLabel->"Out[7]= "],
+Cell[BoxData[{RowBox[{"Integrate", "[", RowBox[{"1", ",", RowBox[{RowBox[{"{", RowBox[{"x", ",", "y"}], "}"}], "\[Element]", RowBox[{"Disk", "[", "]"}]}]}], "]"}]}],"Input",CellLabel->"In[11]:="],
+Cell[BoxData["\[Pi]"],"Output",CellLabel->"Out[11]= "],
+Cell[BoxData[{RowBox[{"Integrate", "[", RowBox[{RowBox[{RowBox[{"x", "^", "2"}], "+", RowBox[{"y", "^", "2"}]}], ",", RowBox[{RowBox[{"{", RowBox[{"x", ",", "y"}], "}"}], "\[Element]", RowBox[{"Disk", "[", "]"}]}]}], "]"}]}],"Input",CellLabel->"In[12]:="],
+Cell[BoxData[FractionBox["\[Pi]", "2"]],"Output",CellLabel->"Out[12]= "],
+Cell[TextData[{"Integral over unit disk"}],"Text"],
+Cell[BoxData[{Pi/4}],"Input",CellLabel->"In[13]:="],
+Cell[BoxData[FractionBox["\[Pi]", "4"]],"Output",CellLabel->"Out[13]= "]
+}]

@@ -1,0 +1,65 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2025,         55]
+NotebookOptionsPosition[      1668,         41]
+NotebookOutlinePosition[      2073,         57]
+CellTagsIndexPosition[      2030,         54]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["Needless to say, the definition of \
+\[OpenCurlyDoubleQuote]interesting\[CloseCurlyDoubleQuote] isn\
+\[CloseCurlyQuote]t an easy or objective one. And in fact the issues are very \
+much the same as Hardy faced with Ramanujan\[CloseCurlyQuote]s letter. If one \
+can see how what\[CloseCurlyQuote]s being presented fits into some bigger \
+picture\[LongDash]some narrative\[LongDash]that one understands, then one can \
+tell whether, at least within that framework, something is \
+\[OpenCurlyDoubleQuote]interesting\[CloseCurlyDoubleQuote]. But if one doesn\
+\[CloseCurlyQuote]t have the bigger picture\[LongDash]or if what\
+\[CloseCurlyQuote]s being presented is just \[OpenCurlyDoubleQuote]too far \
+out\[CloseCurlyDoubleQuote]\[LongDash]then one really has no way to tell if \
+it should be considered interesting or not.\n",
+  FontSlant->"Italic"],
+ "\nHow Wolfram defines interesting, he needs some K-L divergence to compare \
+stuff with"
+}], "Text",
+ CellChangeTimes->{{3.908454601934741*^9, 
+  3.9084546153964524`*^9}},ExpressionUUID->"f0055bd4-4f29-46f2-986d-\
+545788f45977"]
+},
+WindowSize->{569.25, 609.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ea75d331-f96f-4fd0-ad15-e310eb1d2e4b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1106, 19, 265, "Text",ExpressionUUID->"f0055bd4-4f29-46f2-986d-545788f45977"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

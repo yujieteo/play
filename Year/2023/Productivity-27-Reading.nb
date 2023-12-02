@@ -1,0 +1,192 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10000,        184]
+NotebookOptionsPosition[      9640,        170]
+NotebookOutlinePosition[     10046,        186]
+CellTagsIndexPosition[     10003,        183]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+\[OpenCurlyDoubleQuote]So we shall now explain how to read the book. The \
+right way is to put it on your desk during the day, below your pillow at \
+night, devoting yourself to the reading, and solving the exercises until you \
+know it by heart. Unfortunately, I suspect the reader is looking for advice \
+on how not to read, i.e. what to skip, and even better, how to read only some \
+isolated highlights.\[CloseCurlyDoubleQuote] - Saharon Shelah, \
+\[OpenCurlyDoubleQuote]Classification Theory and the Number of Non-Isomorphic \
+Models\[CloseCurlyDoubleQuote]
+
+\[OpenCurlyDoubleQuote]Never read a book that can be adequately summarised.
+Never read a book you would not reread.
+No book that can be shortened survives.
+Never read a book written by a journalist.
+Never read a book if you understand the table of contents.
+Never read a textbook as if you are reading a books.
+Never read a textbook in the sequence prescribed by the authors.
+Never read a book if you know what you are getting out of it.
+Never read a book if you do not expect to be surprised by something in it \
+while reading it.\[CloseCurlyDoubleQuote]
+
+\[OpenCurlyDoubleQuote]..reading a book doesn\[CloseCurlyQuote]t mean just \
+turning the pages. It means thinking about it, 
+identifying parts that you want to go back to, asking how to place it 
+in a broader context, pursuing the ideas. There\[CloseCurlyQuote]s no point \
+in reading 
+a book if you let it pass before your eyes and then forget about it 
+ten minutes later. Reading a book is an intellectual exercise, 
+which stimulates thought, questions, imagination.\[CloseCurlyDoubleQuote] 
+
+\[OpenCurlyDoubleQuote]Avoid discussing anything I did not either personally \
+witness or develop independently, anything
+I have not distilled well enough to write with only the slightest effort. \
+Everything that felt
+like work was out. Purge passages that seem to come from a visit to the \
+library. Use no quote that
+did not naturally spring from memory and did not come from a writer that I \
+have intimately frequented over
+the years. Detest the random use of borrowed wisdoms. Either keep silence, or \
+say something better than silence.\[CloseCurlyDoubleQuote]
+
+It is my hope that this discussion here will galvanize you to be patient with \
+your responsibility to work with abstract ideas as a new language. This \
+article is the result of my motivation to read better now that I regret that \
+I did not try to build my foundation in reading early on, now that I need to \
+revise this knowledge for higher-level courses.
+
+The core tendencies I find advisable for readers are to (1) exercise patience \
+as an exploration in learning the words of an abstract language, (2) to find \
+comfort in solving exercises and interacting with the larger concepts first \
+before detailed computation. The treatment of abstract concepts as a language \
+is under-addressed when trying to learn new mathematics. I by no means claim \
+that this is chiefly the source of intimidation with abstraction, and \
+instead, claim that these are the two tendencies that we should strive for as \
+readers of abstract ideas in science, mathematics, and engineering. In \
+summary, I have faith that you can describe and summarize long calculations \
+with verbiage and terminology that is concise enough to keep you engaged with \
+the book. The first claim I make is that the solution of exercises is \
+primarily to help you feel at ease with the process of rendering the problem \
+tractable in your mind with clear and concise shorthand. I believe this is \
+true since I find that it is important that you can explain clearly the \
+application of the solution techniques and that one can grow and be competent \
+in this regard.
+
+In that sense, I think that exercises should aid you in learning the language \
+that clarifies the technical details in problem-solving. By no means do I \
+think this prescription is applicable to all readers, however, I find that it \
+is helpful to only write down what is really necessary after solving the \
+problem in your head already is helpful. For example, you can write down the \
+majority of the computations and leave the big ideas in your head to mull \
+over. It is normal to feel threatened by an excessive number of exercises. \
+You should solve enough problems to validate your confidence with as much \
+effort as you think is suitable for you. This naturalistic tendency helps you \
+be confident in making tradeoffs with your time and accept that partial \
+progress is still beneficial for your learning. I hope to be able to comfort \
+you that the slow process to read is normal. Even on pages with little \
+technical detail, I find myself spending half an hour revising the ideas \
+presented with reference to the glossary. It is great to be optimistic and \
+ambitious in your efforts to (1) try to understand every word on each page, \
+(2) come up with questions and discussion points that address each important \
+idea, (3) and come up with new definitions that truncate and summarize swaths \
+of discussions. In particular, the verbiage that you adopt can hopefully help \
+you comfortably summarize calculations and solution techniques with your \
+friends.
+
+It is observed that many techniques and theorems that are abstract are named \
+after people to celebrate their achievement. But, it is encouraged that you \
+try to find a shorthand to describe these ideas with more visceral imagery \
+and related concepts.
+
+Another interesting point is that you can have faith in yourself to \
+concentrate on more advanced material that can help you internalize difficult \
+arguments more quickly. You do not need to work your way up necessarily all \
+the time. You can learn the basics while assimilating harder material too! \
+One thing I have found helpful is to read notes line by line and stop at any \
+point where you do not follow the argument. Ask yourself every question you \
+can think of. If you feel sensitive or anxious with this process, try \
+consulting the glossary to revise what each word means. It is praiseworthy \
+and helpful to work through all arguments or proofs, step by step, line by \
+line. You should not feel discouraged if you need to stare at the words while \
+seeking the basic ideas and intuitive interpretations. Hopefully, with \
+sufficient consultation with the glossary, you will be motivated to find \
+simplified definitions that summarize larger swaths of information. It is \
+normal to begin with the simplest examples as you try to interpret line by \
+line of each argument. I believe you can grow to expect yourself to be able \
+to work through arguments and answer questions on computations to attain a \
+sustained understanding of concepts. It is also helpful that you make up \
+definitions or words for routine computations that are not adequately defined.
+
+I understand that it is stressful to have you understand material with too \
+many complicated things; if you feel anxious about complexity when reading, \
+you can skip using pen and paper if you do not feel comfortable. The material \
+may seem difficult, but if you read it slowly you will understand it all. I \
+have faith that you will naturally think of the big picture if you read in \
+detail already, and it\[CloseCurlyQuote]s okay to accept your anxiety if you \
+find that you cannot get the big picture straight away. There is no need to \
+skim as long as you are patient and at ease. Be patient with yourself. You \
+can definitely understand ideas that you do not get straight away with enough \
+time, patience, and diligence. Alternative definitions for various things are \
+very enjoyable, it is fun and instructive to compare and contrast the \
+convenience in how these definitions summarize and make important ideas \
+behave in different contexts. Also, if a proof is included in the book, you \
+do not have to worry, as it is likely that it is not expected for you to come \
+up with the proof on your own.
+
+I can empathize from personal experience that the allocation of time is very \
+difficult and stressful to you with regards to deadlines. I think it is okay \
+to be behind time to build a greater understanding of the topic. It will be \
+well worth it, especially since you will pick up speed later. You will have a \
+rich understanding of a topic and build on prior knowledge more easily and \
+explain concepts clearly. You do not need to make speed a particular \
+competition with others.
+
+A few practical stories of people who worked all the problems and got the \
+benefit:
+
+Freeman Dyson worked all the ODE problems in an ODE book over winter break, \
+teaching himself the subject. He enjoyed it and benefited from it.
+
+Richard Feynman felt he needed to learn classical E&M better when developing \
+QED. He worked every problem in a conventional E&M text. He also worked every \
+problem in calculus texts and in quantum theory.
+
+Lars Onsanger did all the problems in Whitacker and Watson.
+\
+\>", "Text",
+ CellChangeTimes->{
+  3.9105104256099358`*^9},ExpressionUUID->"08112fc6-d2aa-43ed-a41e-\
+217b346388dc"]
+},
+WindowSize->{569.25, 558},
+WindowMargins->{{372.75, Automatic}, {1.5, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"aa589bf9-0694-4a30-a59a-ac194c779837"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 9078, 148, 3301, "Text",ExpressionUUID->"08112fc6-d2aa-43ed-a41e-217b346388dc"]
+}
+]
+*)
+

@@ -1,0 +1,344 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22106,        336]
+NotebookOptionsPosition[     21659,        321]
+NotebookOutlinePosition[     22061,        337]
+CellTagsIndexPosition[     22018,        334]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[StyleBox["\[OpenCurlyDoubleQuote]Literary Theory: An Anthology\
+\[CloseCurlyDoubleQuote] Excerpts Rivkin/Ryan", "Title"]], "Text",
+ CellChangeTimes->{{3.910508062068407*^9, 
+  3.9105080793586855`*^9}},ExpressionUUID->"3929f5aa-f226-4bf4-8256-\
+8ac7a454ff9b"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]The words \[OpenCurlyDoubleQuote]No Radio\
+\[CloseCurlyDoubleQuote] refer to a sign people put in their cars in New York \
+City. It means \[OpenCurlyDoubleQuote]don\[CloseCurlyQuote]t bother breaking \
+into the body of this car; the radio has already been either stolen or else \
+removed by the owner.\[CloseCurlyDoubleQuote]... this image because it speaks \
+to the reservations many still feel about \[OpenCurlyDoubleQuote]theory\
+\[CloseCurlyDoubleQuote] and about its association with the ideology of \
+mastery through critical analysis that murders to dissect... We would not \
+summon the image if we did not feel that \[OpenCurlyDoubleQuote]theory\
+\[CloseCurlyDoubleQuote] is itself filled with doubt regarding the \
+objectivist ideal the image so carefully mocks. Some theories do indeed \
+fulfil the aspirations of the man with the heart in his hand, but we hope you \
+will feel that there are many others in this book that adopt the perspective \
+of the woman on the table.\[CloseCurlyDoubleQuote]
+Formalisms: Russian Formalisms and New Criticisms
+\[OpenCurlyDoubleQuote]If the author emerges by addressing the reader, by \
+commenting on the action, by reflections, etc., the reader will bridge the \
+gap between his own world and fictional reality under the guidance, so to \
+speak, of the author. This is authorial narration. If the reader has the \
+illusion of being present on the scene in one of the figures (characters), \
+then figural narration is taking place. If the point of observation does not \
+lie in any of the novel\[CloseCurlyQuote]s figures, although the perspective \
+gives the reader the feeling of being pre- sent as an imaginary witness of \
+the events then the presentation can be called neutral.\[CloseCurlyDoubleQuote]
+Structuralism, Linguistics, Narratology
+\[OpenCurlyDoubleQuote]There is the notion of \[OpenCurlyDoubleQuote]spirit,\
+\[CloseCurlyDoubleQuote] which enables us to establish between the \
+simultaneous or successive phenomena of a given period a community of \
+meanings, symbolic links, an interplay of resemblance and reflexion, or which \
+allows the sovereignty of collective consciousness to emerge as the principle \
+of unity and explanation. We must question those ready-made syntheses, those \
+groupings that we normally accept before any examination, those links whose \
+validity is recognized from the outset. We must oust those forms and obscure \
+forces by which we usually link the discourse of one man with that of \
+another; they must be driven out from the darkness in which they reign. And \
+instead of giving them unqualified, spontaneous value, we must accept, in the \
+name of methodological rigor, that, in the first instance, they concern only \
+a population of dispersed events.\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]1) Language is a well-defined object in the \
+heterogeneous mass of speech facts. It can be localized in the limited \
+segment of the speaking-circuit where an auditory image becomes associated \
+with a concept. It is the social side of speech, outside the individual who \
+can never create nor modify it by himself; it exists only by virtue of a sort \
+of contract signed by the members of a community. Moreover, the individual \
+must always serve an apprenticeship to learn the functioning of language; a \
+child assimilates it only gradually. It is such a distinct thing that a man \
+deprived of the use of speaking retains it if he understands the vocal signs \
+that he hears. (2) Language, unlike speaking, is something that we can study \
+separately. Although dead languages are no longer spoken, we can easily \
+assimilate their linguistic organisms. We can dispense with the other \
+elements of speech; indeed, the science of language is possible only if the \
+other elements are excluded. (3) Whereas speech is heterogeneous, language, \
+as defined, is homogeneous. It is a system of signs in which the only \
+essential thing is the union of meanings and sound- images, and in which both \
+parts of the sign are psychological.4) Language is concrete, no less so than \
+speaking; and this is a help in our study of it. Linguistic signs, though \
+basically psychological, are not abstractions; associations which bear the \
+stamp of collective approval - and which added together constitute language - \
+are realities that have their seat in the brain.\[CloseCurlyDoubleQuote]
+Rhetoric, Phenomenology, Reader-Response
+\[OpenCurlyDoubleQuote]Metaphor: implied comparison for two things of unlike \
+nature to have something in common. Simile is explicit metaphor. Chiasmus. \
+The order in the second half of an expression reverses that of the first. \
+Metonymy. Substitution of some attributive word for what is meant. Example: \
+crown for royalty. Synecdoche. Substitution of part for whole, example: \
+silver for money. Irony. Use of word to convey meaning opposite to the word.\
+\[CloseCurlyDoubleQuote]
+Poststructuralism, Deconstruction, Postmodernism
+\[OpenCurlyDoubleQuote]Only, on the one hand, the process of limitation and, \
+on the other, the study of the violently alternating reactions of antagonism \
+(expulsion) and love (reabsorption) obtained by positing the heterogeneous \
+element, lie within the province of heterology as science. This element \
+itself remains indefinable and can only be determined through negation.\
+\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]Differance is the systematic play of differences, of \
+the traces of differences, of the spacing by means of which elements are \
+related to each other. This spacing is the simultaneously active and passive \
+(the a of Differance indicates this indecision as concerns activity and \
+passivity, that which cannot be governed by or distributed between the terms \
+of this opposition) production of the intervals without which the \
+\[OpenCurlyDoubleQuote]full\[CloseCurlyDoubleQuote] terms would not signify, \
+would not function. It is also the becoming-space of the spoken chain - which \
+has been called temporal or linear; a becoming-space which makes possible \
+both writing and every correspondence between speech and writing, every \
+passage from one to the other.\[CloseCurlyDoubleQuote]
+Psychoanalysis and Psychology
+\[OpenCurlyDoubleQuote]Freud\[CloseCurlyQuote]s account of the boy\
+\[CloseCurlyQuote]s Oedipus complex is relatively simple and \
+straightforward.2 In response to, or in collaboration with, his heterosexual \
+mother, a boy\[CloseCurlyQuote]s pre-oedipal attachment to her becomes \
+charged with phallic/sexual overtones. He comes to see his father as a rival \
+for his mother\[CloseCurlyQuote]s love and wishes to replace him. He \
+fantasizes taking his father\[CloseCurlyQuote]s penis, murdering, or \
+castrating him. He fears retaliation, and specifically castration, by his \
+father for these wishes; thus, he experiences a conflict between his self- \
+love (narcissistic interest in his penis and body integrity) and his love for \
+his mother (libidinal cathexis). As a result, he gives up his heterosexual \
+attachment to his mother, radically repressing and denying his feelings \
+toward her. (These feelings are not only repressed, but also are partly \
+expressed in \[OpenCurlyDoubleQuote]aim-inhibited\[CloseCurlyDoubleQuote] \
+modes, in affectionate feelings and sublimated activities.) At the same time, \
+a \[OpenCurlyDoubleQuote]successful\[CloseCurlyDoubleQuote] resolution of his \
+Oedipus complex requires that he remain heterosexual. Therefore, he is \
+supposed to detach his heterosexual orientation from his mother, so that when \
+he grows up, he can reattach it to some other woman. He receives a reward for \
+his self-sacrifice, in addition to his avoidance of punishment. The carrot of \
+the masculine Oedipus complex is identification with his father, and the \
+superiority of masculine identification and prerogatives over feminine (if \
+the threat of castration is the stick). A new psychic integration appears in \
+place of the Oedipus complex, as the boy\[CloseCurlyQuote]s ego is modified \
+and transformed through the incorporation of paternal prohibitions to form \
+his superego, and as he substitutes a general sexual orientation for the \
+specific attachment to his mother (this attachment is composed of both the \
+remainders of his infantile love and his newer sexualized and genitalized \
+attachment).\[CloseCurlyDoubleQuote]
+Historicisms
+\[OpenCurlyDoubleQuote]For a long time, the prevailing model for the study of \
+literary sources, a model in effect parcelled out between the old historicism \
+and the new criticism, blocked such a question. As a freestanding, self- \
+sufficient, disinterested artwork produced by a solitary genius, King Lear \
+has only an accidental relation to its sources: they provide a glimpse of the \
+\[OpenCurlyDoubleQuote]raw material\[CloseCurlyDoubleQuote] that the artist \
+fashioned. Insofar as this \[OpenCurlyDoubleQuote]material\
+\[CloseCurlyDoubleQuote] is taken seriously at all, it is as part of the work\
+\[CloseCurlyQuote]s \[OpenCurlyDoubleQuote]historical background,\
+\[CloseCurlyDoubleQuote] a phrase that reduces history to a decorative \
+setting or a convenient, well-lighted pigeonhole. But once the \
+differentiations on which this model is based begin to crumble, then source \
+study is compelled to change its character: history cannot simply be set \
+against literary texts as either stable antithesis or stable background, and \
+the protective isolation of those texts gives way to a sense of their \
+interaction with other texts and hence of the permeability of their \
+boundaries.\[CloseCurlyDoubleQuote]
+Political Criticism: Marxism to Cultural Materialism
+\[OpenCurlyDoubleQuote]Let me summarize what we have discovered about \
+ideology in general. The duplicate mirror-structure of ideology ensures \
+simultaneously: 1 the interpellation of \[OpenCurlyDoubleQuote]individuals\
+\[CloseCurlyDoubleQuote] as subjects; 2 their subjection to the Subject; 3 \
+the mutual recognition of subjects and Subject, the \
+subjects\[CloseCurlyQuote] recognition of each other, and finally the subject\
+\[CloseCurlyQuote]s recognition of himself; 4 the absolute guarantee that \
+everything really is so, and that on condition that the subjects recognize \
+what they are and behave accordingly, everything will be all right: Amen - \
+\[OpenCurlyDoubleQuote]So be it.\[CloseCurlyQuote]\[CloseCurlyQuote]\
+\[CloseCurlyQuote]
+\[OpenCurlyDoubleQuote]The usual interpretation of this dream is based on a \
+thesis that one of the functions of the dream is to enable the dreamer to \
+prolong his sleep. The sleeper is suddenly exposed to an exterior irritation, \
+a stimulus coming from reality (the ringing of an alarm clock, knocking on \
+the door, or, in this case, the smell of smoke), and to prolong his sleep he \
+quickly, on the spot, constructs a dream: a little scene, a small story, \
+which includes this irritating element. However, the external irritation soon \
+becomes too strong, and the subject is awakened. The Lacanian reading is \
+directly opposed to this. The subject does not awake himself when the \
+external irritation becomes too strong; the logic of his awakening is quite \
+different. First, he constructs a dream, a story which enables him to prolong \
+his sleep, to avoid awakening into reality. But the thing that he encounters \
+in the dream, the reality of his desire, the Lacanian Real - in our case, the \
+reality of the child\[CloseCurlyQuote]s reproach to his father, \
+\[OpenCurlyDoubleQuote]Can\[CloseCurlyQuote]t you see that I am burning?,\
+\[CloseCurlyDoubleQuote] implying the father\[CloseCurlyQuote]s fundamental \
+guilt - is more terrifying than so-called external reality itself, and that \
+is why he awakens: to escape the Real of his desire, which announces itself \
+in the terrifying dream. He escapes into so- called reality to be able to \
+continue to sleep, to maintain his blindness, to elude awakening into the \
+Real of his desire. We can rephrase here the old \[OpenCurlyDoubleQuote]hippy\
+\[CloseCurlyDoubleQuote] motto of the 1960s: reality is for those who cannot \
+support [tolerate] the dream. \[OpenCurlyDoubleQuote]Reality\
+\[CloseCurlyDoubleQuote] is a fantasy- construction which enables us to mask \
+the Real of our desire.\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]The Lacanian thesis is, on the contrary, that there is \
+always a hard kernel, a leftover which persists and cannot be reduced to a \
+universal play of illusory mirroring. The difference between Lacan and \
+\[OpenCurlyDoubleQuote]naive realism\[CloseCurlyDoubleQuote] is that for \
+Lacan, the only point at which we approach this hard kernel of the Real is \
+indeed the dream. When we awaken into reality after a dream, we usually say \
+to ourselves \[OpenCurlyDoubleQuote]it was just a dream,\
+\[CloseCurlyDoubleQuote] thereby blinding ourselves to the fact that in our \
+everyday, wakening reality we are nothing but a consciousness of this dream. \
+It was only in the dream that we approached the fantasy- framework which \
+determines our activity, our mode of acting in reality itself. It is the same \
+with the ideological dream, with the determination of ideology as a dreamlike \
+construction hindering us from seeing the real state of things, reality as \
+such. In vain do we try to break out of the ideological dream by \
+\[OpenCurlyDoubleQuote]opening our eyes and trying to see reality as it is,\
+\[CloseCurlyDoubleQuote] by throwing away the ideological spectacles as the \
+subjects of such a post-ideological, objective, sober look, free of so-called \
+ideological prejudices, as the subjects of a look which views the facts as \
+they are, we remain throughout \[OpenCurlyDoubleQuote]the consciousness of \
+our ideological dream.\[CloseCurlyDoubleQuote] The only way to break the \
+power of our ideological dream is to confront the Real of our desire which \
+announces itself in this dream.\[CloseCurlyDoubleQuote]
+Feminism 
+\[OpenCurlyDoubleQuote]Mother, virgin, prostitute: these are the social roles \
+imposed on women. The characteristics of (so-called) feminine sexuality \
+derive from them: the valorisation of reproduction and nursing; faithfulness; \
+modesty, ignorance of and even lack of interest in sexual pleasure; a passive \
+acceptance of men\[CloseCurlyQuote]s \[OpenCurlyDoubleQuote]activity\
+\[CloseCurlyDoubleQuote]; seductiveness, to arouse the consumers\
+\[CloseCurlyQuote] desire while offering herself as its material support \
+without getting pleasure herself... Neither as mother nor as virgin nor as \
+prostitute has woman any right to her own pleasure.\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]But by submitting women\[CloseCurlyQuote]s bodies to a \
+general equivalent, to a transcendent, supernatural value, men have drawn the \
+social structure into an ever-greater process of abstraction, to the point \
+where they themselves are produced in it as pure concepts: having surmounted \
+all their \[OpenCurlyDoubleQuote]perceptible\[CloseCurlyDoubleQuote] \
+qualities and individual differences, they are finally reduced to the average \
+productivity of their labour. The power of this practical economy of the \
+meta- physical comes from the fact that \[OpenCurlyDoubleQuote]physiological\
+\[CloseCurlyDoubleQuote] energy is transformed into abstract value without \
+the mediation of an intelligible elaboration.\[CloseCurlyDoubleQuote]
+Gender Studies
+\[OpenCurlyDoubleQuote]In actual fact, manifold sexualities - those which \
+appear with the different ages (sexualities of the infant or the child), \
+those which become fixated on particular tastes or practices (the sexuality \
+of the invert, the gerontophile, the fetishist), those which, in a diffuse \
+manner, invest relationships (the sexuality of doctor and patient, teacher \
+and student, psychiatrist and mental patient), those which haunt spaces (the \
+sexuality of the home, the school, the prison) - all form the correlate of \
+exact procedures of power. We must not imagine these things that were \
+formerly tolerated attracted notice and received a pejorative designation \
+when the time came to give a regulative role to the one type of sexuality \
+that was capable of reproducing labour power and the form of the family. \
+These polymorphous conducts were extracted from people\[CloseCurlyQuote]s \
+bodies and from their pleasures; or rather, they were solidified in them; \
+they were drawn out, revealed, isolated, intensified, incorporated, by \
+multifarious power devices. The growth of perversions is not a moralizing \
+theme that obsessed the scrupulous minds of the Victorians. It is the real \
+product of the encroachment of a type of power on bodies and their pleasures. \
+It is possible that the West has not been capable of inventing any new \
+pleasures, and it has doubtless not discovered any original vices. But it has \
+defined new rules for the game of powers and pleasures. The frozen \
+countenance of the perversions is a fixture of this game.\
+\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]Masculinity in this society inevitably conjures up \
+notions of power and legitimacy and privilege; it often symbolically refers \
+to the power of the state and to uneven distributions of wealth. Masculinity \
+seems to extend outward into patriarchy and inward into the family; \
+masculinity represents the power of inheritance, the consequences of the \
+traffic in women, and the promise of social privilege. But, obviously, many \
+other lines of identification traverse the terrain of masculinity, dividing \
+its power into complicated differentials of class, race, sexuality, and \
+gender.\[CloseCurlyDoubleQuote]
+Ethnic Literary and Cultural Studies, Critical Race Theory
+\[OpenCurlyDoubleQuote]Probing \[OpenCurlyDoubleQuote]the complex formation \
+of white women\[CloseCurlyQuote]s constructions of racialized selves,\
+\[CloseCurlyDoubleQuote] Frankenberg tries to re-historicize the categories \
+of race and culture insisting on anti-essentialist conceptions of race, \
+ethnicity, and culture, while at the same time emphasizing that these \
+categories are made materially \[OpenCurlyQuote]real\[CloseCurlyQuote] within \
+matrices of power relations.\[CloseCurlyDoubleQuote]56 \
+\[OpenCurlyDoubleQuote]It is critical to think clearly and carefully about \
+the parts white people play in the maintenance of the racial order,\
+\[CloseCurlyDoubleQuote] Frankenberg believes, \[OpenCurlyDoubleQuote]and to \
+ask how our locations in it - and our complicity with it - are marked by \
+other dimensions of our privilege and oppression, including class, gender, \
+and sexuality.\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]
+\[OpenCurlyDoubleQuote]Meanwhile, the recent explosion of interest in \
+understudied writing receives its impetus from urgent social motives, and for \
+that reason some of its proponents have tried, with deliberation or \
+obliviousness, to pry aesthetic questions away from criticism. But many of us \
+who recognize the social imperatives driving us to read understudied writing \
+also recognize aesthetic imperatives. We like this writing. We like the \
+rhythms and resonances of its phrases, sentences, episodes, and ideas. The \
+politics and the aesthetics of Indian writing (or any writing) are not the \
+same, but they are not separable either. The new critics and their followers \
+often masked their politics by posing their political judgments as aesthetic \
+judgments and pretending to write politics out of criticism. They saw \
+politics as the stuff of naive criticism, especially criticism from the left. \
+By contrast, scholars and teachers devoted to noncanonical literature see no \
+conflict in reading politically and reading aesthetically. We read for \
+politics and aesthetics, and we read the rhythms and resonances of one as \
+part of reading the rhythms and resonances of the other.\
+\[CloseCurlyDoubleQuote]
+Colonial, Postcolonial and Transnational Studies
+\[OpenCurlyDoubleQuote]The exercise of colonialist authority, however, \
+requires the production of differentiations, individuations, identity effects \
+through which discriminatory practices can map out subject populations that \
+are tarred with the visible and transparent mark of power. Such a mode of \
+subjection is distinct from what Foucault describes as \
+\[OpenCurlyDoubleQuote]power through transparency\[CloseCurlyDoubleQuote]: \
+the reign of opinion, after the late eighteenth century, which could not \
+tolerate areas of darkness and sought to exercise power through the mere fact \
+of things being known and people seen in an immediate, collective gaze.\
+\[CloseCurlyDoubleQuote]
+
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.910508062068407*^9, 
+  3.9105080747575274`*^9}},ExpressionUUID->"58bd861e-4f91-4234-a1ba-\
+224d76de4d7e"]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0e380640-1c6f-4b82-a94d-5cec62c1cd58"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 272, 4, 73, "Text",ExpressionUUID->"3929f5aa-f226-4bf4-8256-8ac7a454ff9b"],
+Cell[833, 26, 20822, 293, 2404, "Text",ExpressionUUID->"58bd861e-4f91-4234-a1ba-224d76de4d7e"]
+}
+]
+*)
+

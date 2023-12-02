@@ -1,0 +1,337 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21571,        329]
+NotebookOptionsPosition[     20900,        310]
+NotebookOutlinePosition[     21302,        326]
+CellTagsIndexPosition[     21259,        323]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Productivity - Wolfram Understanding", "Title",
+ CellChangeTimes->{{3.9080967327836742`*^9, 
+  3.9080967390359807`*^9}},ExpressionUUID->"633772b2-1959-43c1-a008-\
+c13ab030241d"],
+
+Cell["Interest, Distinct, Intuition,", "Subtitle",
+ CellChangeTimes->{{3.9080968667259736`*^9, 3.908096890216462*^9}, {
+  3.908097028343047*^9, 3.9080970301478825`*^9}, {3.9080974322761173`*^9, 
+  3.9080974637550044`*^9}, {3.90809805257747*^9, 
+  3.9080980527184815`*^9}},ExpressionUUID->"ae8bd01a-41e1-4267-bc95-\
+9f2ec86ca33d"],
+
+Cell[TextData[{
+ StyleBox["Actionable Items:",
+  FontWeight->"Bold"],
+ "\n Present things visually.\n Reverse engineer to find explanation, but not \
+guaranteed.\n Consider particularities, idealise all else away.\n Consider \
+ambient understanding.\n Build abstraction.\n Pay attention to computational \
+irreducibility and computational boundedness (things are easier to understand \
+if you skip explanations)\n Progressive clarity\n Think about branchial and \
+rulial space. Remember you are sampling the universe of possibilities. Think \
+about self observation. Think about inter-concept space.\n Use category \
+theory and multiway system theory.\n Build tools and ideas to see far enough.\
+\n Think about causal invariance and combinators.\n Remove choice, rulial \
+space is about no particular choices.  Use maximum nondeterminism.\n Think \
+about relationships between concepts.\n Make an elegant big picture based on \
+detailed things.  Develop conceptual frameworks.\n Keep things tolerably \
+simple. Concepts are coarse-graining as computationally bounded observers.\n \
+Do experiments.\n Understand structures.\n Use computational essays.\n Give \
+structures names.\n Use something that can be understood.\n Use dictionary \
+compression.\n Use richer language.\n Consider isomorphisms.\nStudy the \
+simplest systems. Ask the most obvious questions. Search for the most \
+straightforward explanations\n\n"
+}], "Text",
+ CellChangeTimes->{{3.9080967768020287`*^9, 3.908096855482972*^9}, {
+   3.9080968981148787`*^9, 3.908096976092244*^9}, {3.9080970096975465`*^9, 
+   3.9080971873630342`*^9}, {3.908097235923292*^9, 3.9080972711365333`*^9}, {
+   3.908097347584779*^9, 3.9080974103805656`*^9}, {3.9080975232107005`*^9, 
+   3.908097578070655*^9}, {3.9080976578410273`*^9, 3.9080976615138817`*^9}, {
+   3.908097705266925*^9, 3.908097715469525*^9}, {3.9080977813534384`*^9, 
+   3.9080977911182065`*^9}, {3.9080978431360626`*^9, 
+   3.9080978571066933`*^9}, {3.9080980595906973`*^9, 3.908098072064019*^9}, 
+   3.9080981732403874`*^9},ExpressionUUID->"6791b811-8d15-4118-a084-\
+9cdab0055a4e"],
+
+Cell[TextData[{
+ "Some quotes:",
+ StyleBox["\n\nIn practice, it\[CloseCurlyQuote]s often critical to create \
+visualizations of inputs or outputs. Yes, everything can be represented as an \
+explicit symbolic expression. But we humans often have a much easier time \
+understanding things when they\[CloseCurlyQuote]re presented visually, rather \
+than as some kind of one-dimensional language-like string. \n\nIn a sense, \
+this is a simple, \[OpenCurlyDoubleQuote]computationally reducible\
+\[CloseCurlyDoubleQuote] solution\[LongDash]that for example we can easily \
+understand. But there\[CloseCurlyQuote]s potentially a much better solution, \
+at least if we\[CloseCurlyQuote]re able to make use of sophisticated \
+computation. Given the complete pattern of who wants to go where, we can \
+dispatch specific vehicles to drive in whatever complicated arrangement is \
+needed to optimally deliver people to their destinations. It won\
+\[CloseCurlyQuote]t be like the trains, with their regular times. Instead, it\
+\[CloseCurlyQuote]ll be something that looks more complex, and \
+computationally irreducible. And it won\[CloseCurlyQuote]t be easy to \
+characterize in terms of numbers.\n\nPart of that expansion is actually a \
+matter of technology. We\[CloseCurlyQuote]re building telescopes and \
+microscopes and amplifiers that allow us to extend our raw human senses to be \
+sensitive to more things. But there\[CloseCurlyQuote]s also another part of \
+the expansion that is in effect intellectual: we\[CloseCurlyQuote]re \
+developing new conceptual frameworks that allow us to \
+\[OpenCurlyDoubleQuote]corral\[CloseCurlyDoubleQuote] things we see happening \
+in the world into forms that \[OpenCurlyDoubleQuote]fit narratives\
+\[CloseCurlyDoubleQuote] we\[CloseCurlyQuote]ve constructed.\n\nIt\
+\[CloseCurlyQuote]s worth understanding that in our models, not everything \
+that \[OpenCurlyDoubleQuote]goes on in the universe\[CloseCurlyDoubleQuote] \
+can necessarily be best characterized in terms of particles. In principle one \
+might be able to think of every piece of activity in the network as somehow \
+related to a sufficiently small or short-lived \
+\[OpenCurlyDoubleQuote]particle\[CloseCurlyDoubleQuote]. But mostly there won\
+\[CloseCurlyQuote]t be \[OpenCurlyDoubleQuote]room \
+for\[CloseCurlyDoubleQuote] the characteristics of something we can identify \
+as a particular \[OpenCurlyDoubleQuote]countable\[CloseCurlyDoubleQuote] \
+particle to emerge.\n\nSo, in the end, how is it that things can move? \
+Ultimately it\[CloseCurlyQuote]s something that has to be formally derived \
+from the underlying model, based on the characteristics of the observer. At \
+least conceptually the first step is to identify what kinds of things the \
+observer considers \[OpenCurlyDoubleQuote]the same\[CloseCurlyDoubleQuote], \
+and what details make them \[OpenCurlyDoubleQuote]seem different\
+\[CloseCurlyDoubleQuote]. Then one needs to determine whether there are \
+structures that would be considered the same by the observer, but which \
+progressively change \[CloseCurlyDoubleQuote]where they\[CloseCurlyQuote]re \
+embedded\[CloseCurlyDoubleQuote]. And if so, we\[CloseCurlyQuote]ve \
+identified \[OpenCurlyDoubleQuote]motion\[CloseCurlyDoubleQuote].\n\nSo are \
+there in fact robust structures that can \[OpenCurlyDoubleQuote]move across \
+rulial space\[CloseCurlyDoubleQuote]? The answer, I think, is yes. But it\
+\[CloseCurlyQuote]s a strange story. I suspect that the analog in rulial \
+space of particles in physical space is basically concepts\[LongDash]say of \
+the kind that might be represented by words in a human (or computational) \
+language.\n\nBut just like our examples of motion, the way this works depends \
+on the characteristics of the observers observing it\[LongDash]and insofar as \
+we are the observers, it therefore depends on us. We know from experience \
+that we form concepts, and that they have a certain robustness. But why is \
+this? In a sense, concepts are a way of coarse-graining things so that we\
+\[LongDash]as computationally bounded entities\[LongDash]can deal with them. \
+And the fact that we take concepts to maintain some kind of fixed meaning is \
+part of our perception that we maintain a single persistent thread of \
+experience.\n\nWhat does the concept of the ruliad mean for the fundamental \
+way we think about things like science? The typical conception of \
+\[OpenCurlyDoubleQuote]what science does\[CloseCurlyDoubleQuote] is that it\
+\[CloseCurlyQuote]s about us figuring out\[LongDash]as \
+\[OpenCurlyDoubleQuote]objectively\[CloseCurlyDoubleQuote] as we can\
+\[LongDash]how the world happens to be. But the concept of the ruliad in a \
+sense turns this on its head.\n\nBecause it says that at some ultimate level, \
+everything is a matter of abstract necessity. And it\[CloseCurlyQuote]s just \
+our \[OpenCurlyDoubleQuote]parsing\[CloseCurlyDoubleQuote] of it that defines \
+the subject matter of what we call science. We might have thought that the \
+science of the universe was just something that\[CloseCurlyQuote]s \
+\[OpenCurlyDoubleQuote]out there\[CloseCurlyDoubleQuote]. But what we\
+\[CloseCurlyQuote]re realizing is that instead in some fundamental sense, it\
+\[CloseCurlyQuote]s all \[OpenCurlyDoubleQuote]on us\[CloseCurlyDoubleQuote].\
+\n\nBut does that mean that there\[CloseCurlyQuote]s no \
+\[OpenCurlyDoubleQuote]objective truth\[CloseCurlyDoubleQuote], and nothing \
+that can robustly be said about the universe without \
+\[OpenCurlyDoubleQuote]passing it through us\[CloseCurlyDoubleQuote]? Well, \
+no. Because what we\[CloseCurlyQuote]ve discovered through our Physics \
+Project is that actually there are quite global things that can (\
+\[OpenCurlyDoubleQuote]objectively\[CloseCurlyDoubleQuote]) be said about our \
+universe and the laws it follows, as perceived by observers like us. \n\nIt\
+\[CloseCurlyQuote]s interesting to notice that for an observer like us, there \
+seem to be only a finite set of types of \[OpenCurlyDoubleQuote]elementary \
+particles\[CloseCurlyDoubleQuote] that exist in physical space. And perhaps \
+that\[CloseCurlyQuote]s not unrelated to the fact that observers like us also \
+seem to imagine that there are in some sense only a finite number of \
+\[OpenCurlyDoubleQuote]basic concepts\[CloseCurlyDoubleQuote] (associated, \
+say, with distinct words in human languages). There\[CloseCurlyQuote]s lots \
+more detail that exists in rulial space\[LongDash]or in the \
+ruliad\[LongDash]but for observers like us, with our type of way of sampling \
+the ruliad, these might be core coherent structures that we perceive. \n\nIt\
+\[CloseCurlyQuote]s a similar problem in natural science. You see some \
+elaborate set of things happening in some biological system. Can one \
+\[OpenCurlyDoubleQuote]reverse engineer\[CloseCurlyDoubleQuote] these to find \
+an \[OpenCurlyDoubleQuote]explanation\[CloseCurlyDoubleQuote] for them? \
+Sometimes one might be able to say, for example, that evolution by natural \
+selection would be likely to lead to something. Or that it\[CloseCurlyQuote]s \
+just common in the computational universe and so is likely to occur. But \
+there\[CloseCurlyQuote]s no guarantee that the natural world is set up in any \
+way that necessarily allows human explanation.\n\nNeedless to say, when one \
+makes models for things, one inevitably considers only the particular aspects \
+that one\[CloseCurlyQuote]s interested in, and idealizes everything else \
+away. And particularly in areas like medicine, it\[CloseCurlyQuote]s not \
+uncommon to end up with some approximate model that\[CloseCurlyQuote]s a \
+fairly shallow decision tree that\[CloseCurlyQuote]s easy to explain, at \
+least as far as it goes.\n\nIn the design of the Wolfram \
+Language\[LongDash]with functions named with English words\[LongDash]I \
+leverage the \[OpenCurlyDoubleQuote]ambient understanding\
+\[CloseCurlyDoubleQuote] that comes from the English words (and sometimes \
+from their meanings in common applications of computation). \n\nWill we call \
+this \[OpenCurlyDoubleQuote]mathematics\[CloseCurlyDoubleQuote]? I think we \
+should. But it\[CloseCurlyQuote]s a different tradition from what we\
+\[CloseCurlyQuote]ve mostly used for the past millennium. \
+It\[CloseCurlyQuote]s one where we can still build abstractions, and we can \
+still construct new levels of understanding. \n\nIt\[CloseCurlyQuote]s a \
+nontrivial fact of physics that \[OpenCurlyDoubleQuote]pure motion\
+\[CloseCurlyDoubleQuote] in physical space is possible; in other words, that \
+an \[OpenCurlyDoubleQuote]object\[CloseCurlyDoubleQuote] can be moved \
+\[OpenCurlyDoubleQuote]without change\[CloseCurlyDoubleQuote] from one place \
+in physical space to another. And now, in a sense, we\[CloseCurlyQuote]re \
+asking about pure motion in rulial space: can we move something \
+\[OpenCurlyDoubleQuote]without change\[CloseCurlyDoubleQuote] from one mind \
+at one place in rulial space to another mind at another place? In physical \
+space, things like particles\[LongDash]as well as things like black holes\
+\[LongDash]are the fundamental elements that are imagined to move without \
+change. So what\[CloseCurlyQuote]s now the analog in rulial space? It seems \
+to be concepts\[LongDash]as often, for example, represented by words. \n\nIt\
+\[CloseCurlyQuote]s also possible to think about a kind of inverse question: \
+just what is the extent of a mind in rulial space? Or, in other words, what \
+range of points of view, ultimately about the ruliad, can it hold? Will it be \
+\[OpenCurlyDoubleQuote]narrow-minded\[CloseCurlyDoubleQuote], able to think \
+only in particular ways, with particular concepts? Or will it be more \
+\[OpenCurlyDoubleQuote]broad-minded\[CloseCurlyDoubleQuote], encompassing \
+more ways of thinking, with more concepts?\n\nIt\[CloseCurlyQuote]s all \
+connected to the idea of semantic grammar\[LongDash]and the goal of having a \
+generic symbolic \[OpenCurlyDoubleQuote]construction kit\
+\[CloseCurlyDoubleQuote] for concepts, that would give us rules for what \
+could fit together with what, and thus for the \[OpenCurlyDoubleQuote]flow\
+\[CloseCurlyDoubleQuote] of what we might turn into human language. \n\nWith \
+the concept of the ruliad we finally have a principled way to talk about \
+alien minds\[LongDash]at least at a theoretical level. And the key point is \
+that any alien mind\[LongDash]or, for that matter, any mind\[LongDash]can be \
+thought of as \[OpenCurlyDoubleQuote]observing\[CloseCurlyDoubleQuote] or \
+sampling the ruliad from its own particular point of view, or in effect, its \
+own position in rulial space.\n\nPotentially it\[CloseCurlyQuote]s like what \
+we\[CloseCurlyQuote]d normally consider a concept\[LongDash]or something to \
+which we might assign a word in human language. If we have ways of thinking\
+\[LongDash]or consciousnesses\[LongDash]whose details are different, the \
+issue is what will be robust enough to be able to be transported between \
+them. And what everyday experience seems to suggest is that the answer is \
+concepts. Even though one might have a slightly different way of thinking, \
+what one calls \[OpenCurlyDoubleQuote]a fish\[CloseCurlyDoubleQuote] (or \
+essentially, the concept of a fish) is something that can still robustly be \
+communicated.\n\nOne might think that a multiway graph that captures all \
+possibilities would inevitably be too complicated to be useful. But this is \
+another key observation from our Physics Project: particularly with the \
+phenomenon of causal invariance, there are generic statements that can be \
+made, without dealing with all the details. And one of the important \
+directions we\[CloseCurlyQuote]ve pursued over the course of this year is to \
+get a better understanding\[LongDash]sometimes using methods from category \
+theory\[LongDash]of the general theory of multiway systems.\n\nWhen we first \
+asked the question \[OpenCurlyDoubleQuote]Why does the universe exist?\
+\[CloseCurlyDoubleQuote] it seemed difficult to understand how one could \
+possibly make an abstract argument that would conclude anything about the \
+existence of the particular universe in which we seem to find ourselves. But \
+the key point is that the full rulial universe involves no particular \
+choices; it is something formally inevitable. But what we perceive as our \
+universe is just a part of that full rulial universe, and a part determined \
+by the particulars of how we\[LongDash]with our \
+consciousness\[LongDash]choose to describe the world.\n\nBut while all of \
+these look like surfaces, they\[CloseCurlyQuote]re all obviously different. \
+And one way to characterize them is by their local curvature. Well, it turns \
+out that in our models, curvature is a concept closely related to dimension\
+\[LongDash]and this fact will actually be critical in understanding, for \
+example, how gravity arises.\n\nIn the end it\[CloseCurlyQuote]s wonderfully \
+elegant. But to get to the point where we can understand the elegant bigger \
+picture we need to go through some detailed things. (It \
+isn\[CloseCurlyQuote]t terribly surprising that a fundamental theory of \
+physics\[LongDash]inevitably built on very abstract ideas\[LongDash]is \
+somewhat complicated to explain, but so it goes.)\n\nAnd, yes, this kind of \
+\[OpenCurlyDoubleQuote]dictionary \
+compression\[CloseCurlyDoubleQuote]\[Dash]like scheme is useful in bringing a \
+first level of explainability.\n\nBut let\[CloseCurlyQuote]s go back to the \
+proof of my axiom system. The lemmas that were generated in this proof are \
+precisely set up to be elements that are used repeatedly (a bit like shared \
+common subexpressions). But even having in effect factored them out, we\
+\[CloseCurlyQuote]re still left with a proof that is not something that we \
+humans can readily understand.\n\nSo how can we go further? Well, basically \
+we have to come up with some yet-higher-level description. But what might \
+this be?\n\nThe Concept of Concepts\n\nIf you\[CloseCurlyQuote]re trying to \
+explain something to somebody, it\[CloseCurlyQuote]s a lot easier when there\
+\[CloseCurlyQuote]s something similar that they\[CloseCurlyQuote]ve already \
+understood. Imagine trying to explain a modern drone to someone from the \
+Stone Age. It\[CloseCurlyQuote]d probably be pretty difficult. But explaining \
+it to someone from 50 years ago, who\[CloseCurlyQuote]d already seen \
+helicopters and model airplanes etc., would be a lot easier. \n\nAnd \
+ultimately the point is that when we explain something, we do it in some \
+language that both we and whoever we\[CloseCurlyQuote]re explaining it to \
+know. And the richer this language is, the fewer new elements we have to \
+introduce in order to communicate whatever it is that we\[CloseCurlyQuote]re \
+trying to explain. \n\nSo to understand our experience, what we need to ask \
+is how a \[OpenCurlyDoubleQuote]branching brain\[CloseCurlyDoubleQuote] will \
+perceive a \[OpenCurlyDoubleQuote]branching universe\[CloseCurlyDoubleQuote]. \
+And the story is remarkably similar to what we discussed above for our \
+experience of space and time: it all has to do with imagining ourselves to \
+have a certain definite persistence.\n\nIn other words, if you want to move \
+in rulial space, you can do it by putting in the appropriate computational \
+work to change your conceptual point of view (or, essentially equivalently, \
+your language for describing things). So what about curvature (or the analog \
+of gravity) in rulial space\[LongDash]say generated through an analog of \
+Einstein\[CloseCurlyQuote]s equations from density of activity in rulial \
+space? Presumably this relates to the difficulty\[LongDash]or time it takes\
+\[LongDash]to get from one place in rulial space, and one way of thinking, to \
+another. And conceivably things like \[OpenCurlyDoubleQuote]paradigm shifts\
+\[CloseCurlyDoubleQuote] between different ways of thinking might be \
+associated with features of rulial space like event horizons.\n\nIn \
+constructing the ruliad, one is in a sense going to a more extreme version of \
+multicomputation, in which one uses not just a particular rule with multiple \
+outcomes, but all possible rules. In effect, the concept is to use \
+\[OpenCurlyDoubleQuote]maximal nondeterminism\[CloseCurlyDoubleQuote], and at \
+each step to independently \[OpenCurlyDoubleQuote]pick whatever rule one \
+wants\[CloseCurlyDoubleQuote], tracing out a rulial multiway system that \
+includes all the different possible paths this generates. \n\nOne of the \
+conceptual difficulties in thinking about how we perceive the ruliad is that \
+it\[CloseCurlyQuote]s a story of \[OpenCurlyDoubleQuote]self-observation\
+\[CloseCurlyDoubleQuote]. Essentially by the very definition of the ruliad, \
+we ourselves are part of it. We never get to \[OpenCurlyDoubleQuote]see the \
+whole ruliad from the outside\[CloseCurlyDoubleQuote]. We only get to \
+\[OpenCurlyDoubleQuote]experience it from the inside\[CloseCurlyDoubleQuote].",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.9080967742873774`*^9, 3.9080968123566885`*^9}, {
+  3.9080968467835736`*^9, 3.9080968470348253`*^9}, {3.9080969051315365`*^9, 
+  3.9080969054142323`*^9}, {3.9080970052073545`*^9, 3.9080970055693617`*^9}, {
+  3.9080970796188297`*^9, 3.9080971300343904`*^9}, {3.9080972857846212`*^9, 
+  3.908097293040968*^9}, {3.9080973819553475`*^9, 3.908097394636732*^9}, {
+  3.9080975025133677`*^9, 3.9080975314320564`*^9}, {3.908097588416733*^9, 
+  3.908097688756359*^9}, {3.9080977419919925`*^9, 3.9080977779806023`*^9}, {
+  3.908097871924791*^9, 
+  3.9080979151605873`*^9}},ExpressionUUID->"aa3f34bd-9905-46cf-9d7c-\
+c0696993ab6f"]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"35df45e8-9812-428b-864b-2f9e907004fb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 183, 3, 160, "Title",ExpressionUUID->"633772b2-1959-43c1-a008-c13ab030241d"],
+Cell[766, 27, 329, 5, 53, "Subtitle",ExpressionUUID->"ae8bd01a-41e1-4267-bc95-9f2ec86ca33d"],
+Cell[1098, 34, 2095, 31, 725, "Text",ExpressionUUID->"6791b811-8d15-4118-a084-9cdab0055a4e"],
+Cell[3196, 67, 17688, 240, 4267, "Text",ExpressionUUID->"aa3f34bd-9905-46cf-9d7c-c0696993ab6f"]
+}, Open  ]]
+}
+]
+*)
+

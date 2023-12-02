@@ -1,0 +1,68 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2054,         60]
+NotebookOptionsPosition[      1607,         45]
+NotebookOutlinePosition[      2012,         61]
+CellTagsIndexPosition[      1969,         58]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+\[OpenCurlyDoubleQuote]Someone must have been telling lies about Josef K., he \
+knew he had done nothing wrong but, one morning, he was arrested.\
+\[CloseCurlyDoubleQuote] - \[OpenCurlyDoubleQuote]The Trial\
+\[CloseCurlyDoubleQuote], Kafka\
+\>", "Text",
+ CellChangeTimes->{{3.9071380821407886`*^9, 3.907138121878084*^9}, {
+  3.907138203690774*^9, 
+  3.907138215906599*^9}},ExpressionUUID->"a647b830-64dc-4059-a499-\
+d881e5fad22c"],
+
+Cell[TextData[{
+ StyleBox["Commentary",
+  FontWeight->"Bold"],
+ ": it was a dream to ignore the bureaucratic world only to be stirred into \
+this reality by the sudden arrest. Therefore the naive realism the Josef K. \
+was in before the story can be interpreted in terms of Lacanian \
+psychoanalysis. In general, one can look for the word \
+\[OpenCurlyDoubleQuote]but\[CloseCurlyDoubleQuote] to search for juxtaposed \
+alternate realities to frame it like this."
+}], "Text",
+ CellChangeTimes->{{3.907138129157024*^9, 
+  3.9071382026214404`*^9}},ExpressionUUID->"8c672fca-7eef-448d-97cd-\
+04e08a28c33e"]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"77bac70a-48c6-4bb2-8a63-95692d79aedb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 440, 9, 81, "Text",ExpressionUUID->"a647b830-64dc-4059-a499-d881e5fad22c"],
+Cell[1001, 31, 602, 12, 127, "Text",ExpressionUUID->"8c672fca-7eef-448d-97cd-04e08a28c33e"]
+}
+]
+*)
+

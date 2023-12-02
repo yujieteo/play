@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5640,        119]
+NotebookOptionsPosition[      5060,        101]
+NotebookOutlinePosition[      5472,        117]
+CellTagsIndexPosition[      5429,        114]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Multicomputation - Reading", "Title",
+ CellChangeTimes->{{3.9082820379982357`*^9, 
+  3.908282043698456*^9}},ExpressionUUID->"de351685-389c-4f36-b9ab-\
+4e3bf915c5de"],
+
+Cell["\<\
+Learn graph theory, statistical mechanics, dynamical systems theory, \
+nonequilibrium thermodynamics, synergetics, cybernetics, general systems \
+theory, nonlinear dynamics, category theory, Einstein\[CloseCurlyQuote]s \
+equations.\
+\>", "Text",
+ CellChangeTimes->{
+  3.9082820818302355`*^9},ExpressionUUID->"e98ac581-3e68-4613-9c5b-\
+4e92751c3808"],
+
+Cell[TextData[{
+ "\nBollobas, Bela, Editor\nGraph Theory : An Introductory Course\n\
+Springer-Verlag, 1979. [ISBN 0387903992>]\n\n",
+ StyleBox["West, Douglas B.\nIntroduction to Graph Theory\nPrentice-Hall, \
+Inc., 2001. [ISBN 0130144002>]",
+  FontWeight->"Bold"],
+ "\n\nHarary, Frank\nGraph Theory\nAddison-Wesley, 1972. [ISBN 0201027879>]\n\
+\nHarary, Frank & Edgar Palmer\nGraphical Enumeration\nAcademic Press, 1973. \
+[ISBN 0123242452>]\n\nBriggs, Norman L., E. Keith Lloyd & Robin J. Wilson\n\
+Graph Theory 1736-1936\nClarendon Press, 1977. [ISBN 0198539010>]\n\nSchmidt, \
+Gunther & Thomas Strohlein\nRelations and Graphs\nSpringer-Verlag, 1993. \
+[ISBN 3540562540>]\n\nSkiena, Steven\nImplementing Discrete Mathematics. \
+Combinatorics and Graph Theory with Mathematica\nAddison-Wesley, 1990. [ISBN \
+0201509431>]\n\nKadanoff, Leo P. & Gordon Baym\nQuantum Statistical \
+Mechanics: Green\[CloseCurlyQuote]s Function Methods in Equilibrium and \
+Nonequilibrium Problems\nAddison-Wesley, 1989. [ISBN 0201094223>]\n\n\
+Kadanoff, Leo P. & Gordon Baym\nQuantum Statistical Mechanics: Green\
+\[CloseCurlyQuote]s Function Methods in Equilibrium and Nonequilibrium \
+Problems\nAddison-Wesley, 1989. [ISBN 0201094223>]\n\nYeung, Chuck\nSome \
+Problems on Spatial Patterns in Nonequilibrium Systems\nUniversity of \
+Illinois, 1989\n\nInfeld, E. & G. Rowlands\nNonlinear Waves, Solitons and \
+Chaos\nCambridge University Press, 1990. [ISBN 0521379377>]\n\nLuenberger, \
+David G.\nLinear and Nonlinear Programming. Second Edition\nAddison-Wesley, \
+1984. [ISBN 0201157942>]\n\nKichenassamy, Satyanad\nNonlinear Wave Equations\n\
+Marcel Dekker, 1996. [ISBN 0824793285>]\n\nKwatny, Harry G & Gilmer L \
+Blankenship\nNonlinear Control and Analytical Mechanics A Computational \
+Approach\nBirkh\[ADoubleDot]user, 2000. [ISBN 0817641475>]\n\nGallavotti, \
+Giovanni & Paul F Zweifel\nNonlinear Evolution and Chaotic Phenomena\nPlenum \
+Press, 1988. [ISBN 0306429098>]\n\nGuckenheimer, John & Philikp Homes\n\
+Nonlinear Oscillations, Dynamical Systems, and Bifurcations of Vector Fields \
+(Applied Mathematical Sciences, Vol. 42)\nSpringer-Verlag, 1983. [ISBN \
+0387908196>]\n\n",
+ StyleBox["Tufillaro, Nicholas, Jeremiah Reilly & Tyler Abbot\nAn \
+Experimental Approach to Nonlinear Dynamics and Chaos\nAddison-Wesley, 1992. \
+[ISBN 0201554410>]\n\nRuelle, David\nChaotic Evolution and Strange \
+Attractors: The Statistical Analysis of Time Series for Deterministic \
+Nonlinear Systems\nCambridge University Press, 1989. [ISBN 0521368308>]\n\n\
+Ruelle, David\nThermodynamic Formalism\nAddison-Wesley, 1978. [ISBN \
+0201135043>]\n\nWald, Robert M.\nGeneral Relativity\nUniversity of Chicago \
+Press, 1984. [ISBN 0226870332>]",
+  FontWeight->"Bold"],
+ "\n\n",
+ StyleBox["Brenig, Wilhelm\nStatistical Theory of Heat: Nonequilibrium \
+Phenomena\nSpringer-Verlag, 1989. [ISBN 3540510362>]\n\nWiener, Norbert\n\
+Cybernetics: or Control and Communication in the Animal and the Machine, \
+Second Edition\nMIT Press, 1961. [ISBN 026273009X>]\n\n",
+  FontWeight->"Bold"],
+ "Roy, Archie E., Editor\nPredictability, Stability, and Chaos in N-Body \
+Dynamical Systems\nPlenum Press, 1991. [ISBN 0306440342>]\n\n",
+ StyleBox["Palis, Jacob, Jr. & Wellington de Melo\nGeometric Theory of \
+Dynamical Systems. An Introduction\nSpringer-Verlag, 1982. [ISBN 0387906681>]\
+\n\nHaken, Hermann\nSynergetics. An Introduction\nSpringer-Verlag, 1978. \
+[ISBN 0387088660>]\n\nDemongeot, J., E. Goles & M. Tchuente\nDynamical \
+Systems and Cellular Automata\nAcademic Press, 1985. [ISBN 0122090608>]",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.9082821029358435`*^9, 3.9082822418433447`*^9}, {
+  3.908282278556638*^9, 3.9082823216580763`*^9}, {3.90828236728974*^9, 
+  3.908282447333605*^9}, {3.9082824901704617`*^9, 3.9082825634553833`*^9}, {
+  3.908282609382701*^9, 
+  3.9082826096466923`*^9}},ExpressionUUID->"3ebae452-c762-4833-b13a-\
+c697d46104a0"]
+}, Open  ]]
+},
+WindowSize->{718.5, 686.25},
+WindowMargins->{{Automatic, -36.75}, {-264.75, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c577f533-849d-4a1e-ac0f-a493342a8912"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 171, 3, 98, "Title",ExpressionUUID->"de351685-389c-4f36-b9ab-4e3bf915c5de"],
+Cell[754, 27, 359, 8, 81, "Text",ExpressionUUID->"e98ac581-3e68-4613-9c5b-4e92751c3808"],
+Cell[1116, 37, 3928, 61, 2496, "Text",ExpressionUUID->"3ebae452-c762-4833-b13a-c697d46104a0"]
+}, Open  ]]
+}
+]
+*)
+

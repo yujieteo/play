@@ -1,0 +1,156 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7309,        148]
+NotebookOptionsPosition[      6733,        130]
+NotebookOutlinePosition[      7138,        146]
+CellTagsIndexPosition[      7095,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Productivity - Stephen Wolfram", "Title",
+ CellChangeTimes->{{3.908107603960902*^9, 
+  3.9081076087236996`*^9}},ExpressionUUID->"da6a9bb7-bd48-4851-bdf1-\
+0b05a2df16d9"],
+
+Cell["\<\
+Actionable Items:
+Work out the presentation as early as possible.
+Definite flow with large scale basic research.
+Make it a conversation.
+Focus on vocabulary.
+Create exercises.
+Check out Wolfram\[CloseCurlyQuote]s Elementary Introduction with Essay \
+Sections for advice.
+Add Q&A
+Add tech notes with technical information.
+Add exercises. Answers at the back to be very simple.
+Concept of a book as a finite container of information.
+
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.9081076206412992`*^9, 3.9081076346028447`*^9}, {
+  3.908107781006065*^9, 3.908107813680172*^9}, {3.908107860616764*^9, 
+  3.9081079305233145`*^9}, {3.9081087213433228`*^9, 
+  3.90810872851611*^9}},ExpressionUUID->"476b9118-6b9d-4132-a986-\
+1a7774b53ae9"],
+
+Cell[TextData[{
+ StyleBox["***A crucial point was that all these diagrams were being produced \
+algorithmically\[LongDash]with Wolfram Language code. And in fact I was \
+developing the diagrams as an integral part of actually doing the research \
+for the book. It was a lesson I\[CloseCurlyQuote]d learned years earlier: don\
+\[CloseCurlyQuote]t wait until research is \[OpenCurlyDoubleQuote]finished\
+\[CloseCurlyDoubleQuote] to figure out how to present it; work out the \
+presentation as early as possible, so you can use it to help you actually do \
+the research.",
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ StyleBox["\n\nAnother aspect of our first \
+\[OpenCurlyDoubleQuote]textbook-like\[CloseCurlyDoubleQuote] style for the \
+book was the idea of having additional elements, alongside the \
+\[OpenCurlyDoubleQuote]main narrative\[CloseCurlyDoubleQuote] of the book. In \
+early layouts we thought about having \[OpenCurlyDoubleQuote]Technical Notes\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]Historical Notes\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]Implementation Notes\
+\[CloseCurlyDoubleQuote], etc. But it didn\[CloseCurlyQuote]t take too long \
+to decide that no, that was just going to be too complicated. So we made the \
+decision to have one kind of note, and to collect all notes at the back of \
+the book.\n\nIt\[CloseCurlyQuote]s often assumed that the way to achieve \
+maximum innovation is to put together innovative people, and then let them \
+\[OpenCurlyDoubleQuote]just innovate\[CloseCurlyDoubleQuote] in whatever \
+directions they choose. But it has been my consistent experience that the \
+greatest innovation is instead achieved when there is a definite \
+\[OpenCurlyDoubleQuote]flow\[CloseCurlyDoubleQuote] and definite, ambitious \
+goals. The Wolfram Institute is going to be about doing large-scale basic \
+research this way. \n\nIt\[CloseCurlyQuote]s difficult to know how society at \
+large should value the general activity of basic research, and it\
+\[CloseCurlyQuote]s easy to criticize the inefficiencies of a large-scale \
+\[OpenCurlyDoubleQuote]just let researchers do what they want\
+\[CloseCurlyDoubleQuote] approach. But with the Wolfram Institute we have a \
+very different model. We\[CloseCurlyQuote]re starting the institute right now \
+for a specific reason: we\[CloseCurlyQuote]ve got a new paradigm that\
+\[CloseCurlyQuote]s just opened up an amazing collection of possibilities. \
+And we plan to pursue those possibilities in an efficient and tightly managed \
+way, optimized for innovation and new ideas.\n\nI said at the beginning of \
+this post that the book is essentially written as a conversation. In almost \
+every section, I found it convenient to add two additional parts: Q&A and \
+Tech Notes. The goal of Q&A is to have a place to answer obvious questions \
+people might have, without distracting from the main narrative. ",
+  FontSlant->"Italic"],
+ "\n\n",
+ StyleBox["I spent a decade of my life writing A New Kind of Science. Most of \
+that time was devoted to discovering the science in the book. But another \
+part was spent figuring out how to present the science in the best possible \
+way\[LongDash]using words and pictures.\n\nI\[CloseCurlyQuote]m constantly \
+thinking about new things.  Coming up with new ideas. Getting new \
+perspectives.  Thinking of new possible projects to do.\n\nUsually I don\
+\[CloseCurlyQuote]t talk much about things until or unless \
+I\[CloseCurlyQuote]ve actually done something real with them.  Which can take \
+years, and sometimes decades\[LongDash]if it happens at all.\n\nBut I\
+\[CloseCurlyQuote]ve decided it\[CloseCurlyQuote]s time I started writing a \
+little more about what I\[CloseCurlyQuote]m thinking about\[LongDash]rather \
+than always waiting to have a complete, finished, project or product.\n\nI\
+\[CloseCurlyQuote]d also like to write about some of the things that happen \
+in my life.  In some ways my life is delightfully simple and ordinary.  But \
+in others I\[CloseCurlyQuote]ve chosen to make it pretty far out on the \
+curve.\n\nBut these seemed to have way too much \
+\[OpenCurlyDoubleQuote]conceptual baggage\[CloseCurlyDoubleQuote], and when \
+one looks closely at them, it\[CloseCurlyQuote]s easy to get confused. I \
+wanted something more minimal\[LongDash]where the spotlight was as much as \
+possible on the systems I was studying, not on \
+\[OpenCurlyDoubleQuote]diagrammatic scaffolding\[CloseCurlyDoubleQuote]. And \
+so I tried to develop a \[OpenCurlyDoubleQuote]direct diagramming\
+\[CloseCurlyDoubleQuote] methodology, where each diagram could directly \
+\[OpenCurlyDoubleQuote]explain itself\[CloseCurlyDoubleQuote]\[LongDash]and \
+where every diagram would be readable \[OpenCurlyDoubleQuote]purely visually\
+\[CloseCurlyDoubleQuote], without words.",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.908107610877651*^9, 3.908107612858033*^9}, {
+  3.908107647063029*^9, 3.9081076476858997`*^9}, {3.9081077549287367`*^9, 
+  3.908107755242389*^9}, {3.908107966551073*^9, 3.9081079848431277`*^9}, {
+  3.9081086709667177`*^9, 3.908108671280716*^9}, {3.9081087078199253`*^9, 
+  3.908108712780811*^9}},ExpressionUUID->"b6983eaf-83d0-4c8d-8c2e-\
+f57cd1e2d390"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4cf26998-5baa-4d31-b841-3eccc67e80ca"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 175, 3, 160, "Title",ExpressionUUID->"da6a9bb7-bd48-4851-bdf1-0b05a2df16d9"],
+Cell[758, 27, 735, 21, 357, "Text",ExpressionUUID->"476b9118-6b9d-4132-a986-1a7774b53ae9"],
+Cell[1496, 50, 5221, 77, 1507, "Text",ExpressionUUID->"b6983eaf-83d0-4c8d-8c2e-f57cd1e2d390"]
+}, Open  ]]
+}
+]
+*)
+

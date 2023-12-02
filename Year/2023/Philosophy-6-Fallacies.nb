@@ -1,0 +1,1434 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     60094,       1426]
+NotebookOptionsPosition[     48797,       1220]
+NotebookOutlinePosition[     49408,       1240]
+CellTagsIndexPosition[     49365,       1237]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Fallacies - A Short Guide", "Title",
+ CellChangeTimes->{{3.9078341898677845`*^9, 
+  3.9078342141141634`*^9}},ExpressionUUID->"bc46725d-12de-419d-8ddf-\
+0297d1567637"],
+
+Cell["\<\
+A short guide of fallacies, adapted from Nassim Taleb (Version: 01 November \
+2023)\
+\>", "Subtitle",
+ CellChangeTimes->{{3.907834220869991*^9, 3.907834231737255*^9}, {
+  3.9078345619245777`*^9, 3.9078345659413886`*^9}, {3.9078422543102465`*^9, 
+  3.9078422595199795`*^9}},ExpressionUUID->"9877ad07-7812-452b-8ae6-\
+74def7f3302b"],
+
+Cell[CellGroupData[{
+
+Cell["Types of Fallacies", "Section",
+ CellChangeTimes->{{3.907835649088374*^9, 
+  3.9078356610133605`*^9}},ExpressionUUID->"42192418-1b63-4bc0-9d0e-\
+3280f657f1ef"],
+
+Cell["\<\
+Grouped based on practice and manifestations as opposed to formal and \
+mathematical attributes. Note that this grouping is also a Procrustean bed, \
+these are connected.
+
+Type 1) Misunderstanding of probability (\[OpenCurlyDoubleQuote]X\
+\[CloseCurlyDoubleQuote] random variable)
+- 1a) Misunderstanding randomness (Fooled by Randomness)
+- 1b) Misunderstanding distribution (Mediocristan vs Extremistan)
+
+Type 2) Misunderstanding effects (\[OpenCurlyDoubleQuote]F(X)\
+\[CloseCurlyDoubleQuote] consequences)
+- 2a) Misunderstanding consequences of higher orders 
+- 2b) Misunderstanding nonlinearity
+- 2c) Misunderstanding dynamics
+- 2d) Misunderstanding dimensionality.
+
+Type 3) Verbalisms, logical errors\
+\>", "Text",
+ CellChangeTimes->{{3.907835662613261*^9, 3.907835712387661*^9}, {
+  3.9078359910762663`*^9, 3.9078360191948957`*^9}, {3.9078361662472553`*^9, 
+  3.907836204251038*^9}, {3.9078373131449957`*^9, 3.907837361202342*^9}, {
+  3.907998852215623*^9, 3.907998883846223*^9}, {3.908000028758175*^9, 
+  3.908000045437543*^9}},ExpressionUUID->"9579590c-5c9a-4734-b51d-\
+1cd81f753323"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["List of Fallacies", "Section",
+ CellChangeTimes->{{3.9078342391472983`*^9, 
+  3.9078342487043943`*^9}},ExpressionUUID->"0e72e296-26f7-4ec5-ad88-\
+32d8f1fcd1e5"],
+
+Cell[CellGroupData[{
+
+Cell["Fooled By Randomness (Type 1a)", "Subsection",
+ CellChangeTimes->{{3.907835979244897*^9, 3.907835981504077*^9}, {
+  3.907836099511016*^9, 
+  3.9078361071701746`*^9}},ExpressionUUID->"2753d7e4-040f-482d-b116-\
+b4fdba18a00b"],
+
+Cell[CellGroupData[{
+
+Cell["Event-Exposure conflation", "Subsubsection",
+ CellChangeTimes->{{3.9079983818595805`*^9, 
+  3.9079983858134713`*^9}},ExpressionUUID->"5fdb2810-45b9-4089-993f-\
+90bbe568c8c1"],
+
+Cell["\<\
+Mistaking the Aristotelian (logic, probability X) for the Thalesian (payoff, \
+exposure, F(X)).
+
+Example (simulated annealing): adding noise increases accuracy to improve \
+functioning. Annealing in metallurgy is the controlled heating and cooling of \
+materials to increase the size of crystals and reduce defects. \
+\>", "Text",
+ CellChangeTimes->{{3.90799838793542*^9, 3.9079983946572375`*^9}, {
+  3.907998558646885*^9, 3.907998601006893*^9}, {3.907999037315174*^9, 
+  3.907999040236338*^9}, {3.9079999776441207`*^9, 3.90799997802308*^9}, {
+  3.908000175447615*^9, 
+  3.9080002161122437`*^9}},ExpressionUUID->"f9dd7066-9e2e-434e-901d-\
+430598561d7b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Non-evidence ", "Subsubsection"]], "Subsubsection",
+ CellChangeTimes->{{3.907835722787652*^9, 3.9078357259087543`*^9}, {
+  3.9078359529142046`*^9, 
+  3.9078359539501486`*^9}},ExpressionUUID->"97448a0c-e7c5-4ece-9795-\
+6d2b726fbcdc"],
+
+Cell["\<\
+Mistaking anecdotes for evidence. Mistaking conspiracy theories for evidence.
+
+Statistics is not a tool for scientism and confirmatory empiricism, but a \
+method to not be fooled by randomness. What Mother Nature does is rigorous \
+until proven otherwise; what humans and science do is flawed until proven \
+otherwise.
+
+Imparting traits to the general based on an incomplete set of particulars. \
+The reverse error of flowing down traits to the particular that only apply to \
+the general.
+
+Examples: sensational anecdote versus strength of evidence. Typically paired \
+up with financial and medical quackery, disinformation and conspiracy \
+theorizing.\
+\>", "Text",
+ CellChangeTimes->{{3.9078357306472387`*^9, 3.90783575233558*^9}, 
+   3.9078359697322845`*^9, {3.9078409221164503`*^9, 3.907840940117915*^9}, {
+   3.90784124698403*^9, 3.907841262342723*^9}, {3.907841722166504*^9, 
+   3.9078417347078304`*^9}, {3.9079996973655663`*^9, 3.907999715389462*^9}, {
+   3.908000577054052*^9, 
+   3.908000577420636*^9}},ExpressionUUID->"5fd0ac45-e410-44cd-b612-\
+420868e5f3b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Ignoring silent attributes of process", \
+"Subsubsection"]], "Subsubsection",
+ CellChangeTimes->{{3.907835780813425*^9, 3.9078358090184994`*^9}, {
+  3.907999599478922*^9, 
+  3.907999608862149*^9}},ExpressionUUID->"33d14ab7-93da-492d-a266-\
+e9a4d52dea02"],
+
+Cell["\<\
+Ignoring silent attributes of a process.
+
+Example (History of Private Life): No historical study or account should be \
+considered without filling-in the gaps of non-events, or events that do not \
+reflect the agency of some top-down ruler or \[OpenCurlyDoubleQuote]leader\
+\[CloseCurlyDoubleQuote].
+
+Example (boring peace ignored in history) Historical accounts are, by their \
+very structure, biased to overestimate agency in human affairs (such as the \
+role of \[OpenCurlyDoubleQuote]leaders\[CloseCurlyDoubleQuote] and the \
+\[OpenCurlyDoubleQuote]state\[CloseCurlyDoubleQuote]), as well as conflicts \
+dealt with from the top, as well as the devaluation of the properties of the \
+system. By their very focus on wars, historians see history as wars \
+punctuated with episodes of peace, not peace punctuated with episodes of war. \
+This mis-focus increase representativeness, exaggerates the role of meetings, \
+decisions, and recorded \
+\[OpenCurlyDoubleQuote]events\[CloseCurlyDoubleQuote]. By their very \
+definition recorded events are not random samples but glorifications of \
+salient happenings.
+
+Example (via positiva leadership) \[OpenCurlyDoubleQuote]Leadership\
+\[CloseCurlyDoubleQuote] is merely procedural Evolution (hence improvement) \
+never happen from the top via positiva. But degradation takes place from the \
+top via interventionism and side effects of policies. And improvement from \
+the top is necessarily obtained via negativa. This ignores contributions from \
+the collective or the ensemble.
+
+Example (survival bias): ignoring those that did not survive.
+
+Example (opaque heuristics): routines performed by society that does not seem \
+to make sense that has been done for a long time and sticks for unknown \
+reasons. \
+\>", "Text",
+ CellChangeTimes->{{3.907835788331448*^9, 3.9078358034441767`*^9}, 
+   3.907835970751849*^9, {3.90783711007331*^9, 3.9078371236774807`*^9}, 
+   3.9078373013639445`*^9, {3.907841273860882*^9, 3.9078413356921315`*^9}, {
+   3.907998654740503*^9, 3.9079987103611765`*^9}, {3.907998821803666*^9, 
+   3.9079988420975523`*^9}, 3.9079991258846874`*^9, {3.9079995867537007`*^9, 
+   3.9079995961982174`*^9}},ExpressionUUID->"42039270-0a3d-4d93-b275-\
+b45211eaa208"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Incorrect information sampling frequency", "Subsubsection",
+ CellChangeTimes->{{3.9079998544243484`*^9, 3.9079998609043026`*^9}, {
+  3.9079999341141524`*^9, 
+  3.907999939378563*^9}},ExpressionUUID->"dc7368a2-b120-4a43-b8c9-\
+dd822363d411"],
+
+Cell["\<\
+High frequency sterile information and sampling that is inappropriate for \
+useful search. This is interventionism.\
+\>", "Text",
+ CellChangeTimes->{{3.90799986899323*^9, 
+  3.9079999255190883`*^9}},ExpressionUUID->"87314850-e00a-4a56-bfac-\
+325f436ad806"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Ignoring generators and focusing on realisation", \
+"Subsubsection"]], "Subsubsection",
+ CellChangeTimes->{{3.907835813462365*^9, 
+  3.9078358380807934`*^9}},ExpressionUUID->"76072cc1-5d1f-46e0-85cd-\
+a9a5d5c24dd4"],
+
+Cell["\<\
+Looking at realisations as opposed to the fundamental generator.
+
+Example (ignoring original sources): ignoring original sources and focusing \
+on payoff from consensus thinking as opposed to actually understanding what \
+is going on.
+
+Example (green lumber fallacy): mistaking the source of important or \
+necessary knowledge (greenness of lumber), for another, less visible from the \
+outside, less tractable one. How theoreticians impute wrong weights to what \
+one should know in a certain business or in general, how many things that are \
+\[OpenCurlyDoubleQuote]relevant knowledge\[CloseCurlyDoubleQuote] are not \
+really relevant knowledge.
+
+Example: if you own something at $1000, ask yourself, would you buy it here \
+if you did not have it. If the answer is not yet, sell. No economic \
+difference between the realised and unrealised.
+
+Example: Messianic Illusion. A single person will save the world. Advances \
+typically come from distributed progressive improvements via negativa from \
+funerals.\
+\>", "Text",
+ CellChangeTimes->{{3.9078358203849277`*^9, 3.907835849282007*^9}, 
+   3.9078359713791866`*^9, {3.907837005575737*^9, 3.9078370133099904`*^9}, {
+   3.9078372988391967`*^9, 3.9078372998743067`*^9}, {3.907837412081035*^9, 
+   3.9078374129125032`*^9}, {3.9079990463513155`*^9, 3.907999109056954*^9}, {
+   3.9079997419244146`*^9, 3.907999778072077*^9}, {3.908000159211946*^9, 
+   3.9080001672027025`*^9}},ExpressionUUID->"ec170d5c-fb9b-48ef-b532-\
+533e50a1b9ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Base rate fallacy", "Subsubsection",
+ CellChangeTimes->{{3.9078379027511797`*^9, 
+  3.907837905531786*^9}},ExpressionUUID->"42b9f4de-59c6-478a-8b8c-\
+3fef2c5f9919"],
+
+Cell["\<\
+Example (independent scholarship): more weight should be given to the \
+independent scholar conditional of having the same rigor.
+
+Example (Snowden): Snowden is dishonest.
+Snowden is now in Russian, use Bayesian reasoning\
+\>", "Text",
+ CellChangeTimes->{{3.907837907019173*^9, 3.907838191118901*^9}, {
+  3.9078382384655137`*^9, 3.907838379170444*^9}, {3.9078384164701004`*^9, 
+  3.9078384748550835`*^9}, {3.9078385410530047`*^9, 3.907838675900524*^9}, {
+  3.907838711964183*^9, 3.907838715290803*^9}, {3.907841796181013*^9, 
+  3.907841815262157*^9}, {3.907841859524252*^9, 3.907841864686754*^9}, {
+  3.9079989644858418`*^9, 
+  3.907998971005044*^9}},ExpressionUUID->"7e100a13-b79d-4603-8111-\
+4a5f1fb53b20"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Wittgenstein\[CloseCurlyQuote]s Ruler", "Subsubsection",
+ CellChangeTimes->{{3.9079991572652235`*^9, 
+  3.9079991646994896`*^9}},ExpressionUUID->"4ae70ccd-1402-498e-879d-\
+aeb559317a0f"],
+
+Cell["\<\
+Not realising that when you using the ruler to measure the table, you are \
+also using the table to measure the ruler.\
+\>", "Text",
+ CellChangeTimes->{{3.9079991617319345`*^9, 
+  3.9079992128563547`*^9}},ExpressionUUID->"5a1cdd81-40e0-4a42-9bea-\
+9f09507fa4c8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Misunderstanding distribution (Mediocristan vs Extremistan) (Type 1b)\
+\>", "Subsection",
+ CellChangeTimes->{{3.9078360876764064`*^9, 3.9078361027140107`*^9}, {
+  3.9078372850493374`*^9, 3.907837285378622*^9}, {3.907998953219529*^9, 
+  3.9079989599503856`*^9}},ExpressionUUID->"45f5441e-3355-450b-8492-\
+013b00a7093f"],
+
+Cell["\<\
+Mediocristan: a process dominated by the mediocre, with few extreme successes \
+or failures (say, income for a dentist). No single observation can \
+meaningfully affect the aggregate.
+
+Extremistan:  a process where the total can be conceivably impacted by a \
+single observation. These include the fractal, power-law or family of \
+distributions.\
+\>", "Text",
+ CellChangeTimes->{{3.907999497632168*^9, 
+  3.9079995581084347`*^9}},ExpressionUUID->"5eccb497-8f75-430b-8afd-\
+6f0248c41e8c"],
+
+Cell["\<\
+In general, it is type 1a biases applied to higher order attributes. \
+Discussed in The Black Swan.\
+\>", "Text",
+ CellChangeTimes->{{3.907836137876402*^9, 3.907836153910531*^9}, 
+   3.907999796820459*^9},ExpressionUUID->"f5e11a87-29de-44ed-b968-\
+8f4af3144236"],
+
+Cell[CellGroupData[{
+
+Cell["Incorrect class of distribution", "Subsubsection",
+ CellChangeTimes->{{3.9078361190403275`*^9, 
+  3.907836122821249*^9}},ExpressionUUID->"a9242abc-c22a-42aa-8aa0-\
+e65177711fd7"],
+
+Cell["\<\
+Example (black swan): black swan event happens, reject Gaussian.
+
+Example (turkey problem and inverse turkey problem): every day a turkey has \
+increased confidence that the butcher who feeds it will never hurt it. The \
+inverse turkey problem: searching for \[OpenCurlyDoubleQuote]cures\
+\[CloseCurlyDoubleQuote] is not irrational just because you will never find \
+anything.
+
+Example (fat tailedness in distribution space): The presence of feedback \
+loops between components and the abrupt switching of states means that random \
+variables in the system can produce multiplicative effects, hence fail to \
+converge to the Gaussian basin.\
+\>", "Text",
+ CellChangeTimes->{{3.907838805270911*^9, 3.9078388188245726`*^9}, {
+  3.9078422359547634`*^9, 3.907842251785415*^9}, {3.907998720928042*^9, 
+  3.9079988099262805`*^9}},ExpressionUUID->"7c0b17e7-1cf7-4e9d-8a35-\
+82a899438957"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Incorrect tail properties", "Subsubsection",
+ CellChangeTimes->{{3.9078361258337135`*^9, 3.9078361353166494`*^9}, {
+  3.9078370435567255`*^9, 
+  3.9078370452989635`*^9}},ExpressionUUID->"423ed4a5-8043-4dc0-a54f-\
+ba4e7677ac24"],
+
+Cell["\<\
+Example (Lucretius fallacy): \[OpenCurlyDoubleQuote]The fool thinks the \
+tallest mountain there is the tallest mountain he has seen.\
+\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.9078370315217233`*^9, 3.9078370413744493`*^9}, {
+  3.9078387992630177`*^9, 
+  3.907838802072068*^9}},ExpressionUUID->"f25423cc-386d-4966-a8a6-\
+c364a059a4c8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Misunderstanding consequences of higher order (Type 2a)", "Subsection",
+ CellChangeTimes->{{3.9078361597653823`*^9, 3.9078361616488323`*^9}, {
+  3.9078362086751366`*^9, 3.907836221623359*^9}, {3.907836314006279*^9, 
+  3.907836317583252*^9}, {3.9078376016047697`*^9, 3.907837601650299*^9}, {
+  3.9079996745636024`*^9, 
+  3.9079996765102377`*^9}},ExpressionUUID->"5461020c-b6cd-4718-b0d6-\
+c4115e5eced9"],
+
+Cell["\<\
+These overlap mathematically with 1b, but in practice it is different. \
+Discussed in Antifragile.\
+\>", "Text",
+ CellChangeTimes->{{3.9078362780109625`*^9, 
+  3.907836307997116*^9}},ExpressionUUID->"22290f83-2460-4e70-9d26-\
+285fbc5345a7"],
+
+Cell["\<\
+Focusing on expected average without looking at variance/skewness\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.907836231309168*^9, 
+  3.9078362609541373`*^9}},ExpressionUUID->"79ac210d-5faf-451b-a7e1-\
+bfbd35319527"],
+
+Cell[CellGroupData[{
+
+Cell["Ignoring asymmetries", "Subsubsection",
+ CellChangeTimes->{{3.907836265823338*^9, 
+  3.907836269383829*^9}},ExpressionUUID->"efba1486-9eab-4900-bcb1-\
+c1068c4a7686"],
+
+Cell["\<\
+Ignoring situations where someone has more to gain from volatility, \
+randomness, errors, uncertainties, stressors and time.
+
+Example (Hammurabi\[CloseCurlyQuote]s rule violation): engineers not punished \
+for killing innocents with poor architecture.  Decisions taken by someone who \
+does not exit the pool.
+
+Example (false accusation): in many legal systems, since Hammurabi\
+\[CloseCurlyQuote]s article, calumnies and false accusations are punished as \
+if the accuser committed the infractions himself. Nabothizing: Production of \
+false accusation, just as Jezebel did to dispossess Naboth. Nabothizing is \
+asymmetric, false accusation causes irreversible reputation loss despite \
+correction.\
+\>", "Text",
+ CellChangeTimes->{{3.907841136570507*^9, 3.9078411854240904`*^9}, {
+  3.9078417533115864`*^9, 3.9078417707006006`*^9}, {3.9079985112096853`*^9, 
+  3.9079985339417257`*^9}, {3.907998922957212*^9, 3.907998928661647*^9}, {
+  3.90799961859371*^9, 
+  3.907999655094823*^9}},ExpressionUUID->"fc07c3de-c3b9-4513-8da2-\
+218a41126af5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Best-map fallacy / best-metric fallacy", "Subsubsection",
+ CellChangeTimes->{{3.9078376075018044`*^9, 3.9078376118817787`*^9}, {
+  3.907839040906474*^9, 
+  3.907839044953368*^9}},ExpressionUUID->"eb583106-8b12-41cd-b76b-\
+7de92b18b102"],
+
+Cell["\<\
+Preferring a false map to no map at all. More technically, ignoring the fact \
+that decision making means alterations in f(x) when we do not know anything \
+about random variable x. Explained in the Black Swan. \
+\[OpenCurlyDoubleQuote]Give us something better.\[CloseCurlyDoubleQuote]
+
+Examples: engineers measure only what can be measured reliably.
+
+Example: When people go to the dentist, they judge by results never by \
+intention. However this reverses when it comes to politics. It remains \
+however that for risky decisions naive assessment of results fail to capture \
+the quality of the decision.
+
+Example: judging a policy by intention or reasoning (exception: applying \
+precautionary principle)\
+\>", "Text",
+ CellChangeTimes->{{3.907837618236374*^9, 3.907837686976491*^9}, {
+  3.907839046993942*^9, 3.907839053971677*^9}, {3.907840196120298*^9, 
+  3.907840249507577*^9}, {3.907999820656063*^9, 
+  3.907999821274678*^9}},ExpressionUUID->"fa4ac9c4-452e-43bd-8005-\
+3cf78432e41a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Misunderstanding nonlinear effects (Type 2b)", "Subsection",
+ CellChangeTimes->{{3.907836327287163*^9, 3.907836348661686*^9}, {
+  3.9078401583434706`*^9, 
+  3.9078401584059734`*^9}},ExpressionUUID->"463c0751-04be-4f5b-a54a-\
+1221b432ca79"],
+
+Cell["\<\
+Nonlinearity:  there is at least one scale at which functions of averages, at \
+some scale, diverge from averages of sums.\
+\>", "Text",
+ CellChangeTimes->{{3.907841898817582*^9, 
+  3.9078419461300745`*^9}},ExpressionUUID->"4f6751e0-cd57-4edc-b866-\
+a13ec54912aa"],
+
+Cell[CellGroupData[{
+
+Cell["Scale transformations", "Subsubsection",
+ CellChangeTimes->{{3.9078363562508793`*^9, 
+  3.9078363584791036`*^9}},ExpressionUUID->"30efa199-96a4-4458-aa53-\
+2776a154c94e"],
+
+Cell["\<\
+Specific deterministic and random interactions between components \
+\[Dash]owing to dependence produce different behaviors from those of the \
+properties seen in isolation, particularly when asymmetric. These \
+cross-dependencies produce different outputs depending on the scale. 
+
+Change in size or quantities transforms the problems. No situation should \
+ever be dealt with in more abstract form than required. Life is about a \
+collection or particulars that do not necessarily generalize without scale \
+transformation.
+
+Example: John Ioannidis found out that the odds for an elderly to die on the \
+road exceeds that from Covid-19 (the statistical claim was effectively wrong, \
+but let\[CloseCurlyQuote]s ignore). Consider a collective, that is a sum of \
+individuals. Because deaths on the road are independent (hence allow for the \
+workings of CLT, the central limit theorem) and the ones from Covid dependent \
+(hence do not scale by CLT), you witness a reversal of the source of risk. \
+How? The odds of a 100 elderly dying from Covid exceed the odds of the same \
+number dying in car accident, even if one person is individually more likely \
+to die on the road.
+
+Example: partisan\[CloseCurlyQuote]s individual opinion is totally invalid. \
+Partisanship is representative collectively.
+
+Example: properties of sum of random variables different from the sum of \
+properties. 
+
+Example: a country is not a large village, a city state is not a small \
+empire, a collective is not the a naive sum of individuals. 
+
+Example: Note that people live under the illusion that if science works in \
+getting us closer to truth, it is the result of the fact that on balance \
+individual scientists are attempting to get us closer to truth. This is \
+clearly false under scale transformation; it is similar to the aggregative \
+properties of markets: scientists might be just trying to pursue \
+self-interest and it is the rules that allow the truth to progress in spite \
+of the attributes of the individuals.
+
+Example (from physical sciences): mean-field theory, renormalization groups
+
+Example (from statistics): ignoring pre-asymptotics or the slowness of the \
+law of large numbers.
+
+Example (false comparisons of scales): GMO to junk food
+
+Example (nudging): nudging rules on individual does not translate to results \
+on collective.
+For instance, nudging people into investing their retirement savings into \
+basket strategies might be beneficial for a single individual taken in \
+isolation, but will not translate into benefits for the collective \[Dash]it \
+will remove the effects of diversification.
+
+Example (golden rules): Avoid golden rules. Golden rules (\
+\[OpenCurlyDoubleQuote]treat others the
+way you\[CloseCurlyQuote]d like to be treated\[CloseCurlyDoubleQuote]) invite \
+busybodies to change other people\[CloseCurlyQuote]s lives.
+
+Example (invisible minority rules): minority rules undergo scale \
+transformation due to renormalization, they need to be visible due to the \
+outsized effect.
+
+Counterexamples for coercion: 
+Exceptions in the tails of the distributions:
+- seat belts
+- taxation (mandatory)
+- bioethics (can\[CloseCurlyQuote]t sell my own kidney if I wanted)
+- education (children coerced to learn even in homeschooling)
+- army (in war to defend nation)
+- treatments (e.g. drug addicts)
+- jury duty (mandatory)
+
+Example: Group morality is not the sum of individual morality. Never make \
+moral inferences about an aggregate or a group from attributes of individual \
+members and vice versa. Under adequate legal and institutional structure, the \
+intentions and morality of individual agents does not aggregate to groups. \
+And the reverse: attributes of groups do not map to those of agents.\
+\>", "Text",
+ CellChangeTimes->{{3.907836419114189*^9, 3.9078365226077304`*^9}, {
+   3.9078392295979495`*^9, 3.907839237090723*^9}, {3.9078398877240033`*^9, 
+   3.907840005008381*^9}, {3.9078400445894294`*^9, 3.9078400544358044`*^9}, {
+   3.9078401089963408`*^9, 3.9078401413912272`*^9}, {3.9078405280511303`*^9, 
+   3.9078405584806957`*^9}, {3.9078406346139765`*^9, 3.907840690832591*^9}, {
+   3.9078407350418425`*^9, 3.90784074510036*^9}, {3.907841384470012*^9, 
+   3.907841401867254*^9}, 3.907841505233901*^9, {3.9078415468074665`*^9, 
+   3.907841583966256*^9}, {3.9078419652946057`*^9, 3.907841984913574*^9}, {
+   3.9078421866556096`*^9, 
+   3.9078422164753857`*^9}},ExpressionUUID->"3e1083f6-8e01-4cfa-914d-\
+79d0cb64d18a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+A negative measure (assuming it works) is not a positive measure\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.9078363657323465`*^9, 3.907836370782642*^9}, {
+  3.907838851755937*^9, 
+  3.9078388683222*^9}},ExpressionUUID->"06b47784-6354-4e11-8d34-0e238c37f50a"],
+
+Cell["\<\
+Example: IQ works for non-intelligence not intelligence. Sigmoidal effects \
+have separate properties. \
+\>", "Text",
+ CellChangeTimes->{{3.9078363721800427`*^9, 3.9078364137898717`*^9}, {
+  3.9078365860731144`*^9, 3.9078366024522777`*^9}, {3.907838843360461*^9, 
+  3.9078388482882347`*^9}},ExpressionUUID->"6072094d-c7ac-467b-9004-\
+f8e586ff956d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dynamics (Type 2c)", "Subsection",
+ CellChangeTimes->{{3.9078365404697647`*^9, 
+  3.9078365485191364`*^9}},ExpressionUUID->"0810ea60-45ed-4253-8d2f-\
+e18c767a7257"],
+
+Cell["\<\
+Accepting the interactive and local behavior of complex systems doesn\
+\[CloseCurlyQuote]t mean raising one\[CloseCurlyQuote]s hand and stepping \
+aside completely. It means the following: priority must be first given to the \
+self-organizing attributes that led to the dynamics, which is not exclusive.\
+\>", "Text",
+ CellChangeTimes->{{3.9078365507947044`*^9, 3.9078366364795804`*^9}, {
+  3.907836704679879*^9, 3.9078367413427677`*^9}, {3.90783714512115*^9, 
+  3.9078371671101265`*^9}, {3.9078372272791524`*^9, 3.9078372696528783`*^9}, {
+  3.90783737146501*^9, 3.907837405429549*^9}, {3.9078403517175026`*^9, 
+  3.907840380615122*^9}, {3.907841211137616*^9, 3.9078412317313538`*^9}, {
+  3.9078414955331755`*^9, 
+  3.907841499752943*^9}},ExpressionUUID->"497b420c-228e-478e-b78f-\
+45d3ca716748"],
+
+Cell[CellGroupData[{
+
+Cell["Ignoring ergodicity", "Subsubsection",
+ CellChangeTimes->{{3.9078412255636673`*^9, 
+  3.9078412282484674`*^9}},ExpressionUUID->"d45da18a-a725-4bfc-b6c4-\
+50cebb85108a"],
+
+Cell["\<\
+Example: sequential bets (time average) differs from average of a group \
+(ensemble average) when there is an absorbing barrier or compounding.
+
+The General (non-naive) precautionary principle delineates conditions where \
+actions must be taken to reduce risk of ruin, and traditional cost-benefit \
+analyses must not be used. These are ruin problems where, over time, exposure \
+to tail events leads to a certain eventual extinction.
+
+Example (Lindy effect): a technology or anything nonperishable increases in \
+life expectancy with every day of it\.08s life.
+
+Example (neomania): a love of change for its own sake, a form of philistinism \
+that does not comply with the Lindy effect. Ignorance of ergodicity leads to \
+one forecasting the future by adding, not subtracting.
+
+Example: Time expectation is not a state-space one. Ignoring ergodicity.
+
+Example (ethics): journalistic anachronism of Aristotle\[CloseCurlyQuote]s \
+opinion of slavery using today\[CloseCurlyQuote]s norms. This is \
+retrospective moralising. 
+
+Example (hindsight bias): history seen as running backwards.
+
+Example (static inequality)\.08: snapshot view of inequality that is static \
+inequality, dynamic inequality looks at entire future and past life.
+
+Example: not putting expiration date.\
+\>", "Text",
+ CellChangeTimes->{
+  3.9078412296297603`*^9, {3.9078414293947678`*^9, 3.907841437509424*^9}, {
+   3.907999399186445*^9, 3.907999477240055*^9}, {3.9080006261775103`*^9, 
+   3.9080006267550097`*^9}},ExpressionUUID->"4b30a105-6d5f-4f18-a8c9-\
+2b4d158d89a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ignoring opacity", "Subsubsection",
+ CellChangeTimes->{{3.9078403830948687`*^9, 3.907840386499238*^9}, {
+  3.9078420153916645`*^9, 3.90784202204453*^9}, {3.9078421001364584`*^9, 
+  3.9078421109301615`*^9}},ExpressionUUID->"9d576411-de2f-4ae3-afaf-\
+ac279ccd08e5"],
+
+Cell["\<\
+Focusing on the known and not the unknown.
+The reason the state should not act like a Lebanese mother is that often in \
+engineering results are unexpected side effects of the process. \
+\[OpenCurlyDoubleQuote]Rational\[CloseCurlyDoubleQuote] outcomes do not \
+necessarily flow out of \[OpenCurlyDoubleQuote]rational\
+\[CloseCurlyDoubleQuote] process (the teleological fallacy).
+
+Example: People have a hard time shedding socialism because it makes a lot of \
+sense and appeals to our deep sense of justice. What makes a lot of sense, \
+historically, doesn\[CloseCurlyQuote]t really make a lot of sense; the fact \
+is obvious but hard to remember when swayed by abstract justice arguments. \
+Consider modern Northern European monarchies, particularly the Scandinavian \
+ones \[Dash] they offer the highest degree of governance.\
+\>", "Text",
+ CellChangeTimes->{{3.9078403900141325`*^9, 3.907840441485656*^9}, 
+   3.9078420959773645`*^9, {3.9078421381331744`*^9, 
+   3.907842138817144*^9}},ExpressionUUID->"2a0f981c-c6ea-4d76-a52d-\
+002196ba2cd9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ignoring computational irreducibility", "Subsubsection",
+ CellChangeTimes->{{3.907842116216212*^9, 
+  3.9078421234072065`*^9}},ExpressionUUID->"df811370-1c10-4c89-93df-\
+316d7374503e"],
+
+Cell["\<\
+Computational irreducibility (Wolfram) cannot be ruled out in navigating \
+successive states, meaning that to evaluate the state of the system between \
+discrete periods t and t + m requires knowing the future state at every step, \
+hence a minimum of m computations.\
+\>", "Text",
+ CellChangeTimes->{{3.9078421246000576`*^9, 
+  3.9078421360079093`*^9}},ExpressionUUID->"af7be76f-e731-4f0a-819d-\
+3786ef63260e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Teleological fallacy", "Subsubsection",
+ CellChangeTimes->{{3.907840468120757*^9, 
+  3.9078404754790893`*^9}},ExpressionUUID->"2c2f38ff-d74f-454b-8686-\
+d635f10caae4"],
+
+Cell["\<\
+Example (Greek vs Roman): The difference goes deeper; it has much to do with \
+both teleology and acceptance of opacity. The \[OpenCurlyDoubleQuote]Greek\
+\[CloseCurlyDoubleQuote] assumes that the fact that I) there is a cause to \
+things immediately implies that II) such cause is visible to them, without \
+making a link between I and II. 
+\[OpenCurlyDoubleQuote]Greek\[CloseCurlyDoubleQuote]: puts theory above \
+practice. 
+\[OpenCurlyDoubleQuote]Roman\[CloseCurlyDoubleQuote]: puts practice above \
+theory.\
+\>", "Text",
+ CellChangeTimes->{
+  3.9078404766410384`*^9},ExpressionUUID->"845313a7-b353-4119-a8cf-\
+eb9d09f9e4cf"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dimension truncation (Type 2d)", "Subsection",
+ CellChangeTimes->{{3.907836694840477*^9, 3.9078367009475927`*^9}, 
+   3.9078367866008673`*^9},ExpressionUUID->"1aabf909-374b-4f97-aebd-\
+baa59c331e97"],
+
+Cell[CellGroupData[{
+
+Cell["Procrustean bed/Naive Platonism", "Subsubsection",
+ CellChangeTimes->{{3.9079984677731633`*^9, 
+  3.907998495478405*^9}},ExpressionUUID->"d354f24e-277a-46d1-9867-\
+722e2a220191"],
+
+Cell["\<\
+Oversimplification of problems to fit into a Platonic ideal or model.\
+\>", "Text",
+ CellChangeTimes->{{3.9079984790118504`*^9, 
+  3.907998488238682*^9}},ExpressionUUID->"f784f9dd-c008-441c-84f1-\
+7f5d353b7fce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Kantian universalism", "Subsubsection",
+ CellChangeTimes->{{3.9078407595315037`*^9, 
+  3.9078407632992144`*^9}},ExpressionUUID->"3341114e-c6fb-430a-89d1-\
+75b3536fdb29"],
+
+Cell["\<\
+Example: scale free liberty. Liberty is fractal; it should be exercised to \
+all collective units at all scales, that is, communities qua communities, all \
+the way from n = 1 to n = \[Infinity], with minimal scale transformation.
+
+The saying if you are friends with everyone, you are \
+nobody\[CloseCurlyQuote]s friend. And if you treat all mankind the same, in \
+other words without some preferential treatment to your own children, you \
+will turn out to be an unreliable parent \[Dash]eventually threatening their \
+own survival. Pure universalism at its ad absurdum limit implies you drop off \
+a kid at school in the morning and randomly pick an- other in the afternoon.
+
+Racism vs. Xenophobia. Racism has
+two conditions: 1) imparting population attributes to randomly selected \
+individuals or sub-groups from such a population; that is, in the association \
+of abilities, personality traits, and disposition with ethnicities and \
+classification. It leads to treating a person with presumed population traits \
+rather than the idiosyncratic ones (that is, top down vs bottom up).
+2) holding the belief that such presumed population traits and dispositions \
+are inferior to one\[CloseCurlyQuote]s own.
+
+Homophily consists in preferring people similar to one-
+self for social or cultural purposes, though not political,
+economic, or functional ones (where its pathology becomes
+nepotism).
+
+Xenophobia consists in pathological homophily, disliking strangers qua \
+strangers.
+
+Example: Giving favorable treatment or inheritance to a relative or a family \
+member cannot be considered racism although the link with that person is \
+primarily genetic, particularly if the person is recently discovered half \
+sibling. On the other hand claiming to be giving such favorable treatment \
+\[OpenCurlyDoubleQuote]because of skills\[CloseCurlyDoubleQuote] is racist \
+and eugenist. Granting a French citizenship to a newborn issue of French \
+parents in Mongolia while not doing so with other babies in the same hospital \
+is not racist. Claiming to be doing so because of French ethnic superiority \
+is.\
+\>", "Text",
+ CellChangeTimes->{{3.9078407649637127`*^9, 3.9078407906785526`*^9}, {
+  3.907840837772049*^9, 3.9078408811096168`*^9}, {3.9078414816744814`*^9, 
+  3.9078414916417584`*^9}},ExpressionUUID->"bf6b444f-c2d3-42dd-9f40-\
+f7a88f96de29"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ludic fallacy", "Subsubsection",
+ CellChangeTimes->{{3.907836751916149*^9, 
+  3.9078367772042084`*^9}},ExpressionUUID->"6f01ea5d-3254-46d8-95e6-\
+fac7095a427d"],
+
+Cell["\<\
+Life is not a game. In real life probability is just a kernel inside a \
+complicated pay-off function and are not separable.
+
+Example: conflation of I1 and I2.
+
+Example (Tetlock and Thaler): replicate under games, but does not generalise \
+to real risk. One can overestimate the probability and underestimate the \
+expected payoff.
+
+Example: Dr John vs Fat Tony. Coin with 99 heads 1 tails. Dr John says 50/50, \
+Fat Tony says that coin is rigged.\
+\>", "Text",
+ CellChangeTimes->{{3.9078367720755*^9, 3.9078367755304127`*^9}, {
+  3.9078387504010525`*^9, 3.907838786318014*^9}, {3.907838873059904*^9, 
+  3.907838883664193*^9}, {3.907838918516602*^9, 3.9078389757803264`*^9}, {
+  3.907840487402526*^9, 
+  3.9078404938700075`*^9}},ExpressionUUID->"523be377-d5bd-49d0-ae6c-\
+268faf9ceea8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Missing ecological rationality", "Subsubsection",
+ CellChangeTimes->{{3.9078367566078806`*^9, 
+  3.9078367603726735`*^9}},ExpressionUUID->"836b8a29-8df0-450c-b9f8-\
+ca29093029df"],
+
+Cell["Example: misunderstanding the role of religion", "Text",
+ CellChangeTimes->{{3.90783676402909*^9, 
+  3.9078367699727263`*^9}},ExpressionUUID->"645f24a3-1ff9-45c5-ae52-\
+ca9e093a51c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ahistoricity", "Subsubsection",
+ CellChangeTimes->{{3.9078391226028805`*^9, 
+  3.907839124249669*^9}},ExpressionUUID->"e11779f1-dea3-4e98-a8f6-\
+d93053872a6d"],
+
+Cell["\<\
+Why not consider what happens what happens at other periods of time?\
+\>", "Text",
+ CellChangeTimes->{{3.907839133298868*^9, 
+  3.9078391473715267`*^9}},ExpressionUUID->"5b4d9e9f-17fb-46f7-83ab-\
+df7bdc64db55"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Inappropriate dimensionality", "Subsubsection",
+ CellChangeTimes->{{3.907842039151774*^9, 
+  3.907842070247921*^9}},ExpressionUUID->"14a035c8-d230-4b96-8f92-\
+e9edd3c50bc4"],
+
+Cell["\<\
+The random or deterministic process for a vector, even when predictable, \
+cannot be
+expressed by a higher dimensional stochastic process, with its snapshots \
+expressed as a multivariate probability distribution. Hence: automata, agent \
+based models.\
+\>", "Text",
+ CellChangeTimes->{{3.9078420551244445`*^9, 
+  3.9078420772264132`*^9}},ExpressionUUID->"984c6454-9020-472c-87a2-\
+da0281e9c13f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Type 3 (BS Vending)", "Subsection",
+ CellChangeTimes->{{3.907836817506189*^9, 
+  3.9078368656013107`*^9}},ExpressionUUID->"e3a668ff-0c3d-4dc0-b85e-\
+7b9ff56f3c36"],
+
+Cell["\<\
+In general, a weak argument when used out of context generally become a type \
+3 fallacy.\
+\>", "Text",
+ CellChangeTimes->{{3.907838996158026*^9, 
+  3.9078390138895473`*^9}},ExpressionUUID->"b0237111-ac82-4947-8f06-\
+084e1fa275ba"],
+
+Cell["Conflating the necessary with the sufficient", "Subsubsection",
+ CellChangeTimes->{{3.9078397776511183`*^9, 
+  3.9078397843235846`*^9}},ExpressionUUID->"09507852-8a5d-4811-849e-\
+32f4bfb8d3f8"],
+
+Cell[CellGroupData[{
+
+Cell["Confirmatory empiricism", "Subsubsection",
+ CellChangeTimes->{{3.907839303952688*^9, 3.907839307192585*^9}, {
+  3.908000400607071*^9, 
+  3.908000402235404*^9}},ExpressionUUID->"e29fd399-9d45-4fee-8a7a-\
+c6f956658346"],
+
+Cell["Absence of evidence is not evidence of absence.", "Text",
+ CellChangeTimes->{{3.9078393088745008`*^9, 
+  3.9078393143152857`*^9}},ExpressionUUID->"b182229d-8b00-4645-9d14-\
+dbd5743f872b"]
+}, Open  ]],
+
+Cell["Counterfactual Games", "Subsubsection",
+ CellChangeTimes->{{3.907837075963993*^9, 
+  3.9078370803555374`*^9}},ExpressionUUID->"9e2c8eb3-a173-4bcf-a3e8-\
+30d413e4689f"],
+
+Cell[CellGroupData[{
+
+Cell["Cherry-picking and nitpicking", "Subsubsection",
+ CellChangeTimes->{{3.9078391578360662`*^9, 3.907839159828273*^9}, {
+  3.9078396275530324`*^9, 
+  3.9078396302056303`*^9}},ExpressionUUID->"ae3df464-92e3-463c-b3ad-\
+21ad9575c0e2"],
+
+Cell["\<\
+One sided argument even if correct except to declare plain advocacy.
+
+Example (narrative disciplines): use statistics to fish out good stories due \
+to cherry picking instead of using controlled experiments. This is also \
+related to the narrative fallacy to fit a story to connected and disconnected \
+facts.
+
+Examples: U.N. reports (perhaps to justify their funds) present environmental \
+situations as dire without counterpoint or global statistical representation. \
+They will show \[OpenCurlyDoubleQuote]deforestation over [span years] without \
+longer periods (say past 25 years), this fitting a window or noise variations \
+to their story rather than the true trend.\
+\>", "Text",
+ CellChangeTimes->{{3.9078416742498665`*^9, 3.907841707604541*^9}, {
+  3.9079993319355636`*^9, 
+  3.907999393098443*^9}},ExpressionUUID->"14bbbcd1-efeb-4fcc-a3e3-\
+6f4c11d62a5e"]
+}, Open  ]],
+
+Cell["Strawman", "Subsubsection",
+ CellChangeTimes->{{3.907837480484294*^9, 
+  3.907837481616214*^9}},ExpressionUUID->"a5220507-920e-47f0-b6a9-\
+f534ecd008d6"],
+
+Cell[CellGroupData[{
+
+Cell["Carpenter fallacy", "Subsubsection",
+ CellChangeTimes->{{3.9078375660924845`*^9, 
+  3.907837568294577*^9}},ExpressionUUID->"9caca8e2-d0ae-455b-b940-\
+ba0b0ceb14d5"],
+
+Cell["\<\
+Example: to understand roulette risk, know probability not carpentry.\
+\>", "Text",
+ CellChangeTimes->{{3.9078375710767107`*^9, 
+  3.9078375864438405`*^9}},ExpressionUUID->"57955563-74ca-4e6f-b246-\
+f755088e50b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Genetic fallacy", "Subsubsection",
+ CellChangeTimes->{{3.9078374551448593`*^9, 
+  3.9078374564970074`*^9}},ExpressionUUID->"d1033943-88d9-4bd1-a685-\
+862248a9ba10"],
+
+Cell["\<\
+Rejecting or accepting an argument based on its origin rather than its \
+content.\
+\>", "Text",
+ CellChangeTimes->{{3.907837460365663*^9, 
+  3.907837473893427*^9}},ExpressionUUID->"7b1f60e3-e307-428d-bced-\
+c4bb8e503d1b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Logical Errors, Non-Sequitur", "Subsubsection",
+ CellChangeTimes->{{3.9078368700124717`*^9, 
+  3.9078368993447504`*^9}},ExpressionUUID->"a171241f-9774-4c90-9acc-\
+c9ec9d841aef"],
+
+Cell[TextData[{
+ "Typically hidden in convoluted chains of reasoning.\n\n",
+ StyleBox["Affirming the Consequent\n", "Subsubsection"],
+ "If P then Q. Since Q is true, therefore P is true.\n\n",
+ StyleBox["Denying the Antecedent", "Subsubsection"],
+ "\nIf P then Q. Since P is not true, therefore Q is not true."
+}], "Text",
+ CellChangeTimes->{{3.907836887712341*^9, 3.9078369089215937`*^9}, {
+  3.9078369407132845`*^9, 
+  3.907836969142476*^9}},ExpressionUUID->"7b84028b-e301-48ce-bfc8-\
+68ffc579adeb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["RECAP: modus ponens and modus tollens.", "Subsubsection",
+ CellChangeTimes->{{3.9078393195423594`*^9, 
+  3.9078393515488725`*^9}},ExpressionUUID->"7ec920a2-e5a3-4a60-a66f-\
+0ed157b544e3"],
+
+Cell["\<\
+Modus Ponens (affirming the antecedent). If P then Q. Since P is true, \
+therefore Q is true.
+
+Modus Tollens (denying the consequent). If P then Q. Since Q is not true, \
+therefore P is not true.\
+\>", "Text",
+ CellChangeTimes->{{3.9078393535347967`*^9, 
+  3.907839385148201*^9}},ExpressionUUID->"779cae52-7d8a-44cc-8dd4-\
+a6d95b1d3ba5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Hand-waving", "Subsubsection",
+ CellChangeTimes->{{3.9078396000390606`*^9, 
+  3.907839603693575*^9}},ExpressionUUID->"7803d1da-bc95-4918-a7b9-\
+42e76decd267"],
+
+Cell["\<\
+Skipping critical steps in reasoning, not necessarily in exposition.\
+\>", "Text",
+ CellChangeTimes->{{3.907839604698016*^9, 
+  3.907839613026333*^9}},ExpressionUUID->"c627e1a4-4bfe-49c4-beac-\
+83d6d52ec049"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Verbalism", "Subsubsection",
+ CellChangeTimes->{{3.9078369107255063`*^9, 
+  3.907836913110149*^9}},ExpressionUUID->"55a94909-bbc6-494b-b1d7-\
+15c3822d821a"],
+
+Cell[TextData[{
+ "Verbalism is the use of terms important to arguments where their meaning \
+can change with context of circumstances and does not lend themselves to \
+explicit definitions. \n\nNote that scholars do not need to produce \
+codification to expressions used, but must be able to back-up every single \
+term used.\n\nThe problem is not using labels as shortcuts. The problem is \
+thinking in terms of labels.\n\nVerbalisms do not have rigidity of meaning. \
+The criterion of rigidity of meaning is sufficient to spot verbalism. Some \
+examples include:\n\n(1) Ill-defined terms: \[OpenCurlyDoubleQuote]freedom of \
+speech\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]globalist\
+\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]conservative\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]progressive\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]liberal\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]modern\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]populist\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]sectarian\
+\[CloseCurlyDoubleQuote]\n(1.1) Terms that require ",
+ StyleBox["scale and degree",
+  FontWeight->"Bold"],
+ ": rate of change meant by \[OpenCurlyDoubleQuote]progressive\
+\[CloseCurlyDoubleQuote], rate of autarky in \[OpenCurlyDoubleQuote]globalist\
+\[CloseCurlyDoubleQuote]. Especially in discussions where there is \
+normalisation mechanics. Example: taken over by intolerant asymmetric \
+minority (kosher foods) \nExample: \[OpenCurlyDoubleQuote]conservative\
+\[CloseCurlyDoubleQuote] means backward resisting all progress. Hayek\
+\[CloseCurlyQuote]s separation from verbalistic notion of conservatism.\n\n\
+(2) Well-defined and rigid terms that does not correspond with their meaning. \
+Examples include \[OpenCurlyDoubleQuote]correlation\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]volatility\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]regression\[CloseCurlyDoubleQuote]\n\n(3) Terms \
+stretched outside their original meaning: \[OpenCurlyDoubleQuote]nazi\
+\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]fascist\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]racist\[CloseCurlyDoubleQuote]\n\n(4) Expressions \
+without statistical significance: \[OpenCurlyDoubleQuote]evidence\
+\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]causal\
+\[CloseCurlyDoubleQuote]. This is scientism.\n\n(5) Circular terms: ones that \
+are explained by other terms that loop back to the same source. Example: \
+\[OpenCurlyDoubleQuote]rationality\[CloseCurlyDoubleQuote] without mapping to \
+the proper axiomatic framework of rationality.\n\n(6) Words that do not have \
+a robust mapping because they can have an arbitrary gerrymandered (boundaries \
+of definition is manipulated and picked to work) definition that, not being, \
+robust, changes according to periods. Examples include: \
+\[OpenCurlyDoubleQuote]Western civilization\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]East-West divide\[CloseCurlyDoubleQuote]\n\n(7) \
+Substitution of one term for another. Examples: \
+\[OpenCurlyDoubleQuote]democracy\[CloseCurlyDoubleQuote] with implication of \
+\[OpenCurlyDoubleQuote]governance\[CloseCurlyDoubleQuote], or \
+\[OpenCurlyDoubleQuote]legal\[CloseCurlyDoubleQuote] for \
+\[OpenCurlyDoubleQuote]ethical\[CloseCurlyDoubleQuote]\n\n(8) Distinctions \
+without a difference but presented as a matter of substance are verbalistic \
+if the terms do not have rigidity of meaning. Note: distinctions can be with \
+and without differences depending on contexts and uses.\n\n(9) Euphemisms and \
+exaggeration in rigorous thought.\n\n(10) Ambiguous labels that can fool \
+people. \n\nExample: \[OpenCurlyDoubleQuote]\.08Holy Roman Empire\
+\[CloseCurlyDoubleQuote] was not a continuation of the Roman Empire \
+(Byzantium was) but the name is potent enough to confuse people to believing \
+the original (mostly) Franco-German European union that was the continuation \
+of ancient Rome. \n\nExample: \[OpenCurlyDoubleQuote]Arab\
+\[CloseCurlyDoubleQuote] as a designation that could mean a Westerner (i.e. \
+Mediterranean) or \[OpenCurlyDoubleQuote]foreigner\[CloseCurlyDoubleQuote] \
+for Arabians and Peninsular people, while understood as \
+\[OpenCurlyDoubleQuote]nomad\[CloseCurlyDoubleQuote] by some. Confuses people \
+into political theories such as \[OpenCurlyDoubleQuote]Arab nationalism\
+\[CloseCurlyDoubleQuote]\n\nExamples: bigoteering in general calling someone \
+racist, chauvinist when not warranted. Exploiting verbalisms. Second order \
+siding with bigoteers is also as bad. Also, retrospective bigoteering.\n\n\
+Examples: pedophrastry or using children to prop up arguments."
+}], "Text",
+ CellChangeTimes->{{3.9078369207460775`*^9, 3.9078369249043074`*^9}, {
+   3.907839248999171*^9, 3.9078392526227484`*^9}, {3.9078394758519096`*^9, 
+   3.907839580381678*^9}, {3.9078398429699855`*^9, 3.9078398668540196`*^9}, {
+   3.907840581897798*^9, 3.9078406157149615`*^9}, {3.907841591925169*^9, 
+   3.9078416626383924`*^9}, 3.9078425355044703`*^9, {3.9080035332963543`*^9, 
+   3.908003537952799*^9}},ExpressionUUID->"58d05447-7da3-40eb-95bc-\
+397a4dc86393"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Disclaimed Fallacies", "Section",
+ CellChangeTimes->{{3.907834256082532*^9, 3.9078342585012302`*^9}, {
+  3.9078345930962553`*^9, 3.907834594789847*^9}, {3.9078355408427334`*^9, 
+  3.907835563702684*^9}},ExpressionUUID->"16781d92-f80f-4367-ae41-\
+e3959c024773"],
+
+Cell[CellGroupData[{
+
+Cell["Ad Hominem/Appeal to Authority (IN PRACTICE)", "Subsection",
+ CellChangeTimes->{{3.90783529148791*^9, 3.907835301023946*^9}, {
+  3.907835509524311*^9, 
+  3.9078355119553585`*^9}},ExpressionUUID->"beaefe27-b4d0-4a52-9514-\
+3c60cada8fdf"],
+
+Cell["\<\
+Sometimes you focus on the person, sometimes you focus on the argument. For \
+example, medical degrees being doctors, expert witnesses. Sometimes you \
+require empirical or mathematical proofs, then you focus on the arguments.
+
+Note that there is a legitimate version: \[OpenCurlyDoubleQuote]Because you \
+are an idiot, your statement is wrong.\[CloseCurlyDoubleQuote] which is Ad \
+Hominem, but in practice it usually is \[OpenCurlyDoubleQuote]Because your \
+statement is wrong, you are an idiot.\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.9078353047582693`*^9, 3.907835337888043*^9}, {
+  3.907835513854233*^9, 
+  3.907835557642475*^9}},ExpressionUUID->"f6d10ae0-979b-49c6-9747-\
+d60b0bf2bd42"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dunning-Kruger", "Subsection",
+ CellChangeTimes->{{3.9078355802969937`*^9, 
+  3.9078355864617524`*^9}},ExpressionUUID->"d45f7604-ee84-48fc-ac80-\
+0f364f89e22d"],
+
+Cell["Not proven.", "Text",
+ CellChangeTimes->{{3.90783558852067*^9, 
+  3.9078355925767255`*^9}},ExpressionUUID->"ea9f0150-59d2-47c9-9190-\
+b686a642c24f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sunk Cost", "Subsection",
+ CellChangeTimes->{{3.9078356011331434`*^9, 
+  3.907835602216981*^9}},ExpressionUUID->"f67bbfe9-6f6c-4b49-8906-\
+fb7e42c3a191"],
+
+Cell["\<\
+Sunk cost fallacy may not be the case in decisions that respect path \
+dependence.\
+\>", "Text",
+ CellChangeTimes->{{3.907835605718561*^9, 
+  3.907835633544964*^9}},ExpressionUUID->"caee49e9-fc5b-4694-815d-\
+5980e62e7252"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conclusion", "Section",
+ CellChangeTimes->{{3.9078390788919783`*^9, 
+  3.9078390874906116`*^9}},ExpressionUUID->"c8aeca86-cf85-44e0-ab89-\
+7c0360b2dee3"],
+
+Cell["\<\
+Almost all those caught making a logical fallacy interpret it as a \
+\[OpenCurlyDoubleQuote]disagreement\[CloseCurlyDoubleQuote].\
+\>", "Text",
+ CellChangeTimes->{{3.9078390890765514`*^9, 
+  3.907839104431033*^9}},ExpressionUUID->"c6796a36-2967-4cca-84ed-\
+51dd7bc3dbfd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Good References", "Section",
+ CellChangeTimes->{{3.907839181846197*^9, 
+  3.9078391856113625`*^9}},ExpressionUUID->"0badddb8-a43a-4151-968e-\
+37c8ea48b8ab"],
+
+Cell["\<\
+Nassim Taleb\[CloseCurlyQuote]s twitter feed.
+Incerto
+Fallacies
+Principia Politica
+Essays on Religion
+Covid Forecasting PAper
+Russian War (Empire vs NATO)\
+\>", "Text",
+ CellChangeTimes->{{3.907839187242967*^9, 3.907839211325529*^9}, {
+  3.9079993099624796`*^9, 
+  3.907999311029281*^9}},ExpressionUUID->"2e46d8e6-169a-424f-becf-\
+418ac3e80d71"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{722.25, 729.75},
+WindowMargins->{{Automatic, 81}, {Automatic, 39}},
+SpellingDictionaries->{"CorrectWords"->{
+ "calorically", "Nusselt", "Wacom", "Farokhi", "Verbalisms", "negativa", 
+  "Ludic", "Antifragile", "Nassim", "Taleb", "Ahistoricity", "scientism", 
+  "Thalesian"}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5c6919dd-f002-4aa0-b8e1-0df65575358b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 172, 3, 98, "Title",ExpressionUUID->"bc46725d-12de-419d-8ddf-0297d1567637"],
+Cell[755, 27, 340, 7, 85, "Subtitle",ExpressionUUID->"9877ad07-7812-452b-8ae6-74def7f3302b"],
+Cell[CellGroupData[{
+Cell[1120, 38, 165, 3, 67, "Section",ExpressionUUID->"42192418-1b63-4bc0-9d0e-3280f657f1ef"],
+Cell[1288, 43, 1100, 24, 334, "Text",ExpressionUUID->"9579590c-5c9a-4734-b51d-1cd81f753323"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2425, 72, 166, 3, 67, "Section",ExpressionUUID->"0e72e296-26f7-4ec5-ad88-32d8f1fcd1e5"],
+Cell[CellGroupData[{
+Cell[2616, 79, 229, 4, 54, "Subsection",ExpressionUUID->"2753d7e4-040f-482d-b116-b4fdba18a00b"],
+Cell[CellGroupData[{
+Cell[2870, 87, 180, 3, 45, "Subsubsection",ExpressionUUID->"5fdb2810-45b9-4089-993f-90bbe568c8c1"],
+Cell[3053, 92, 663, 13, 127, "Text",ExpressionUUID->"f9dd7066-9e2e-434e-901d-430598561d7b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3753, 110, 256, 4, 45, "Subsubsection",ExpressionUUID->"97448a0c-e7c5-4ece-9795-6d2b726fbcdc"],
+Cell[4012, 116, 1080, 22, 265, "Text",ExpressionUUID->"5fd0ac45-e410-44cd-b612-420868e5f3b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5129, 143, 278, 5, 45, "Subsubsection",ExpressionUUID->"33d14ab7-93da-492d-a266-e9a4d52dea02"],
+Cell[5410, 150, 2231, 40, 587, "Text",ExpressionUUID->"42039270-0a3d-4d93-b275-b45211eaa208"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7678, 195, 246, 4, 45, "Subsubsection",ExpressionUUID->"dc7368a2-b120-4a43-b8c9-dd822363d411"],
+Cell[7927, 201, 266, 6, 58, "Text",ExpressionUUID->"87314850-e00a-4a56-bfac-325f436ad806"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8230, 212, 239, 4, 45, "Subsubsection",ExpressionUUID->"76072cc1-5d1f-46e0-85cd-a9a5d5c24dd4"],
+Cell[8472, 218, 1492, 28, 380, "Text",ExpressionUUID->"ec170d5c-fb9b-48ef-b532-533e50a1b9ed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10001, 251, 170, 3, 45, "Subsubsection",ExpressionUUID->"42b9f4de-59c6-478a-8b8c-3fef2c5f9919"],
+Cell[10174, 256, 718, 14, 127, "Text",ExpressionUUID->"7e100a13-b79d-4603-8111-4a5f1fb53b20"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10929, 275, 192, 3, 45, "Subsubsection",ExpressionUUID->"4ae70ccd-1402-498e-879d-aeb559317a0f"],
+Cell[11124, 280, 272, 6, 58, "Text",ExpressionUUID->"5a1cdd81-40e0-4a42-9bea-9f09507fa4c8"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11445, 292, 328, 6, 54, "Subsection",ExpressionUUID->"45f5441e-3355-450b-8492-013b00a7093f"],
+Cell[11776, 300, 498, 11, 127, "Text",ExpressionUUID->"5eccb497-8f75-430b-8afd-6f0248c41e8c"],
+Cell[12277, 313, 272, 6, 35, "Text",ExpressionUUID->"f5e11a87-29de-44ed-b968-8f4af3144236"],
+Cell[CellGroupData[{
+Cell[12574, 323, 184, 3, 45, "Subsubsection",ExpressionUUID->"a9242abc-c22a-42aa-8aa0-e65177711fd7"],
+Cell[12761, 328, 891, 17, 219, "Text",ExpressionUUID->"7c0b17e7-1cf7-4e9d-8a35-82a899438957"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13689, 350, 233, 4, 45, "Subsubsection",ExpressionUUID->"423ed4a5-8043-4dc0-a54f-ba4e7677ac24"],
+Cell[13925, 356, 364, 8, 58, "Text",ExpressionUUID->"f25423cc-386d-4966-a8a6-c364a059a4c8"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14338, 370, 408, 6, 54, "Subsection",ExpressionUUID->"5461020c-b6cd-4718-b0d6-c4115e5eced9"],
+Cell[14749, 378, 250, 6, 35, "Text",ExpressionUUID->"22290f83-2460-4e70-9d26-285fbc5345a7"],
+Cell[15002, 386, 226, 5, 45, "Subsubsection",ExpressionUUID->"79ac210d-5faf-451b-a7e1-bfbd35319527"],
+Cell[CellGroupData[{
+Cell[15253, 395, 171, 3, 37, "Subsubsection",ExpressionUUID->"efba1486-9eab-4900-bcb1-c1068c4a7686"],
+Cell[15427, 400, 1052, 20, 265, "Text",ExpressionUUID->"fc07c3de-c3b9-4513-8da2-218a41126af5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16516, 425, 242, 4, 45, "Subsubsection",ExpressionUUID->"eb583106-8b12-41cd-b76b-7de92b18b102"],
+Cell[16761, 431, 1000, 20, 288, "Text",ExpressionUUID->"fa4ac9c4-452e-43bd-8005-3cf78432e41a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17810, 457, 245, 4, 54, "Subsection",ExpressionUUID->"463c0751-04be-4f5b-a54a-1221b432ca79"],
+Cell[18058, 463, 274, 6, 58, "Text",ExpressionUUID->"4f6751e0-cd57-4edc-b866-a13ec54912aa"],
+Cell[CellGroupData[{
+Cell[18357, 473, 176, 3, 45, "Subsubsection",ExpressionUUID->"30efa199-96a4-4458-aa53-2776a154c94e"],
+Cell[18536, 478, 4469, 87, 1461, "Text",ExpressionUUID->"3e1083f6-8e01-4cfa-914d-79d0cb64d18a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23042, 570, 270, 5, 45, "Subsubsection",ExpressionUUID->"06b47784-6354-4e11-8d34-0e238c37f50a"],
+Cell[23315, 577, 358, 7, 58, "Text",ExpressionUUID->"6072094d-c7ac-467b-9004-f8e586ff956d"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23722, 590, 170, 3, 54, "Subsection",ExpressionUUID->"0810ea60-45ed-4253-8d2f-e18c767a7257"],
+Cell[23895, 595, 806, 13, 81, "Text",ExpressionUUID->"497b420c-228e-478e-b78f-45d3ca716748"],
+Cell[CellGroupData[{
+Cell[24726, 612, 174, 3, 45, "Subsubsection",ExpressionUUID->"d45da18a-a725-4bfc-b6c4-50cebb85108a"],
+Cell[24903, 617, 1551, 33, 587, "Text",ExpressionUUID->"4b30a105-6d5f-4f18-a8c9-2b4d158d89a9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26491, 655, 269, 4, 45, "Subsubsection",ExpressionUUID->"9d576411-de2f-4ae3-afaf-ac279ccd08e5"],
+Cell[26763, 661, 1056, 18, 242, "Text",ExpressionUUID->"2a0f981c-c6ea-4d76-a52d-002196ba2cd9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27856, 684, 190, 3, 45, "Subsubsection",ExpressionUUID->"df811370-1c10-4c89-93df-316d7374503e"],
+Cell[28049, 689, 421, 8, 81, "Text",ExpressionUUID->"af7be76f-e731-4f0a-819d-3786ef63260e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28507, 702, 173, 3, 45, "Subsubsection",ExpressionUUID->"2c2f38ff-d74f-454b-8686-d635f10caae4"],
+Cell[28683, 707, 638, 13, 150, "Text",ExpressionUUID->"845313a7-b353-4119-a8cf-eb9d09f9e4cf"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29370, 726, 205, 3, 54, "Subsection",ExpressionUUID->"1aabf909-374b-4f97-aebd-baa59c331e97"],
+Cell[CellGroupData[{
+Cell[29600, 733, 184, 3, 45, "Subsubsection",ExpressionUUID->"d354f24e-277a-46d1-9867-722e2a220191"],
+Cell[29787, 738, 221, 5, 35, "Text",ExpressionUUID->"f784f9dd-c008-441c-84f1-7f5d353b7fce"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30045, 748, 175, 3, 45, "Subsubsection",ExpressionUUID->"3341114e-c6fb-430a-89d1-75b3536fdb29"],
+Cell[30223, 753, 2356, 42, 725, "Text",ExpressionUUID->"bf6b444f-c2d3-42dd-9f40-f7a88f96de29"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32616, 800, 166, 3, 45, "Subsubsection",ExpressionUUID->"6f01ea5d-3254-46d8-95e6-fac7095a427d"],
+Cell[32785, 805, 796, 18, 242, "Text",ExpressionUUID->"523be377-d5bd-49d0-ae6c-268faf9ceea8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33618, 828, 185, 3, 45, "Subsubsection",ExpressionUUID->"836b8a29-8df0-450c-b9f8-ca29093029df"],
+Cell[33806, 833, 189, 3, 35, "Text",ExpressionUUID->"645f24a3-1ff9-45c5-ae52-ca9e093a51c0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34032, 841, 165, 3, 45, "Subsubsection",ExpressionUUID->"e11779f1-dea3-4e98-a8f6-d93053872a6d"],
+Cell[34200, 846, 220, 5, 35, "Text",ExpressionUUID->"5b4d9e9f-17fb-46f7-83ab-df7bdc64db55"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34457, 856, 179, 3, 45, "Subsubsection",ExpressionUUID->"14a035c8-d230-4b96-8f92-e9edd3c50bc4"],
+Cell[34639, 861, 406, 9, 81, "Text",ExpressionUUID->"984c6454-9020-472c-87a2-da0281e9c13f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35094, 876, 169, 3, 54, "Subsection",ExpressionUUID->"e3a668ff-0c3d-4dc0-b85e-7b9ff56f3c36"],
+Cell[35266, 881, 241, 6, 35, "Text",ExpressionUUID->"b0237111-ac82-4947-8f06-084e1fa275ba"],
+Cell[35510, 889, 199, 3, 45, "Subsubsection",ExpressionUUID->"09507852-8a5d-4811-849e-32f4bfb8d3f8"],
+Cell[CellGroupData[{
+Cell[35734, 896, 223, 4, 37, "Subsubsection",ExpressionUUID->"e29fd399-9d45-4fee-8a7a-c6f956658346"],
+Cell[35960, 902, 193, 3, 35, "Text",ExpressionUUID->"b182229d-8b00-4645-9d14-dbd5743f872b"]
+}, Open  ]],
+Cell[36168, 908, 173, 3, 45, "Subsubsection",ExpressionUUID->"9e2c8eb3-a173-4bcf-a3e8-30d413e4689f"],
+Cell[CellGroupData[{
+Cell[36366, 915, 235, 4, 37, "Subsubsection",ExpressionUUID->"ae3df464-92e3-463c-b3ad-21ad9575c0e2"],
+Cell[36604, 921, 876, 17, 242, "Text",ExpressionUUID->"14bbbcd1-efeb-4fcc-a3e3-6f4c11d62a5e"]
+}, Open  ]],
+Cell[37495, 941, 159, 3, 45, "Subsubsection",ExpressionUUID->"a5220507-920e-47f0-b6a9-f534ecd008d6"],
+Cell[CellGroupData[{
+Cell[37679, 948, 170, 3, 37, "Subsubsection",ExpressionUUID->"9caca8e2-d0ae-455b-b940-ba0b0ceb14d5"],
+Cell[37852, 953, 223, 5, 35, "Text",ExpressionUUID->"57955563-74ca-4e6f-b246-f755088e50b4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38112, 963, 170, 3, 45, "Subsubsection",ExpressionUUID->"d1033943-88d9-4bd1-a685-862248a9ba10"],
+Cell[38285, 968, 231, 6, 35, "Text",ExpressionUUID->"7b1f60e3-e307-428d-bced-c4bb8e503d1b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38553, 979, 183, 3, 45, "Subsubsection",ExpressionUUID->"a171241f-9774-4c90-9acc-c9ec9d841aef"],
+Cell[38739, 984, 501, 10, 183, "Text",ExpressionUUID->"7b84028b-e301-48ce-bfc8-68ffc579adeb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39277, 999, 193, 3, 45, "Subsubsection",ExpressionUUID->"7ec920a2-e5a3-4a60-a66f-0ed157b544e3"],
+Cell[39473, 1004, 347, 9, 81, "Text",ExpressionUUID->"779cae52-7d8a-44cc-8dd4-a6d95b1d3ba5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39857, 1018, 164, 3, 45, "Subsubsection",ExpressionUUID->"7803d1da-bc95-4918-a7b9-42e76decd267"],
+Cell[40024, 1023, 218, 5, 35, "Text",ExpressionUUID->"c627e1a4-4bfe-49c4-beac-83d6d52ec049"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40279, 1033, 162, 3, 45, "Subsubsection",ExpressionUUID->"55a94909-bbc6-494b-b1d7-15c3822d821a"],
+Cell[40444, 1038, 5166, 76, 1346, "Text",ExpressionUUID->"58d05447-7da3-40eb-95bc-397a4dc86393"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45671, 1121, 266, 4, 67, "Section",ExpressionUUID->"16781d92-f80f-4367-ae41-e3959c024773"],
+Cell[CellGroupData[{
+Cell[45962, 1129, 242, 4, 54, "Subsection",ExpressionUUID->"beaefe27-b4d0-4a52-9514-3c60cada8fdf"],
+Cell[46207, 1135, 722, 13, 173, "Text",ExpressionUUID->"f6d10ae0-979b-49c6-9747-d60b0bf2bd42"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46966, 1153, 166, 3, 54, "Subsection",ExpressionUUID->"d45f7604-ee84-48fc-ac80-0f364f89e22d"],
+Cell[47135, 1158, 154, 3, 35, "Text",ExpressionUUID->"ea9f0150-59d2-47c9-9190-b686a642c24f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47326, 1166, 159, 3, 54, "Subsection",ExpressionUUID->"f67bbfe9-6f6c-4b49-8906-fb7e42c3a191"],
+Cell[47488, 1171, 232, 6, 35, "Text",ExpressionUUID->"caee49e9-fc5b-4694-815d-5980e62e7252"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47769, 1183, 159, 3, 67, "Section",ExpressionUUID->"c8aeca86-cf85-44e0-ab89-7c0360b2dee3"],
+Cell[47931, 1188, 281, 6, 35, "Text",ExpressionUUID->"c6796a36-2967-4cca-84ed-51dd7bc3dbfd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48249, 1199, 162, 3, 67, "Section",ExpressionUUID->"0badddb8-a43a-4151-968e-37c8ea48b8ab"],
+Cell[48414, 1204, 355, 12, 173, "Text",ExpressionUUID->"2e46d8e6-169a-424f-becf-418ac3e80d71"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

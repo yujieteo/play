@@ -1,0 +1,68 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1769,         58]
+NotebookOptionsPosition[      1201,         40]
+NotebookOutlinePosition[      1606,         56]
+CellTagsIndexPosition[      1563,         53]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Math - Statistical Inference", "Title",
+ CellChangeTimes->{{3.908708046076985*^9, 
+  3.908708058677225*^9}},ExpressionUUID->"b6549e69-8c7f-44ef-a22b-\
+9fea35b4d8af"],
+
+Cell["60% of people who attempted suicide are Vitamin Deficient.", "Text",
+ CellChangeTimes->{{3.9087080622288475`*^9, 
+  3.9087080702766867`*^9}},ExpressionUUID->"35b3c30b-6119-471f-a4ad-\
+d24fb3320451"],
+
+Cell["\<\
+What if 60% of the people in their cohort were Vitamin D deficient? Lol.\
+\>", "Text",
+ CellChangeTimes->{{3.9087080726967444`*^9, 
+  3.908708086271268*^9}},ExpressionUUID->"647f8eb8-89c9-4b1e-ad54-\
+a7d809e90ded"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b3bd042b-d60e-43e3-8880-fe5c41038de3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 171, 3, 98, "Title",ExpressionUUID->"b6549e69-8c7f-44ef-a22b-9fea35b4d8af"],
+Cell[754, 27, 204, 3, 35, "Text",ExpressionUUID->"35b3c30b-6119-471f-a4ad-d24fb3320451"],
+Cell[961, 32, 224, 5, 35, "Text",ExpressionUUID->"647f8eb8-89c9-4b1e-ad54-a7d809e90ded"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

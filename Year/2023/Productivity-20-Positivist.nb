@@ -1,0 +1,73 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2452,         65]
+NotebookOptionsPosition[      1972,         48]
+NotebookOutlinePosition[      2375,         64]
+CellTagsIndexPosition[      2332,         61]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Positivist Checklist for Good Thinking", "Title",
+ CellChangeTimes->{{3.908453609942012*^9, 
+  3.9084536478428288`*^9}},ExpressionUUID->"117dc396-dafc-4f1d-a26e-\
+725b794974a5"],
+
+Cell["\<\
+Present a multi-sided argument with multiple causes using statistically \
+significant evidence, with the correct distribution, priors. A case for the \
+calibration bounded in probability space (using inequality bounds and via \
+negativa) is to be given, as well as the outcome (concave upper bound, convex \
+lower bound) in payoff space. Convexity problems, ergodicity and absorbing \
+barrier arguments (cost benefit analysis), second order effects thought \
+through the limit are to be accounted for. Problems that are not \
+computationally reducible are to be recognised. A list of all rules and \
+possible states/tokens are to be given, with suitable drawings of a multiway \
+diagram drawn. Syllogisms using modus tollens are to be accounted for, with \
+no affirming the consequent and denying the antecedent being done. There \
+should be no begging the question, cherry picking, nit picking, anecdotes \
+used as evidence. No verbalisms, all terms should have rigidity of meaning.\
+\>", "Text",
+ CellChangeTimes->{{3.9084536499806213`*^9, 3.9084536678929915`*^9}, {
+  3.9084538235164747`*^9, 
+  3.9084540787957373`*^9}},ExpressionUUID->"e1f86ea7-d6f5-4b21-8d4f-\
+27f77aee7a1a"]
+}, Open  ]]
+},
+WindowSize->{722.25, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c5625f29-c7b3-4ae1-b483-b84e90875ca0"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 183, 3, 160, "Title",ExpressionUUID->"117dc396-dafc-4f1d-a26e-725b794974a5"],
+Cell[766, 27, 1190, 18, 242, "Text",ExpressionUUID->"e1f86ea7-d6f5-4b21-8d4f-27f77aee7a1a"]
+}, Open  ]]
+}
+]
+*)
+

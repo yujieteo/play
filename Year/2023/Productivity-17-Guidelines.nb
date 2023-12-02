@@ -1,0 +1,71 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1721,         63]
+NotebookOptionsPosition[      1240,         46]
+NotebookOutlinePosition[      1645,         62]
+CellTagsIndexPosition[      1602,         59]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Hour Estimates Nassim Taleb", "Title",
+ CellChangeTimes->{{3.90818392115403*^9, 3.9081839240687504`*^9}, {
+  3.908183964202403*^9, 
+  3.908183968102509*^9}},ExpressionUUID->"5f76135d-c26e-4810-9062-\
+28d2da0f8461"],
+
+Cell["\<\
+56 hours of sleep
+112 hours available time
+40 hours of work
+4-7 hours of walking (subsumed into work?)
+
+72 hours left
+
+9 - 13.5 hours of endurance sport (6 hours of Zone 2)
+15 hours of math
+30 - 40 hours of reading\
+\>", "Text",
+ CellChangeTimes->{{3.9081839712971354`*^9, 3.9081840976889896`*^9}, {
+  3.9081841357465663`*^9, 
+  3.9081842164518747`*^9}},ExpressionUUID->"f2f4e41c-f935-49c1-a6d1-\
+8c815774bdf5"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9fde299a-98dd-41cd-a1e0-c371ae9febc3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 220, 4, 160, "Title",ExpressionUUID->"5f76135d-c26e-4810-9062-28d2da0f8461"],
+Cell[803, 28, 421, 15, 242, "Text",ExpressionUUID->"f2f4e41c-f935-49c1-a6d1-8c815774bdf5"]
+}, Open  ]]
+}
+]
+*)
+
