@@ -4,13 +4,13 @@
 
 - [Project Name](#project-name)
   - [Table of Contents](#table-of-contents)
-  - [Usage](#usage)
+  - [Organisation](#organisation)
   - [Acknowledgements](#acknowledgements)
 
-## Usage
+## Organisation
 
-Notebooks are available in `nb` directory.
-Selected `.pdfs` are available.
+The `Research` directory contains all of the major topics I intend to
+explore.
 
 ## Acknowledgements
 
