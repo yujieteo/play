@@ -1,0 +1,145 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4176,        137]
+NotebookOptionsPosition[      3133,        109]
+NotebookOutlinePosition[      3538,        125]
+CellTagsIndexPosition[      3495,        122]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MeijerG Representations", "Title",
+ CellChangeTimes->{{3.910570394313471*^9, 
+  3.9105703996676545`*^9}},ExpressionUUID->"6db426c0-4d8d-47d3-9f93-\
+b8528b0040a8"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MeijerGReduce", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9105704023326683`*^9, 3.910570407752438*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"c9b9b45b-5aeb-421b-a993-72fa97d6fb89"],
+
+Cell[BoxData[
+ RowBox[{
+  SqrtBox["\[Pi]"], " ", 
+  RowBox[{
+   TemplateBox[{"MeijerG"},
+    "InactiveHead",
+    BaseStyle->"Inactive",
+    SyntaxForm->"Symbol",
+    Tooltip->"Inactive[MeijerG]"], "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "}"}], ",", 
+      RowBox[{"{", "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       FractionBox["1", "2"], "}"}], ",", 
+      RowBox[{"{", "0", "}"}]}], "}"}], ",", 
+    FractionBox["x", "2"], ",", 
+    FractionBox["1", "2"]}], "]"}]}]], "Output",
+ CellChangeTimes->{3.910570408382293*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"82e934bc-db0d-441b-9dc6-e2c7ab64f4c7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Activate", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.9105704109924765`*^9, 3.9105704129623575`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"d34a2d7e-c85d-4a40-a61b-6e3da42ca2be"],
+
+Cell[BoxData[
+ RowBox[{"Sin", "[", "x", "]"}]], "Output",
+ CellChangeTimes->{3.9105704135022964`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"fb8e37d4-9ed6-497f-bca4-7908c4d90d71"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MeijerGReduce", "[", 
+  RowBox[{
+   RowBox[{"Cos", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.91057074471891*^9, 3.9105707455833254`*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"abedcbbb-eb7e-46cc-b2fa-79cc1f889914"],
+
+Cell[BoxData[
+ RowBox[{
+  SqrtBox["\[Pi]"], " ", 
+  RowBox[{
+   TemplateBox[{"MeijerG"},
+    "InactiveHead",
+    BaseStyle->"Inactive",
+    SyntaxForm->"Symbol",
+    Tooltip->"Inactive[MeijerG]"], "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "}"}], ",", 
+      RowBox[{"{", "}"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "0", "}"}], ",", 
+      RowBox[{"{", 
+       FractionBox["1", "2"], "}"}]}], "}"}], ",", 
+    FractionBox["x", "2"], ",", 
+    FractionBox["1", "2"]}], "]"}]}]], "Output",
+ CellChangeTimes->{3.910570748268859*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"06ebc0c2-b4be-432f-81ad-c872a9cb4e57"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{569.25, 609.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cd803e9f-63a8-47a9-9dd5-a756722b9c6a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 168, 3, 98, "Title",ExpressionUUID->"6db426c0-4d8d-47d3-9f93-b8528b0040a8"],
+Cell[CellGroupData[{
+Cell[773, 29, 267, 5, 28, "Input",ExpressionUUID->"c9b9b45b-5aeb-421b-a993-72fa97d6fb89"],
+Cell[1043, 36, 663, 22, 47, "Output",ExpressionUUID->"82e934bc-db0d-441b-9dc6-e2c7ab64f4c7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1743, 63, 210, 3, 28, "Input",ExpressionUUID->"d34a2d7e-c85d-4a40-a61b-6e3da42ca2be"],
+Cell[1956, 68, 180, 3, 32, "Output",ExpressionUUID->"fb8e37d4-9ed6-497f-bca4-7908c4d90d71"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2173, 76, 266, 5, 28, "Input",ExpressionUUID->"abedcbbb-eb7e-46cc-b2fa-79cc1f889914"],
+Cell[2442, 83, 663, 22, 47, "Output",ExpressionUUID->"06ebc0c2-b4be-432f-81ad-c872a9cb4e57"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
