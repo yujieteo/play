@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    250450,       4955]
-NotebookOptionsPosition[    245617,       4873]
-NotebookOutlinePosition[    246020,       4889]
-CellTagsIndexPosition[    245977,       4886]
+NotebookDataLength[    275107,       5499]
+NotebookOptionsPosition[    269681,       5406]
+NotebookOutlinePosition[    270084,       5422]
+CellTagsIndexPosition[    270041,       5419]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2731,6 +2731,539 @@ Cell[BoxData[
   Ticks->{Automatic, Automatic}]], "Output",
  CellChangeTimes->{3.9105290037689734`*^9, 3.9105297266719437`*^9},
  CellLabel->"Out[13]=",ExpressionUUID->"fc3ccd3a-5060-4daa-94f9-9cc6eaed222d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Other Processes", "Subsection",
+ CellChangeTimes->{{3.910582064248037*^9, 
+  3.910582068058874*^9}},ExpressionUUID->"9c9942fe-b77c-46cc-a531-\
+6790fb8ee607"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"WolframLanguageData", "[", 
+    RowBox[{
+    "\"\<WienerProcess\>\"", ",", "\"\<RelationshipCommunityGraph\>\""}], 
+    "]"}], ",", 
+   RowBox[{"ImageSize", "->", "Full"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9105820906219816`*^9, 3.9105820930248137`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"5f4a37fc-e290-4d84-978b-ee8a56d33890"],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    {EdgeForm[GrayLevel[0.5]], FaceForm[None], 
+     FilledCurveBox[
+      BSplineCurve[{{-0.0937495158564286, 
+       1.0644127662344476`}, {-0.018767876406846906`, 0.6616775863376798}, {
+       0.554815584049597, -0.0937495158564286}, {
+       0.742314615762454, -0.0937495158564286}, {1.210773706463777, 
+       1.4416291028219756`}, {1.210773706463777, 1.6291281345348327`}, {
+       0.13240929359011272`, 2.3918864796163932`}, {-0.05508973812274448, 
+       2.3918864796163932`}, {-0.0937495158564286, 1.2519117979473047`}}, 
+       SplineClosed -> True]]}, 
+    {EdgeForm[GrayLevel[0.5]], FaceForm[None], 
+     FilledCurveBox[
+      BSplineCurve[{{3.0483328589199656`, 0.410512272877488}, {
+       3.2358318906328227`, 0.410512272877488}, {3.2358318906328227`, 
+       0.5980113045903452}, {3.1396044542421517`, 1.361444527133103}, {
+       2.983972137485828, 1.9636332503384961`}, {2.796473105772971, 
+       1.9636332503384961`}, {2.13197452275234, 1.6994501443021808`}, {
+       2.13197452275234, 1.5119511125893237`}, {2.374406225152889, 
+       0.8915641908705696}}, SplineClosed -> True]]}}, {
+    {Hue[0.6, 0.7, 0.5], Opacity[0.7], 
+     LineBox[{{0., 1.1581622820908761`}, {0.7797832755030685, 
+      1.004552419424384}}], 
+     LineBox[{{0., 1.1581622820908761`}, {0.8455984373757492, 
+      0.7385119776742006}}], 
+     LineBox[{{0., 1.1581622820908761`}, {0.0749816394495817, 
+      0.7554271021941084}}], 
+     LineBox[{{0., 1.1581622820908761`}, {0.49558134209604765`, 
+      1.564481552124498}}], 
+     LineBox[{{1.1170241906073484`, 1.5353786186784042`}, {0.7797832755030685,
+       1.004552419424384}}], 
+     LineBox[{{1.1170241906073484`, 1.5353786186784042`}, {0.8455984373757492,
+       0.7385119776742006}}], 
+     BezierCurveBox[{{1.1170241906073484`, 1.5353786186784042`}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.4681557410093173`, 0.9853137067269983}},
+      SplineDegree->2], 
+     LineBox[{{1.1170241906073484`, 1.5353786186784042`}, {
+      0.49558134209604765`, 1.564481552124498}}], 
+     BezierCurveBox[{{1.1170241906073484`, 1.5353786186784042`}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.2257240386087687`, 1.6057006284457522`}},
+      SplineDegree->2], 
+     LineBox[{{3.142082374776394, 0.5042617887339166}, {2.4681557410093173`, 
+      0.9853137067269983}}], 
+     LineBox[{{3.142082374776394, 0.5042617887339166}, {3.045854938385723, 
+      1.2676950112766745`}}], 
+     LineBox[{{0.7797832755030685, 1.004552419424384}, {0.8455984373757492, 
+      0.7385119776742006}}], 
+     BezierCurveBox[{{0.7797832755030685, 1.004552419424384}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.4681557410093173`, 0.9853137067269983}},
+      SplineDegree->2], 
+     LineBox[{{0.7797832755030685, 1.004552419424384}, {0.0749816394495817, 
+      0.7554271021941084}}], 
+     LineBox[{{0.7797832755030685, 1.004552419424384}, {0.49558134209604765`, 
+      1.564481552124498}}], 
+     BezierCurveBox[{{0.7797832755030685, 1.004552419424384}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.2257240386087687`, 1.6057006284457522`}},
+      SplineDegree->2], 
+     LineBox[{{0.7797832755030685, 1.004552419424384}, {0.6485650999060255, 
+      0.}}], BezierCurveBox[{{0.8455984373757492, 0.7385119776742006}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.4681557410093173`, 0.9853137067269983}},
+      SplineDegree->2], 
+     LineBox[{{0.8455984373757492, 0.7385119776742006}, {0.0749816394495817, 
+      0.7554271021941084}}], 
+     LineBox[{{0.8455984373757492, 0.7385119776742006}, {0.49558134209604765`,
+       1.564481552124498}}], 
+     BezierCurveBox[{{0.8455984373757492, 0.7385119776742006}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.2257240386087687`, 1.6057006284457522`}},
+      SplineDegree->2], 
+     LineBox[{{0.8455984373757492, 0.7385119776742006}, {0.6485650999060255, 
+      0.}}], LineBox[{{2.4681557410093173`, 0.9853137067269983}, {
+      3.045854938385723, 1.2676950112766745`}}], 
+     LineBox[{{2.4681557410093173`, 0.9853137067269983}, {2.2257240386087687`,
+       1.6057006284457522`}}], 
+     LineBox[{{2.4681557410093173`, 0.9853137067269983}, {2.8902226216293996`,
+       1.8698837344820676`}}], 
+     LineBox[{{3.045854938385723, 1.2676950112766745`}, {2.2257240386087687`, 
+      1.6057006284457522`}}], 
+     LineBox[{{3.045854938385723, 1.2676950112766745`}, {2.8902226216293996`, 
+      1.8698837344820676`}}], 
+     LineBox[{{0.0749816394495817, 0.7554271021941084}, {0.49558134209604765`,
+       1.564481552124498}}], 
+     BezierCurveBox[{{0.49558134209604765`, 1.564481552124498}, {
+      1.2231622437381486`, 1.2051016566071224`}, {1.5919826090379576`, 
+      1.25000794411732}, {1.9608029743377664`, 1.2949142316275175`}, {
+      2.2257240386087687`, 1.6057006284457522`}},
+      SplineDegree->2], 
+     LineBox[{{0.49558134209604765`, 1.564481552124498}, {0.03865977773368412,
+       2.2981369637599647`}}], 
+     LineBox[{{2.2257240386087687`, 1.6057006284457522`}, {
+      2.8902226216293996`, 1.8698837344820676`}}]}, 
+    {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0., 1.1581622820908761`}, 0.031249838618809533]}, 
+      InsetBox["\<\"BinormalDistribution\"\>", 
+       Offset[{2, 2}, {0.031249838618809533, 1.1894121207096857}], 
+       ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{1.1170241906073484`, 1.5353786186784042`}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"BrownianBridgeProcess\"\>", 
+       Offset[{2, 2}, {1.148274029226158, 1.5666284572972138}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0.14, 1, 0.9], 
+       DiskBox[{3.142082374776394, 0.5042617887339166}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"CoxIngersollRossProcess\"\>", 
+       Offset[{2, 2}, {3.1733322133952035, 0.5355116273527261}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.7797832755030685, 1.004552419424384}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"FractionalBrownianMotionProcess\"\>", 
+       Offset[{2, 2}, {0.8110331141218781, 1.0358022580431936}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.8455984373757492, 0.7385119776742006}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"FractionalGaussianNoiseProcess\"\>", 
+       Offset[{2, 2}, {0.8768482759945588, 0.7697618162930102}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0.14, 1, 0.9], 
+       DiskBox[{2.4681557410093173`, 0.9853137067269983}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"GeometricBrownianMotionProcess\"\>", 
+       Offset[{2, 2}, {2.4994055796281267, 1.0165635453458077}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0.14, 1, 0.9], 
+       DiskBox[{3.045854938385723, 1.2676950112766745`}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"ItoProcess\"\>", 
+       Offset[{2, 2}, {3.0771047770045326, 1.298944849895484}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.0749816394495817, 0.7554271021941084}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"MultinormalDistribution\"\>", 
+       Offset[{2, 2}, {0.10623147806839123, 0.786676940812918}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.49558134209604765`, 1.564481552124498}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"NormalDistribution\"\>", 
+       Offset[{2, 2}, {0.5268311807148571, 1.5957313907433075}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0.14, 1, 0.9], 
+       DiskBox[{2.2257240386087687`, 1.6057006284457522`}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"OrnsteinUhlenbeckProcess\"\>", 
+       Offset[{2, 2}, {2.256973877227578, 1.6369504670645618}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.6485650999060255, 0.}, 0.031249838618809533]}, 
+      InsetBox["\<\"RandomWalkProcess\"\>", 
+       Offset[{2, 2}, {0.6798149385248351, 0.031249838618809533}], 
+       ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0.14, 1, 0.9], 
+       DiskBox[{2.8902226216293996`, 1.8698837344820676`}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"StratonovichProcess\"\>", 
+       Offset[{2, 2}, {2.921472460248209, 1.9011335731008772}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}, {
+      {Hue[0, 1, 0.8], 
+       DiskBox[{0.03865977773368412, 2.2981369637599647`}, 
+        0.031249838618809533]}, 
+      InsetBox["\<\"WhiteNoiseProcess\"\>", 
+       Offset[{2, 2}, {0.06990961635249365, 2.329386802378774}], ImageScaled[{0, 0}],
+       BaseStyle->"Graphics"]}}}},
+  FormatType->TraditionalForm,
+  FrameTicks->None,
+  ImageSize->Full,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{3.9105821053814707`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"d47541a7-73a0-4733-b651-fecd52188bbb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "GeometricBrownianMotionProcess"}]], "Input",
+ CellChangeTimes->{{3.9105822377460966`*^9, 3.910582241179082*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"5659d815-9f4a-4b18-90d5-2721fdeeb635"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/GeometricBrownianMotionProcess",
+              ButtonNote->"paclet:ref/GeometricBrownianMotionProcess"],
+             "\"paclet:ref/GeometricBrownianMotionProcess\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"GeometricBrownianMotionProcess\
+\\\", \\\"[\\\", RowBox[{StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"], \\\",\\\", \
+StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"0\\\", \
+\\\"TR\\\"]]}], \\\"]\\\"}]\\) represents a geometric Brownian motion process \
+with drift \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\), volatility \\!\\(\
+\\*StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]\\), and initial value \
+\\!\\(\\*SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"0\\\", \\\
+\"TR\\\"]]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/GeometricBrownianMotionProcess", 
+                    "paclet:ref/GeometricBrownianMotionProcess", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+GeometricBrownianMotionProcess.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+GeometricBrownianMotionProcess.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`GeometricBrownianMotionProcess\
+\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/GeometricBrownianMotionProcess",
+              ButtonNote->"paclet:ref/GeometricBrownianMotionProcess"],
+             "\"paclet:ref/GeometricBrownianMotionProcess\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"GeometricBrownianMotionProcess\
+\\\", \\\"[\\\", RowBox[{StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"], \\\",\\\", \
+StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"0\\\", \
+\\\"TR\\\"]]}], \\\"]\\\"}]\\) represents a geometric Brownian motion process \
+with drift \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\), volatility \\!\\(\
+\\*StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]\\), and initial value \
+\\!\\(\\*SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"0\\\", \\\
+\"TR\\\"]]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"GeometricBrownianMotionProcess\", \"[\", \
+RowBox[{StyleBox[\"\[Mu]\", \"TR\"], \",\", StyleBox[\"\[Sigma]\", \"TR\"], \
+\",\", SubscriptBox[StyleBox[\"x\", \"TI\"], StyleBox[\"0\", \"TR\"]]}], \
+\"]\"}]\) represents a geometric Brownian motion process with drift \
+\!\(\*StyleBox[\"\[Mu]\", \"TR\"]\), volatility \!\(\*StyleBox[\"\[Sigma]\", \
+\"TR\"]\), and initial value \!\(\*SubscriptBox[StyleBox[\"x\", \"TI\"], \
+StyleBox[\"0\", \"TR\"]]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/GeometricBrownianMotionProcess", "Web" -> 
+      "http://reference.wolfram.com/language/ref/\
+GeometricBrownianMotionProcess.html"|>, "OwnValues" -> None, "UpValues" -> 
+    None, "DownValues" -> None, "SubValues" -> None, "DefaultValues" -> None, 
+    "NValues" -> None, "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`GeometricBrownianMotionProcess"|>, False]]], "Output",
+ CellChangeTimes->{3.9105822445153847`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"f36b8975-98a8-4914-a2c7-95fa9e21a890"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 
@@ -4871,8 +5404,8 @@ b0c37d1a7d73"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{641.5, 645.5},
-WindowMargins->{{Automatic, -4.5}, {Automatic, 0}},
+WindowSize->{1280, 652},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"4e5d483b-90b7-4ceb-96fb-71fb1f2c8e7d"
@@ -4892,19 +5425,19 @@ Cell[CellGroupData[{
 Cell[580, 22, 159, 3, 98, "Title",ExpressionUUID->"9cc5a5db-9a58-4c27-8aa7-e057267a634d"],
 Cell[742, 27, 188, 3, 53, "Subtitle",ExpressionUUID->"1bb3ac8e-052b-4011-ab68-3dbd193f3508"],
 Cell[933, 32, 412, 8, 81, "Text",ExpressionUUID->"1300e9a7-004f-47c2-aa3e-5c9e04905d5f"],
-Cell[1348, 42, 438, 10, 150, "Text",ExpressionUUID->"ddf1d024-aa7c-4418-9ef2-e792162019f7"],
+Cell[1348, 42, 438, 10, 127, "Text",ExpressionUUID->"ddf1d024-aa7c-4418-9ef2-e792162019f7"],
 Cell[CellGroupData[{
 Cell[1811, 56, 159, 3, 67, "Section",ExpressionUUID->"5a344e69-ab47-4b6d-8622-565b1350e615"],
-Cell[1973, 61, 466, 11, 150, "Text",ExpressionUUID->"6f7a1c09-12e7-4503-a96a-64de731b800c"],
-Cell[2442, 74, 588, 14, 48, "Input",ExpressionUUID->"79d01647-ea75-4f86-980c-da19ff1c25e3"],
+Cell[1973, 61, 466, 11, 127, "Text",ExpressionUUID->"6f7a1c09-12e7-4503-a96a-64de731b800c"],
+Cell[2442, 74, 588, 14, 28, "Input",ExpressionUUID->"79d01647-ea75-4f86-980c-da19ff1c25e3"],
 Cell[CellGroupData[{
 Cell[3055, 92, 205, 3, 28, "Input",ExpressionUUID->"cc58bb88-ee4b-4df9-8c64-11945e6b5d0e"],
 Cell[3263, 97, 12987, 306, 119, "Output",ExpressionUUID->"feef8ec0-9ceb-496c-ba46-75abe411e3dc"]
 }, Open  ]],
 Cell[16265, 406, 174, 3, 35, "Text",ExpressionUUID->"2eeb0243-b919-40c4-b046-b4fd92e5beda"],
-Cell[16442, 411, 767, 21, 48, "Input",ExpressionUUID->"b9695f34-2c6b-4d3f-88da-773b230807dc"],
+Cell[16442, 411, 767, 21, 28, "Input",ExpressionUUID->"b9695f34-2c6b-4d3f-88da-773b230807dc"],
 Cell[17212, 434, 235, 6, 35, "Text",ExpressionUUID->"dcd8c555-d2b1-42cb-b509-d985a97118c3"],
-Cell[17450, 442, 946, 24, 67, "Input",ExpressionUUID->"709beb90-ef0b-4614-95fc-b6bcc2253ca8"],
+Cell[17450, 442, 946, 24, 48, "Input",ExpressionUUID->"709beb90-ef0b-4614-95fc-b6bcc2253ca8"],
 Cell[18399, 468, 184, 3, 35, "Text",ExpressionUUID->"f7619029-5256-417b-bb6d-58daa916c465"],
 Cell[CellGroupData[{
 Cell[18608, 475, 214, 3, 28, "Input",ExpressionUUID->"673e7439-ff74-4e11-8a92-183d8ebeb3a8"],
@@ -4912,49 +5445,60 @@ Cell[18825, 480, 101698, 1750, 233, "Output",ExpressionUUID->"78211a96-3bdd-42de
 }, Open  ]],
 Cell[120538, 2233, 272, 7, 81, "Text",ExpressionUUID->"3568fa39-7c7e-4897-9902-cf69e11d8524"],
 Cell[CellGroupData[{
-Cell[120835, 2244, 649, 16, 48, "Input",ExpressionUUID->"f250afe0-c613-4c04-b5ab-e3e2a81ee6b8"],
+Cell[120835, 2244, 649, 16, 28, "Input",ExpressionUUID->"f250afe0-c613-4c04-b5ab-e3e2a81ee6b8"],
 Cell[121487, 2262, 15916, 470, 239, "Output",ExpressionUUID->"fc3ccd3a-5060-4daa-94f9-9cc6eaed222d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[137440, 2737, 163, 3, 54, "Subsection",ExpressionUUID->"9c9942fe-b77c-46cc-a531-6790fb8ee607"],
+Cell[CellGroupData[{
+Cell[137628, 2744, 399, 9, 28, "Input",ExpressionUUID->"5f4a37fc-e290-4d84-978b-ee8a56d33890"],
+Cell[138030, 2755, 9649, 187, 826, "Output",ExpressionUUID->"d47541a7-73a0-4733-b651-fecd52188bbb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[147716, 2947, 219, 3, 28, "Input",ExpressionUUID->"5659d815-9f4a-4b18-90d5-2721fdeeb635"],
+Cell[147938, 2952, 13517, 312, 95, "Output",ExpressionUUID->"f36b8975-98a8-4914-a2c7-95fa9e21a890"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[137452, 2738, 329, 6, 105, "Section",ExpressionUUID->"d1947186-67f4-4764-a11f-c9b3b6c32395"],
-Cell[137784, 2746, 2537, 70, 269, "Text",ExpressionUUID->"dfc07bfc-324a-4de4-acb5-265a32c20a62"],
+Cell[161516, 3271, 329, 6, 67, "Section",ExpressionUUID->"d1947186-67f4-4764-a11f-c9b3b6c32395"],
+Cell[161848, 3279, 2537, 70, 246, "Text",ExpressionUUID->"dfc07bfc-324a-4de4-acb5-265a32c20a62"],
 Cell[CellGroupData[{
-Cell[140346, 2820, 530, 13, 28, "Input",ExpressionUUID->"a1824b86-2f57-4efa-abb9-95d20176f625"],
-Cell[140879, 2835, 322, 8, 51, "Output",ExpressionUUID->"dcc3316d-bf14-4abc-9fa3-5be87f7f1c5f"]
+Cell[164410, 3353, 530, 13, 28, "Input",ExpressionUUID->"a1824b86-2f57-4efa-abb9-95d20176f625"],
+Cell[164943, 3368, 322, 8, 51, "Output",ExpressionUUID->"dcc3316d-bf14-4abc-9fa3-5be87f7f1c5f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[141238, 2848, 191, 3, 28, "Input",ExpressionUUID->"611ca47e-e093-40ea-83a8-4a7cf983347d"],
-Cell[141432, 2853, 21285, 423, 227, "Output",ExpressionUUID->"55fdb84b-944a-4422-8552-c32b2e35c0cc"]
+Cell[165302, 3381, 191, 3, 28, "Input",ExpressionUUID->"611ca47e-e093-40ea-83a8-4a7cf983347d"],
+Cell[165496, 3386, 21285, 423, 227, "Output",ExpressionUUID->"55fdb84b-944a-4422-8552-c32b2e35c0cc"]
 }, Open  ]],
-Cell[162732, 3279, 187, 3, 35, "Text",ExpressionUUID->"712fefb5-0c71-404d-9f42-2d425a2e0d9a"],
+Cell[186796, 3812, 187, 3, 35, "Text",ExpressionUUID->"712fefb5-0c71-404d-9f42-2d425a2e0d9a"],
 Cell[CellGroupData[{
-Cell[162944, 3286, 283, 5, 28, "Input",ExpressionUUID->"141f8989-2fd3-40f0-87a7-7163f4f3d50a"],
-Cell[163230, 3293, 549, 16, 68, "Output",ExpressionUUID->"6aeeaa34-8ccf-4bb1-bb68-0be654f42d65"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[163816, 3314, 348, 9, 28, "Input",ExpressionUUID->"054c3f97-08f9-4e6d-9bd6-03cee15d0e58"],
-Cell[164167, 3325, 662, 20, 77, "Output",ExpressionUUID->"d25181c2-e8c4-40c7-97fb-b572a56012c5"]
-}, Open  ]],
-Cell[164844, 3348, 215, 5, 35, "Text",ExpressionUUID->"6a244d72-22c1-4b12-b049-909a847b3b9c"],
-Cell[CellGroupData[{
-Cell[165084, 3357, 930, 26, 48, "Input",ExpressionUUID->"e927e3f3-e1bc-4c02-b962-bfe6a07ba8e4"],
-Cell[166017, 3385, 484, 11, 46, "Message",ExpressionUUID->"3800a4ae-3d20-4fb5-aa23-1abe53cda8ec"],
-Cell[166504, 3398, 483, 11, 46, "Message",ExpressionUUID->"f2612f6f-78ec-4d84-aa0c-802735947c69"],
-Cell[166990, 3411, 38141, 687, 246, "Output",ExpressionUUID->"dedd19c5-cc00-4a9e-bafd-40ba051d6937"]
-}, Open  ]],
-Cell[205146, 4101, 241, 6, 58, "Text",ExpressionUUID->"53500d20-045d-4120-93b1-0df65858bffe"],
-Cell[CellGroupData[{
-Cell[205412, 4111, 865, 24, 48, "Input",ExpressionUUID->"20add1b9-fd0a-4788-acc4-40a941d6c56b"],
-Cell[206280, 4137, 486, 11, 46, "Message",ExpressionUUID->"7bd82acb-e9b3-4834-87fc-c929b202fb26"],
-Cell[206769, 4150, 485, 11, 46, "Message",ExpressionUUID->"7a8d3e15-8b01-4797-a3a7-d3a19f5e158a"],
-Cell[207257, 4163, 37409, 675, 246, "Output",ExpressionUUID->"0cc84747-857c-49aa-988e-911c35a572ac"]
+Cell[187008, 3819, 283, 5, 28, "Input",ExpressionUUID->"141f8989-2fd3-40f0-87a7-7163f4f3d50a"],
+Cell[187294, 3826, 549, 16, 68, "Output",ExpressionUUID->"6aeeaa34-8ccf-4bb1-bb68-0be654f42d65"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[244703, 4843, 478, 11, 47, "Input",ExpressionUUID->"237027b2-31f7-47a6-b34d-032b88df45bc"],
-Cell[245184, 4856, 189, 4, 47, "Output",ExpressionUUID->"75d55e3a-41c0-4574-aeb7-c4bf30d6e771"]
+Cell[187880, 3847, 348, 9, 28, "Input",ExpressionUUID->"054c3f97-08f9-4e6d-9bd6-03cee15d0e58"],
+Cell[188231, 3858, 662, 20, 77, "Output",ExpressionUUID->"d25181c2-e8c4-40c7-97fb-b572a56012c5"]
 }, Open  ]],
-Cell[245388, 4863, 201, 6, 58, "Text",ExpressionUUID->"7cdaa092-987c-48b7-b1ed-b0c37d1a7d73"]
+Cell[188908, 3881, 215, 5, 35, "Text",ExpressionUUID->"6a244d72-22c1-4b12-b049-909a847b3b9c"],
+Cell[CellGroupData[{
+Cell[189148, 3890, 930, 26, 28, "Input",ExpressionUUID->"e927e3f3-e1bc-4c02-b962-bfe6a07ba8e4"],
+Cell[190081, 3918, 484, 11, 28, "Message",ExpressionUUID->"3800a4ae-3d20-4fb5-aa23-1abe53cda8ec"],
+Cell[190568, 3931, 483, 11, 28, "Message",ExpressionUUID->"f2612f6f-78ec-4d84-aa0c-802735947c69"],
+Cell[191054, 3944, 38141, 687, 246, "Output",ExpressionUUID->"dedd19c5-cc00-4a9e-bafd-40ba051d6937"]
+}, Open  ]],
+Cell[229210, 4634, 241, 6, 58, "Text",ExpressionUUID->"53500d20-045d-4120-93b1-0df65858bffe"],
+Cell[CellGroupData[{
+Cell[229476, 4644, 865, 24, 28, "Input",ExpressionUUID->"20add1b9-fd0a-4788-acc4-40a941d6c56b"],
+Cell[230344, 4670, 486, 11, 28, "Message",ExpressionUUID->"7bd82acb-e9b3-4834-87fc-c929b202fb26"],
+Cell[230833, 4683, 485, 11, 28, "Message",ExpressionUUID->"7a8d3e15-8b01-4797-a3a7-d3a19f5e158a"],
+Cell[231321, 4696, 37409, 675, 246, "Output",ExpressionUUID->"0cc84747-857c-49aa-988e-911c35a572ac"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[268767, 5376, 478, 11, 47, "Input",ExpressionUUID->"237027b2-31f7-47a6-b34d-032b88df45bc"],
+Cell[269248, 5389, 189, 4, 47, "Output",ExpressionUUID->"75d55e3a-41c0-4574-aeb7-c4bf30d6e771"]
+}, Open  ]],
+Cell[269452, 5396, 201, 6, 58, "Text",ExpressionUUID->"7cdaa092-987c-48b7-b1ed-b0c37d1a7d73"]
 }, Open  ]]
 }, Open  ]]
 }
