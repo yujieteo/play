@@ -1,0 +1,744 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     28042,        736]
+NotebookOptionsPosition[     26410,        696]
+NotebookOutlinePosition[     26809,        712]
+CellTagsIndexPosition[     26766,        709]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Tuples", "Title",
+ CellChangeTimes->{{3.910583269498233*^9, 
+  3.910583270178192*^9}},ExpressionUUID->"ec6dc79e-f31e-4c80-84fe-\
+7bbddc24c1ba"],
+
+Cell["https://reference.wolfram.com/language/ref/Tuples.html", "Text",
+ CellChangeTimes->{
+  3.9105833231206417`*^9},ExpressionUUID->"de2cc477-c590-4a65-ae1f-\
+40d4c72d8f21"],
+
+Cell[CellGroupData[{
+
+Cell["Mathematics", "Section",
+ CellChangeTimes->{{3.9105832759443693`*^9, 3.9105832773017616`*^9}, {
+  3.910583530136406*^9, 
+  3.910583530792497*^9}},ExpressionUUID->"51c6ed35-6115-4eb7-9820-\
+fb97a8806158"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tuples", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.910583263970368*^9, 3.910583263970368*^9}},
+ CellLabel->"In[74]:=",ExpressionUUID->"26e6babc-c8b6-4ec2-bd26-bf92eee818fe"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.9105832664667025`*^9},
+ CellLabel->"Out[74]=",ExpressionUUID->"554828b5-ef93-4850-9cc5-ba945360f863"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tuples", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.910583284266923*^9, 3.9105832842706213`*^9}},
+ CellLabel->"In[75]:=",ExpressionUUID->"daf74206-d2cd-4b10-a626-c2ec59d680bd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.910583284960491*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"1bf7f7a8-16a5-4773-ae2f-5e64f480458d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tuples", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<John\>\"", ",", "\"\<Mary\>\"", ",", "\"\<Sally\>\""}], 
+    "}"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9105832870978746`*^9, 3.9105833000042453`*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"544a36cb-98ca-43bb-8ad7-5a78541936e2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"John\"\>", ",", "\<\"John\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"John\"\>", ",", "\<\"Mary\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"John\"\>", ",", "\<\"Sally\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mary\"\>", ",", "\<\"John\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mary\"\>", ",", "\<\"Mary\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Mary\"\>", ",", "\<\"Sally\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Sally\"\>", ",", "\<\"John\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Sally\"\>", ",", "\<\"Mary\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Sally\"\>", ",", "\<\"Sally\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.910583300615584*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"3aa84d76-c074-44ff-a085-03fd03eeb4e1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Multiway Systems", "Section",
+ CellChangeTimes->{{3.910583630629529*^9, 
+  3.910583633267943*^9}},ExpressionUUID->"3e30a417-da61-4796-9a05-\
+0e8bf937c024"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"ResourceFunction", "[", "\"\<MultiwaySystem\>\"", "]"}], "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\<A\>\"", "->", "\"\<BBB\>\""}], ",", 
+       RowBox[{"\"\<BB\>\"", "->", "\"\<A\>\""}]}], "}"}], ",", "\"\<A\>\"", 
+     ",", "7", ",", "\"\<StatesGraph\>\""}], "]"}], ",", 
+   RowBox[{"AspectRatio", "->", "1.5"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8375587131209183`*^9, 3.837558720820476*^9}, {
+  3.837558970763318*^9, 3.837558979710129*^9}, {3.9105836439590144`*^9, 
+  3.910583689959687*^9}},
+ CellLabel->"In[83]:=",
+ CellID->1779282242,ExpressionUUID->"361d8c2c-369c-4685-bb62-a32a54f87012"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "A", "BBB", "AB", "BA", "BBBB", "ABB", "BAB", "BBA", "AA", "BBBBB", 
+       "ABBB", "BABB", "BBAB", "BBBA", "AAB", "ABA", "BAA", "BBBBBB"}, {{{1, 
+       2}, {2, 3}, {2, 4}, {3, 5}, {4, 5}, {5, 6}, {5, 7}, {5, 8}, {6, 9}, {8,
+        9}, {6, 10}, {7, 10}, {8, 10}, {9, 11}, {10, 11}, {10, 12}, {10, 
+       13}, {9, 14}, {10, 14}, {11, 15}, {13, 15}, {11, 16}, {14, 16}, {12, 
+       17}, {14, 17}, {11, 18}, {12, 18}, {13, 18}, {14, 18}}, Null}, {
+      AspectRatio -> 1.5, EdgeStyle -> {
+         Directive[{
+           Hue[0.75, 0, 0.35], 
+           Dashing[None], 
+           AbsoluteThickness[1]}]}, GraphLayout -> {"Dimension" -> 2}, 
+       PerformanceGoal -> "Quality", VertexShapeFunction -> {Text[
+          Framed[
+           Style[
+            
+            FunctionRepository`$d565908159ef4f95abe6d42d3d3ed1a6`\
+stripMetadata[#2], 
+            Hue[0.62, 1, 0.48]], Background -> Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]], FrameMargins -> {{2, 2}, {0, 0}}, 
+           RoundingRadius -> 0, FrameStyle -> Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]]], #, {0, 0}]& }}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.75, 0, 0.35], AbsoluteThickness[1], Opacity[0.7], Dashing[None],
+         Arrowheads[Medium], 
+        ArrowBox[{
+         DynamicLocation["VertexID$1", Automatic, Center], DynamicLocation[
+          "VertexID$2", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+          "VertexID$3", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$2", Automatic, Center], DynamicLocation[
+          "VertexID$4", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$3", Automatic, Center], DynamicLocation[
+          "VertexID$5", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$4", Automatic, Center], DynamicLocation[
+          "VertexID$5", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$6", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$7", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$5", Automatic, Center], DynamicLocation[
+          "VertexID$8", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$6", Automatic, Center], DynamicLocation[
+          "VertexID$9", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$6", Automatic, Center], DynamicLocation[
+          "VertexID$10", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$7", Automatic, Center], DynamicLocation[
+          "VertexID$10", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$8", Automatic, Center], DynamicLocation[
+          "VertexID$9", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$8", Automatic, Center], DynamicLocation[
+          "VertexID$10", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$9", Automatic, Center], DynamicLocation[
+          "VertexID$11", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$9", Automatic, Center], DynamicLocation[
+          "VertexID$14", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$10", Automatic, Center], DynamicLocation[
+          "VertexID$11", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$10", Automatic, Center], DynamicLocation[
+          "VertexID$12", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$10", Automatic, Center], DynamicLocation[
+          "VertexID$13", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$10", Automatic, Center], DynamicLocation[
+          "VertexID$14", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$11", Automatic, Center], DynamicLocation[
+          "VertexID$15", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$11", Automatic, Center], DynamicLocation[
+          "VertexID$16", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$11", Automatic, Center], DynamicLocation[
+          "VertexID$18", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$12", Automatic, Center], DynamicLocation[
+          "VertexID$17", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$12", Automatic, Center], DynamicLocation[
+          "VertexID$18", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$13", Automatic, Center], DynamicLocation[
+          "VertexID$15", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$13", Automatic, Center], DynamicLocation[
+          "VertexID$18", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$14", Automatic, Center], DynamicLocation[
+          "VertexID$16", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$14", Automatic, Center], DynamicLocation[
+          "VertexID$17", Automatic, Center]}], 
+        ArrowBox[{
+         DynamicLocation["VertexID$14", Automatic, Center], DynamicLocation[
+          "VertexID$18", Automatic, Center]}]}, 
+       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"A\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 4.5}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$1"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 3.8571428571428577}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$2"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"AB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 3.2142857142857144}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$3"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 3.2142857142857144}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$4"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBBB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 2.5714285714285716}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$5"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"ABB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-2., 1.9285714285714288}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$6"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BAB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 1.9285714285714288}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$7"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 1.9285714285714288}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$8"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"AA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-2., 1.2857142857142858}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$9"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBBBB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 1.2857142857142858}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$10"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"ABBB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-3., 0.6428571428571429}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$11"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BABB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 0.6428571428571429}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$12"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBAB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 0.6428571428571429}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$13"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBBA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-2., 0.6428571428571429}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$14"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"AAB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-2., 0.}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$15"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"ABA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-3., 0.}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$16"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BAA\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {0., 0.}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$17"], 
+        TagBox[InsetBox[
+          FrameBox[
+           StyleBox["\<\"BBBBBB\"\>",
+            StripOnInput->False,
+            LineColor->Hue[0.62, 1, 0.48],
+            FrontFaceColor->Hue[0.62, 1, 0.48],
+            BackFaceColor->Hue[0.62, 1, 0.48],
+            GraphicsColor->Hue[0.62, 1, 0.48],
+            FontColor->Hue[0.62, 1, 0.48]],
+           Background->Directive[
+             Opacity[0.2], 
+             Hue[0.62, 0.45, 0.87]],
+           FrameMargins->{{2, 2}, {0, 0}},
+           FrameStyle->Directive[
+             Opacity[0.5], 
+             Hue[0.62, 0.52, 0.82]],
+           RoundingRadius->0,
+           StripOnInput->False], {-1., 0.}, NCache[
+          ImageScaled[{Rational[1, 2], Rational[1, 2]}], 
+           ImageScaled[{0.5, 0.5}]]],
+         "DynamicName",
+         BoxID -> "VertexID$18"]}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{{3.9105836322292137`*^9, 3.9105836903899107`*^9}},
+ CellLabel->"Out[83]=",ExpressionUUID->"e7edcb68-65eb-4195-a42f-c48cb925a335"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{643, 583},
+WindowMargins->{{Automatic, 89.5}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"59311b04-71c8-4433-bf84-1bc8a94b4636"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 149, 3, 98, "Title",ExpressionUUID->"ec6dc79e-f31e-4c80-84fe-7bbddc24c1ba"],
+Cell[732, 27, 174, 3, 35, "Text",ExpressionUUID->"de2cc477-c590-4a65-ae1f-40d4c72d8f21"],
+Cell[CellGroupData[{
+Cell[931, 34, 209, 4, 67, "Section",ExpressionUUID->"51c6ed35-6115-4eb7-9820-fb97a8806158"],
+Cell[CellGroupData[{
+Cell[1165, 42, 276, 6, 28, "Input",ExpressionUUID->"26e6babc-c8b6-4ec2-bd26-bf92eee818fe"],
+Cell[1444, 50, 728, 20, 52, "Output",ExpressionUUID->"554828b5-ef93-4850-9cc5-ba945360f863"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2209, 75, 278, 6, 28, "Input",ExpressionUUID->"daf74206-d2cd-4b10-a626-c2ec59d680bd"],
+Cell[2490, 83, 726, 20, 52, "Output",ExpressionUUID->"1bf7f7a8-16a5-4773-ae2f-5e64f480458d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3253, 108, 329, 7, 28, "Input",ExpressionUUID->"544a36cb-98ca-43bb-8ad7-5a78541936e2"],
+Cell[3585, 117, 909, 22, 52, "Output",ExpressionUUID->"3aa84d76-c074-44ff-a085-03fd03eeb4e1"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4543, 145, 161, 3, 67, "Section",ExpressionUUID->"3e30a417-da61-4796-9a05-0e8bf937c024"],
+Cell[CellGroupData[{
+Cell[4729, 152, 704, 16, 48, "Input",ExpressionUUID->"361d8c2c-369c-4685-bb62-a32a54f87012",
+ CellID->1779282242],
+Cell[5436, 170, 20934, 521, 471, "Output",ExpressionUUID->"e7edcb68-65eb-4195-a42f-c48cb925a335"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
