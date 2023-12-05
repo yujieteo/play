@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    396313,       7874]
-NotebookOptionsPosition[    389245,       7750]
-NotebookOutlinePosition[    389690,       7767]
-CellTagsIndexPosition[    389647,       7764]
+NotebookDataLength[    459885,       9321]
+NotebookOptionsPosition[    451237,       9174]
+NotebookOutlinePosition[    451678,       9191]
+CellTagsIndexPosition[    451635,       9188]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -32,8 +32,17 @@ Cell["Central Limit Theorem", "Subsection",ExpressionUUID->"90b1f963-1a83-4b65-a
 
 Cell["\<\
 Note that the Pareto distribution is the most talked about in real life. Not \
-the normal distribution. People are also excited about actuals.\
-\>", "Text",ExpressionUUID->"54e9a288-53fe-4b0b-8bfa-d159ae68e894"],
+the normal distribution. People are also excited about what is actually \
+realised.\
+\>", "Text",
+ CellChangeTimes->{{3.9107268768287067`*^9, 
+  3.9107268931308365`*^9}},ExpressionUUID->"54e9a288-53fe-4b0b-8bfa-\
+d159ae68e894"],
+
+Cell["We first define a Pareto random variable.", "Text",
+ CellChangeTimes->{{3.910726896430519*^9, 
+  3.910726923796782*^9}},ExpressionUUID->"a9c7472e-7700-4659-b526-\
+ebaf58257c4e"],
 
 Cell[BoxData[
  RowBox[{"w", ":=", 
@@ -41,6 +50,730 @@ Cell[BoxData[
    RowBox[{"ParetoDistribution", "[", 
     RowBox[{"1", ",", "2"}], "]"}], "]"}]}]], "Input",
  CellLabel->"In[2]:=",ExpressionUUID->"7acb3709-5bbc-4995-b5cf-89385a1c79be"],
+
+Cell["Here is the help menu for this.", "Text",
+ CellChangeTimes->{{3.9107269278349686`*^9, 
+  3.9107269340105567`*^9}},ExpressionUUID->"a3e62a60-0d11-4b4d-8346-\
+4951e5d503a7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"??", "RandomVariate"}]], "Input",
+ CellChangeTimes->{{3.9107269519021187`*^9, 3.910726954665435*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"04f5eed1-f767-4916-ad23-5007dc6c512c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/RandomVariate",
+              ButtonNote->"paclet:ref/RandomVariate"],
+             "\"paclet:ref/RandomVariate\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives a pseudorandom \
+variate from the symbolic distribution \\!\\(\\*StyleBox[\\\"dist\\\", \\\"TI\
+\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"n\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) gives a list of \\!\\(\\*StyleBox[\\\"n\\\", \
+\\\"TI\\\"]\\) pseudorandom variates from the symbolic distribution \
+\\!\\(\\*StyleBox[\\\"dist\\\", \
+\\\"TI\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives an \
+\\!\\(\\*RowBox[{StyleBox[SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\"TI\\\"], \\\"\[Times]\\\", \
+StyleBox[\\\" \\\", \\\"TI\\\"], StyleBox[SubscriptBox[StyleBox[\\\"n\\\", \\\
+\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\"TI\\\"], \\\"\[Times]\\\", \
+StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}]\\) array of pseudorandom variates \
+from the symbolic distribution \\!\\(\\*StyleBox[\\\"dist\\\", \
+\\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/RandomVariate",
+                     "paclet:ref/RandomVariate", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/RandomVariate.\
+html"], None}, "http://reference.wolfram.com/language/ref/RandomVariate.html",
+                     "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Options\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Options\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Options", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Method", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{"WorkingPrecision", "\[Rule]", "Automatic"}]}], 
+                    "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "Protected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`RandomVariate\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/RandomVariate",
+              ButtonNote->"paclet:ref/RandomVariate"],
+             "\"paclet:ref/RandomVariate\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives a pseudorandom \
+variate from the symbolic distribution \\!\\(\\*StyleBox[\\\"dist\\\", \\\"TI\
+\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"n\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) gives a list of \\!\\(\\*StyleBox[\\\"n\\\", \
+\\\"TI\\\"]\\) pseudorandom variates from the symbolic distribution \
+\\!\\(\\*StyleBox[\\\"dist\\\", \
+\\\"TI\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"RandomVariate\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives an \
+\\!\\(\\*RowBox[{StyleBox[SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\"TI\\\"], \\\"\[Times]\\\", \
+StyleBox[\\\" \\\", \\\"TI\\\"], StyleBox[SubscriptBox[StyleBox[\\\"n\\\", \\\
+\"TI\\\"], StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\"TI\\\"], \\\"\[Times]\\\", \
+StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}]\\) array of pseudorandom variates \
+from the symbolic distribution \\!\\(\\*StyleBox[\\\"dist\\\", \
+\\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"RandomVariate\", \"[\", StyleBox[\"dist\", \"TI\"], \
+\"]\"}]\) gives a pseudorandom variate from the symbolic distribution \
+\!\(\*StyleBox[\"dist\", \"TI\"]\).\n\!\(\*RowBox[{\"RandomVariate\", \"[\", \
+RowBox[{StyleBox[\"dist\", \"TI\"], \",\", StyleBox[\"n\", \"TI\"]}], \"]\"}]\
+\) gives a list of \!\(\*StyleBox[\"n\", \"TI\"]\) pseudorandom variates from \
+the symbolic distribution \!\(\*StyleBox[\"dist\", \"TI\"]\).\n\!\(\*RowBox[{\
+\"RandomVariate\", \"[\", RowBox[{StyleBox[\"dist\", \"TI\"], \",\", RowBox[{\
+\"{\", RowBox[{SubscriptBox[StyleBox[\"n\", \"TI\"], StyleBox[\"1\", \
+\"TR\"]], \",\", SubscriptBox[StyleBox[\"n\", \"TI\"], StyleBox[\"2\", \
+\"TR\"]], \",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}]}], \"]\"}]\) \
+gives an \!\(\*RowBox[{StyleBox[SubscriptBox[StyleBox[\"n\", \"TI\"], \
+StyleBox[\"1\", \"TR\"]], \"TI\"], \"\[Times]\", StyleBox[\" \", \"TI\"], \
+StyleBox[SubscriptBox[StyleBox[\"n\", \"TI\"], StyleBox[\"2\", \"TR\"]], \"TI\
+\"], \"\[Times]\", StyleBox[\"\[Ellipsis]\", \"TR\"]}]\) array of \
+pseudorandom variates from the symbolic distribution \!\(\*StyleBox[\"dist\", \
+\"TI\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/RandomVariate", "Web" -> 
+      "http://reference.wolfram.com/language/ref/RandomVariate.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {Method -> Automatic, WorkingPrecision -> Automatic}, 
+    "Attributes" -> {Protected}, "FullName" -> "System`RandomVariate"|>, 
+   True]]], "Output",
+ CellChangeTimes->{3.9107269563624783`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"3f386ef4-c048-400b-8ba2-3084f0c00dec"]
+}, Open  ]],
+
+Cell["\<\
+A Pareto distribution is defined by its minimum value k and shape \[Alpha].\
+\>", "Text",
+ CellChangeTimes->{{3.910726991284275*^9, 
+  3.91072701584867*^9}},ExpressionUUID->"5222a0a5-8822-400b-bcd6-\
+2aea3698af01"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"??", "ParetoDistribution"}]], "Input",
+ CellChangeTimes->{{3.9107269622524614`*^9, 3.9107269833121047`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"95586d56-f930-48f1-9db2-07d403baf453"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParetoDistribution",
+              ButtonNote->"paclet:ref/ParetoDistribution"],
+             "\"paclet:ref/ParetoDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\
+\[Alpha]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a Pareto distribution \
+with minimum value parameter \\!\\(\\*StyleBox[\\\"k\\\", \\\"TI\\\"]\\) and \
+shape parameter \\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\\) represents a Pareto type II distribution with \
+location parameter \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Gamma]\\\", \
+\\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) \
+represents a Pareto type IV distribution with shape parameter \
+\\!\\(\\*StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/ParetoDistribution", 
+                    "paclet:ref/ParetoDistribution", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+ParetoDistribution.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+ParetoDistribution.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`ParetoDistribution\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParetoDistribution",
+              ButtonNote->"paclet:ref/ParetoDistribution"],
+             "\"paclet:ref/ParetoDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\
+\[Alpha]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a Pareto distribution \
+with minimum value parameter \\!\\(\\*StyleBox[\\\"k\\\", \\\"TI\\\"]\\) and \
+shape parameter \\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\
+\"TR\\\"]}], \\\"]\\\"}]\\) represents a Pareto type II distribution with \
+location parameter \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParetoDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"k\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Gamma]\\\", \
+\\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) \
+represents a Pareto type IV distribution with shape parameter \
+\\!\\(\\*StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"ParetoDistribution\", \"[\", RowBox[{StyleBox[\"k\", \
+\"TI\"], \",\", StyleBox[\"\[Alpha]\", \"TR\"]}], \"]\"}]\) represents a \
+Pareto distribution with minimum value parameter \!\(\*StyleBox[\"k\", \
+\"TI\"]\) and shape parameter \!\(\*StyleBox[\"\[Alpha]\", \"TR\"]\).\n\
+\!\(\*RowBox[{\"ParetoDistribution\", \"[\", RowBox[{StyleBox[\"k\", \"TI\"], \
+\",\", StyleBox[\"\[Alpha]\", \"TR\"], \",\", StyleBox[\"\[Mu]\", \"TR\"]}], \
+\"]\"}]\) represents a Pareto type II distribution with location parameter \!\
+\(\*StyleBox[\"\[Mu]\", \"TR\"]\).\n\!\(\*RowBox[{\"ParetoDistribution\", \"[\
+\", RowBox[{StyleBox[\"k\", \"TI\"], \",\", StyleBox[\"\[Alpha]\", \"TR\"], \
+\",\", StyleBox[\"\[Gamma]\", \"TR\"], \",\", StyleBox[\"\[Mu]\", \"TR\"]}], \
+\"]\"}]\) represents a Pareto type IV distribution with shape parameter \
+\!\(\*StyleBox[\"\[Gamma]\", \"TR\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/ParetoDistribution", "Web" -> 
+      "http://reference.wolfram.com/language/ref/ParetoDistribution.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`ParetoDistribution"|>, True]]], "Output",
+ CellChangeTimes->{{3.9107269748919992`*^9, 3.910726983673952*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"36ae2258-b1ef-4aa3-95a0-0ae1068ca4f5"]
+}, Open  ]],
+
+Cell["This code adds up the two random variables.", "Text",
+ CellChangeTimes->{{3.9107270221372595`*^9, 
+  3.910727027479431*^9}},ExpressionUUID->"c69393a1-9148-40ec-9a12-\
+4987e1a390eb"],
 
 Cell[CellGroupData[{
 
@@ -55,7 +788,344 @@ Cell[BoxData["2.448886110029558`"], "Output",
  CellLabel->"Out[3]=",ExpressionUUID->"a72add3b-017b-4e45-93e1-9cf4b0423ae1"]
 }, Open  ]],
 
-Cell["Consider add up 10000 times. Run the simulation 100 times.", "Text",ExpressionUUID->"c13efbf2-d117-4166-95d3-6b17e0ae9181"],
+Cell["\<\
+The PostFix form allows you to run a function afterwards. Note that this \
+represents the sum of all random variables in a list.\
+\>", "Text",
+ CellChangeTimes->{{3.910727042342099*^9, 
+  3.910727066881976*^9}},ExpressionUUID->"399f90ee-fd3a-4016-8790-\
+41d386977874"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "//"}]], "Input",
+ CellChangeTimes->{{3.91072703224509*^9, 3.9107270345138597`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"6835c1bb-0023-456d-b063-136f7656f745"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/Postfix",
+              ButtonNote->"paclet:ref/Postfix"],
+             "\"paclet:ref/Postfix\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Postfix\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\"[\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"], \\\"]\\\"}], \\\"]\\\"}]\\) prints with \\!\\(\\*RowBox[{StyleBox[\
+\\\"f\\\", \\\"TI\\\"], \\\"[\\\", StyleBox[\\\"expr\\\", \\\"TI\\\"], \
+\\\"]\\\"}]\\) given in default postfix form: \
+\\!\\(\\*RowBox[{StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"//\\\", \
+StyleBox[\\\"f\\\", \\\"TI\\\"]}]\\). \\n\\!\\(\\*RowBox[{\\\"Postfix\\\", \\\
+\"[\\\", RowBox[{RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\"[\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"]\\\"}], \\\",\\\", \
+StyleBox[\\\"h\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) prints as \
+\\!\\(\\*StyleBox[\\\"exprh\\\", \\\"TI\\\"]\\). \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/Postfix", 
+                    "paclet:ref/Postfix", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/Postfix.html"],
+                     None}, 
+                    "http://reference.wolfram.com/language/ref/Postfix.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", "Protected", "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`Postfix\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/Postfix",
+              ButtonNote->"paclet:ref/Postfix"],
+             "\"paclet:ref/Postfix\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Postfix\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\"[\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"], \\\"]\\\"}], \\\"]\\\"}]\\) prints with \\!\\(\\*RowBox[{StyleBox[\
+\\\"f\\\", \\\"TI\\\"], \\\"[\\\", StyleBox[\\\"expr\\\", \\\"TI\\\"], \
+\\\"]\\\"}]\\) given in default postfix form: \
+\\!\\(\\*RowBox[{StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"//\\\", \
+StyleBox[\\\"f\\\", \\\"TI\\\"]}]\\). \\n\\!\\(\\*RowBox[{\\\"Postfix\\\", \\\
+\"[\\\", RowBox[{RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\"[\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"]\\\"}], \\\",\\\", \
+StyleBox[\\\"h\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) prints as \
+\\!\\(\\*StyleBox[\\\"exprh\\\", \\\"TI\\\"]\\). \"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"Postfix\", \"[\", RowBox[{StyleBox[\"f\", \"TI\"], \
+\"[\", StyleBox[\"expr\", \"TI\"], \"]\"}], \"]\"}]\) prints with \
+\!\(\*RowBox[{StyleBox[\"f\", \"TI\"], \"[\", StyleBox[\"expr\", \"TI\"], \"]\
+\"}]\) given in default postfix form: \!\(\*RowBox[{StyleBox[\"expr\", \
+\"TI\"], \"//\", StyleBox[\"f\", \"TI\"]}]\). \n\!\(\*RowBox[{\"Postfix\", \
+\"[\", RowBox[{RowBox[{StyleBox[\"f\", \"TI\"], \"[\", StyleBox[\"expr\", \
+\"TI\"], \"]\"}], \",\", StyleBox[\"h\", \"TI\"]}], \"]\"}]\) prints as \
+\!\(\*StyleBox[\"exprh\", \"TI\"]\). ", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/Postfix", "Web" -> 
+      "http://reference.wolfram.com/language/ref/Postfix.html"|>, "OwnValues" -> 
+    None, "UpValues" -> None, "DownValues" -> None, "SubValues" -> None, 
+    "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> None, "Attributes" -> {Protected}, "FullName" -> 
+    "System`Postfix"|>, False]]], "Output",
+ CellChangeTimes->{3.910727034875362*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"e682cc77-2c2c-48b5-b144-b2a20a7f0198"]
+}, Open  ]],
+
+Cell["\<\
+Create a list of 1000 Pareto random variables. Take the total. Run the \
+simulation 100 times.\
+\>", "Text",
+ CellChangeTimes->{{3.9107270921531777`*^9, 
+  3.9107271172740345`*^9}},ExpressionUUID->"c13efbf2-d117-4166-95d3-\
+6b17e0ae9181"],
 
 Cell[CellGroupData[{
 
@@ -222,12 +1292,366 @@ Cell[BoxData[
  CellLabel->"Out[4]=",ExpressionUUID->"8010bbf5-d6a8-4335-a3ce-931a2f1151e8"]
 }, Open  ]],
 
+Cell["\<\
+The observation for the Pareto random variable is this. It does not look \
+remotely Gaussian after running the simulation 100 times. The question is: \
+when will the law of large numbers apply? And also, is there a way to verify \
+that it will eventually become a Gaussian using Mathematica as opposed to \
+using an empirical heuristic?\
+\>", "Text",
+ CellChangeTimes->{{3.9107271261265855`*^9, 
+  3.910727202263958*^9}},ExpressionUUID->"c45584f9-6bbe-45bb-9c4c-\
+29076587c7d2"],
+
 Cell[BoxData[
  RowBox[{"y", ":=", 
   RowBox[{"RandomVariate", "[", 
    RowBox[{"GammaDistribution", "[", 
     RowBox[{"1", ",", "1"}], "]"}], "]"}]}]], "Input",
  CellLabel->"In[5]:=",ExpressionUUID->"49f0d4e7-e1ff-43a2-9ebb-efa23eb5c02e"],
+
+Cell["\<\
+We define a random variable that follows the gamma distribution.
+Here is the help for this.\
+\>", "Text",
+ CellChangeTimes->{{3.910727223930188*^9, 
+  3.9107272513428965`*^9}},ExpressionUUID->"f9cbb7a6-5268-4b8b-bc24-\
+c416d346cc49"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"??", "GammaDistribution"}]], "Input",
+ CellChangeTimes->{{3.910727213075111*^9, 3.910727220540987*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"64dea81f-26d7-48e3-9725-c0b6480efff2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/GammaDistribution",
+              ButtonNote->"paclet:ref/GammaDistribution"],
+             "\"paclet:ref/GammaDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"GammaDistribution\\\", \\\"[\\\
+\", RowBox[{StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\
+\[Beta]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a gamma distribution \
+with shape parameter \\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"]\\) and \
+scale parameter \\!\\(\\*StyleBox[\\\"\[Beta]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"GammaDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\
+\[Beta]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\"], \
+\\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a \
+generalized gamma distribution with shape parameters \\!\\(\\*StyleBox[\\\"\
+\[Alpha]\\\", \\\"TR\\\"]\\) and \\!\\(\\*StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\
+\"]\\), scale parameter \\!\\(\\*StyleBox[\\\"\[Beta]\\\", \\\"TR\\\"]\\), \
+and location parameter \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/GammaDistribution", 
+                    "paclet:ref/GammaDistribution", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+GammaDistribution.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+GammaDistribution.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`GammaDistribution\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/GammaDistribution",
+              ButtonNote->"paclet:ref/GammaDistribution"],
+             "\"paclet:ref/GammaDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"GammaDistribution\\\", \\\"[\\\
+\", RowBox[{StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\
+\[Beta]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a gamma distribution \
+with shape parameter \\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"]\\) and \
+scale parameter \\!\\(\\*StyleBox[\\\"\[Beta]\\\", \
+\\\"TR\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"GammaDistribution\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\
+\[Beta]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\"], \
+\\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents a \
+generalized gamma distribution with shape parameters \\!\\(\\*StyleBox[\\\"\
+\[Alpha]\\\", \\\"TR\\\"]\\) and \\!\\(\\*StyleBox[\\\"\[Gamma]\\\", \\\"TR\\\
+\"]\\), scale parameter \\!\\(\\*StyleBox[\\\"\[Beta]\\\", \\\"TR\\\"]\\), \
+and location parameter \\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"GammaDistribution\", \"[\", \
+RowBox[{StyleBox[\"\[Alpha]\", \"TR\"], \",\", StyleBox[\"\[Beta]\", \
+\"TR\"]}], \"]\"}]\) represents a gamma distribution with shape parameter \
+\!\(\*StyleBox[\"\[Alpha]\", \"TR\"]\) and scale parameter \!\(\*StyleBox[\"\
+\[Beta]\", \"TR\"]\).\n\!\(\*RowBox[{\"GammaDistribution\", \"[\", \
+RowBox[{StyleBox[\"\[Alpha]\", \"TR\"], \",\", StyleBox[\"\[Beta]\", \"TR\"], \
+\",\", StyleBox[\"\[Gamma]\", \"TR\"], \",\", StyleBox[\"\[Mu]\", \"TR\"]}], \
+\"]\"}]\) represents a generalized gamma distribution with shape parameters \
+\!\(\*StyleBox[\"\[Alpha]\", \"TR\"]\) and \!\(\*StyleBox[\"\[Gamma]\", \
+\"TR\"]\), scale parameter \!\(\*StyleBox[\"\[Beta]\", \"TR\"]\), and \
+location parameter \!\(\*StyleBox[\"\[Mu]\", \"TR\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/GammaDistribution", "Web" -> 
+      "http://reference.wolfram.com/language/ref/GammaDistribution.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`GammaDistribution"|>, True]]], "Output",
+ CellChangeTimes->{3.9107272209798613`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"8771483a-41c6-4f14-8cef-d2c263489800"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -7748,8 +9172,8 @@ Cell[BoxData[""], "Input",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{837.5, 645.5},
-WindowMargins->{{Automatic, 24}, {Automatic, 114}},
+WindowSize->{837.5, 641},
+WindowMargins->{{Automatic, 24}, {Automatic, 0}},
 TaggingRules-><|"TryRealOnly" -> False|>,
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
 StyleDefinitions->"Default.nb",
@@ -7771,109 +9195,132 @@ Cell[580, 22, 95, 0, 98, "Title",ExpressionUUID->"93882ba1-a4ed-4b60-9183-6a997c
 Cell[678, 24, 151, 2, 35, "Text",ExpressionUUID->"47008e90-04c3-49e8-96bc-de2017b9f0fd"],
 Cell[CellGroupData[{
 Cell[854, 30, 98, 0, 54, "Subsection",ExpressionUUID->"90b1f963-1a83-4b65-a444-64cd41f90a2e"],
-Cell[955, 32, 221, 3, 35, "Text",ExpressionUUID->"54e9a288-53fe-4b0b-8bfa-d159ae68e894"],
-Cell[1179, 37, 239, 5, 28, "Input",ExpressionUUID->"7acb3709-5bbc-4995-b5cf-89385a1c79be"],
+Cell[955, 32, 316, 7, 58, "Text",ExpressionUUID->"54e9a288-53fe-4b0b-8bfa-d159ae68e894"],
+Cell[1274, 41, 183, 3, 35, "Text",ExpressionUUID->"a9c7472e-7700-4659-b526-ebaf58257c4e"],
+Cell[1460, 46, 239, 5, 28, "Input",ExpressionUUID->"7acb3709-5bbc-4995-b5cf-89385a1c79be"],
+Cell[1702, 53, 177, 3, 35, "Text",ExpressionUUID->"a3e62a60-0d11-4b4d-8346-4951e5d503a7"],
 Cell[CellGroupData[{
-Cell[1443, 46, 179, 4, 28, "Input",ExpressionUUID->"e3993ded-8cb6-4f2f-875b-7a3e33d74aab"],
-Cell[1625, 52, 191, 2, 32, "Output",ExpressionUUID->"a72add3b-017b-4e45-93e1-9cf4b0423ae1"]
+Cell[1904, 60, 203, 3, 28, "Input",ExpressionUUID->"04f5eed1-f767-4916-ad23-5007dc6c512c"],
+Cell[2110, 65, 16194, 355, 221, "Output",ExpressionUUID->"3f386ef4-c048-400b-8ba2-3084f0c00dec"]
 }, Open  ]],
-Cell[1831, 57, 129, 0, 35, "Text",ExpressionUUID->"c13efbf2-d117-4166-95d3-6b17e0ae9181"],
+Cell[18319, 423, 224, 5, 35, "Text",ExpressionUUID->"5222a0a5-8822-400b-bcd6-2aea3698af01"],
 Cell[CellGroupData[{
-Cell[1985, 61, 346, 9, 28, "Input",ExpressionUUID->"ec00da5e-e0f0-4aaf-a39e-96c6987f11ee"],
-Cell[2334, 72, 5071, 149, 238, "Output",ExpressionUUID->"8010bbf5-d6a8-4335-a3ce-931a2f1151e8"]
+Cell[18568, 432, 210, 3, 28, "Input",ExpressionUUID->"95586d56-f930-48f1-9db2-07d403baf453"],
+Cell[18781, 437, 14844, 332, 205, "Output",ExpressionUUID->"36ae2258-b1ef-4aa3-95a0-0ae1068ca4f5"]
 }, Open  ]],
-Cell[7420, 224, 238, 5, 28, "Input",ExpressionUUID->"49f0d4e7-e1ff-43a2-9ebb-efa23eb5c02e"],
+Cell[33640, 772, 187, 3, 35, "Text",ExpressionUUID->"c69393a1-9148-40ec-9a12-4987e1a390eb"],
 Cell[CellGroupData[{
-Cell[7683, 233, 346, 9, 28, "Input",ExpressionUUID->"f5b1d4da-b8f4-4b62-a367-8d231b86d7ac"],
-Cell[8032, 244, 7207, 213, 238, "Output",ExpressionUUID->"59911956-9bcd-446f-8910-5dfe1ebf4058"]
+Cell[33852, 779, 179, 4, 28, "Input",ExpressionUUID->"e3993ded-8cb6-4f2f-875b-7a3e33d74aab"],
+Cell[34034, 785, 191, 2, 32, "Output",ExpressionUUID->"a72add3b-017b-4e45-93e1-9cf4b0423ae1"]
+}, Open  ]],
+Cell[34240, 790, 278, 6, 58, "Text",ExpressionUUID->"399f90ee-fd3a-4016-8790-41d386977874"],
+Cell[CellGroupData[{
+Cell[34543, 800, 190, 3, 28, "Input",ExpressionUUID->"6835c1bb-0023-456d-b063-136f7656f745"],
+Cell[34736, 805, 13526, 313, 119, "Output",ExpressionUUID->"e682cc77-2c2c-48b5-b144-b2a20a7f0198"]
+}, Open  ]],
+Cell[48277, 1121, 248, 6, 35, "Text",ExpressionUUID->"c13efbf2-d117-4166-95d3-6b17e0ae9181"],
+Cell[CellGroupData[{
+Cell[48550, 1131, 346, 9, 28, "Input",ExpressionUUID->"ec00da5e-e0f0-4aaf-a39e-96c6987f11ee"],
+Cell[48899, 1142, 5071, 149, 238, "Output",ExpressionUUID->"8010bbf5-d6a8-4335-a3ce-931a2f1151e8"]
+}, Open  ]],
+Cell[53985, 1294, 488, 9, 81, "Text",ExpressionUUID->"c45584f9-6bbe-45bb-9c4c-29076587c7d2"],
+Cell[54476, 1305, 238, 5, 28, "Input",ExpressionUUID->"49f0d4e7-e1ff-43a2-9ebb-efa23eb5c02e"],
+Cell[54717, 1312, 243, 6, 58, "Text",ExpressionUUID->"f9cbb7a6-5268-4b8b-bc24-c416d346cc49"],
+Cell[CellGroupData[{
+Cell[54985, 1322, 205, 3, 28, "Input",ExpressionUUID->"64dea81f-26d7-48e3-9725-c0b6480efff2"],
+Cell[55193, 1327, 14445, 325, 205, "Output",ExpressionUUID->"8771483a-41c6-4f14-8cef-d2c263489800"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15276, 462, 268, 7, 28, "Input",ExpressionUUID->"ba407efb-d07b-4abd-9a92-26e310052353"],
-Cell[15547, 471, 166, 2, 32, "Output",ExpressionUUID->"7997bf46-e4f5-4a2e-96d5-62685f9f58fb"]
+Cell[69675, 1657, 346, 9, 28, "Input",ExpressionUUID->"f5b1d4da-b8f4-4b62-a367-8d231b86d7ac"],
+Cell[70024, 1668, 7207, 213, 238, "Output",ExpressionUUID->"59911956-9bcd-446f-8910-5dfe1ebf4058"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77268, 1886, 268, 7, 28, "Input",ExpressionUUID->"ba407efb-d07b-4abd-9a92-26e310052353"],
+Cell[77539, 1895, 166, 2, 32, "Output",ExpressionUUID->"7997bf46-e4f5-4a2e-96d5-62685f9f58fb"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15762, 479, 97, 0, 54, "Subsection",ExpressionUUID->"86f08d35-35f1-4efe-949a-c1a6825644c6"],
-Cell[15862, 481, 242, 5, 28, "Input",ExpressionUUID->"794f1317-1a2f-4291-9432-1de5afd908a6"],
+Cell[77754, 1903, 97, 0, 54, "Subsection",ExpressionUUID->"86f08d35-35f1-4efe-949a-c1a6825644c6"],
+Cell[77854, 1905, 242, 5, 28, "Input",ExpressionUUID->"794f1317-1a2f-4291-9432-1de5afd908a6"],
 Cell[CellGroupData[{
-Cell[16129, 490, 613, 17, 28, "Input",ExpressionUUID->"9d9231ff-b3ad-43f9-95f9-6bf5c71c01c9"],
-Cell[16745, 509, 32410, 566, 239, "Output",ExpressionUUID->"d40a3fc6-b9c2-4ac2-87ef-5fc9639e2f36"]
+Cell[78121, 1914, 613, 17, 48, "Input",ExpressionUUID->"9d9231ff-b3ad-43f9-95f9-6bf5c71c01c9"],
+Cell[78737, 1933, 32410, 566, 239, "Output",ExpressionUUID->"d40a3fc6-b9c2-4ac2-87ef-5fc9639e2f36"]
 }, Open  ]],
-Cell[49170, 1078, 109, 0, 35, "Text",ExpressionUUID->"a6b15d82-62bc-40fb-a169-138afd3fb6fa"],
-Cell[49282, 1080, 240, 5, 28, "Input",ExpressionUUID->"374f5c1d-c58b-4e89-bcad-3232ebbe4b6a"],
+Cell[111162, 2502, 109, 0, 35, "Text",ExpressionUUID->"a6b15d82-62bc-40fb-a169-138afd3fb6fa"],
+Cell[111274, 2504, 240, 5, 28, "Input",ExpressionUUID->"374f5c1d-c58b-4e89-bcad-3232ebbe4b6a"],
 Cell[CellGroupData[{
-Cell[49547, 1089, 623, 18, 28, "Input",ExpressionUUID->"c5226db9-abfe-45a3-af68-6b72abccefe8"],
-Cell[50173, 1109, 61512, 969, 252, "Output",ExpressionUUID->"35fb1e39-8ed0-4d73-b984-a091922d1744"]
+Cell[111539, 2513, 623, 18, 28, "Input",ExpressionUUID->"c5226db9-abfe-45a3-af68-6b72abccefe8"],
+Cell[112165, 2533, 61512, 969, 252, "Output",ExpressionUUID->"35fb1e39-8ed0-4d73-b984-a091922d1744"]
 }, Open  ]],
-Cell[111700, 2081, 170, 3, 35, "Text",ExpressionUUID->"d8b1e3a0-e615-49f8-93c2-8981d06769cb"],
+Cell[173692, 3505, 170, 3, 35, "Text",ExpressionUUID->"d8b1e3a0-e615-49f8-93c2-8981d06769cb"],
 Cell[CellGroupData[{
-Cell[111895, 2088, 141, 2, 28, "Input",ExpressionUUID->"6367a2f6-7a38-40f6-b245-55a7d64f6d0c"],
-Cell[112039, 2092, 167148, 3100, 233, "Output",ExpressionUUID->"909bce1c-c066-4521-97ed-06e48b80212b"]
+Cell[173887, 3512, 141, 2, 28, "Input",ExpressionUUID->"6367a2f6-7a38-40f6-b245-55a7d64f6d0c"],
+Cell[174031, 3516, 167148, 3100, 233, "Output",ExpressionUUID->"909bce1c-c066-4521-97ed-06e48b80212b"]
 }, Open  ]],
-Cell[279202, 5195, 127, 0, 35, "Text",ExpressionUUID->"d98aa6ca-4675-44b8-b698-fb54e600bde6"],
-Cell[279332, 5197, 193, 5, 35, "Text",ExpressionUUID->"284c0558-2ac3-4cee-9439-78033f6fb0c6"],
+Cell[341194, 6619, 127, 0, 35, "Text",ExpressionUUID->"d98aa6ca-4675-44b8-b698-fb54e600bde6"],
+Cell[341324, 6621, 193, 5, 35, "Text",ExpressionUUID->"284c0558-2ac3-4cee-9439-78033f6fb0c6"],
 Cell[CellGroupData[{
-Cell[279550, 5206, 247, 6, 28, "Input",ExpressionUUID->"3f2c646b-634e-46ee-a874-335532f3b98d"],
-Cell[279800, 5214, 195, 4, 50, "Output",ExpressionUUID->"a3e575f3-fbf0-46ba-a0e9-53ee81a645e6"]
+Cell[341542, 6630, 247, 6, 28, "Input",ExpressionUUID->"3f2c646b-634e-46ee-a874-335532f3b98d"],
+Cell[341792, 6638, 195, 4, 50, "Output",ExpressionUUID->"a3e575f3-fbf0-46ba-a0e9-53ee81a645e6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[280044, 5224, 97, 0, 54, "Subsection",ExpressionUUID->"89c6cacf-8269-43ea-823b-460449b406b9"],
+Cell[342036, 6648, 97, 0, 54, "Subsection",ExpressionUUID->"89c6cacf-8269-43ea-823b-460449b406b9"],
 Cell[CellGroupData[{
-Cell[280166, 5228, 342, 7, 28, "Input",ExpressionUUID->"d598fc23-3665-48b5-970a-9dffa1872100"],
-Cell[280511, 5237, 352, 6, 32, "Output",ExpressionUUID->"96880634-5693-442f-ba4a-ada1c534c5c7"]
+Cell[342158, 6652, 342, 7, 28, "Input",ExpressionUUID->"d598fc23-3665-48b5-970a-9dffa1872100"],
+Cell[342503, 6661, 352, 6, 32, "Output",ExpressionUUID->"96880634-5693-442f-ba4a-ada1c534c5c7"]
 }, Open  ]],
-Cell[280878, 5246, 198, 3, 35, "Text",ExpressionUUID->"137a3785-14cd-41d3-9e1d-5181f14d30b4"],
-Cell[281079, 5251, 1792, 47, 48, "Input",ExpressionUUID->"802d3145-23e6-42c9-a984-4fd3968c8f0d"],
+Cell[342870, 6670, 198, 3, 35, "Text",ExpressionUUID->"137a3785-14cd-41d3-9e1d-5181f14d30b4"],
+Cell[343071, 6675, 1792, 47, 48, "Input",ExpressionUUID->"802d3145-23e6-42c9-a984-4fd3968c8f0d"],
 Cell[CellGroupData[{
-Cell[282896, 5302, 262, 6, 28, "Input",ExpressionUUID->"805058d4-fe76-467d-926f-8b2cc4905bb9"],
-Cell[283161, 5310, 2669, 89, 235, "Output",ExpressionUUID->"992b8038-c8af-45f2-93c5-772024a2c848"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[285867, 5404, 210, 4, 28, "Input",ExpressionUUID->"a5706a7f-cbc7-4931-b034-e81a0ab01cee"],
-Cell[286080, 5410, 1825, 48, 84, "Output",ExpressionUUID->"1450e1b5-83dd-4861-bee5-2765954b28f4"]
+Cell[344888, 6726, 262, 6, 28, "Input",ExpressionUUID->"805058d4-fe76-467d-926f-8b2cc4905bb9"],
+Cell[345153, 6734, 2669, 89, 235, "Output",ExpressionUUID->"992b8038-c8af-45f2-93c5-772024a2c848"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[287942, 5463, 426, 11, 28, "Input",ExpressionUUID->"02a7d11c-63ee-4b96-a530-d56c6865ac19"],
-Cell[288371, 5476, 19972, 377, 180, "Output",ExpressionUUID->"53852f26-2cbb-4e74-81e0-19930de3027f"]
+Cell[347859, 6828, 210, 4, 28, "Input",ExpressionUUID->"a5706a7f-cbc7-4931-b034-e81a0ab01cee"],
+Cell[348072, 6834, 1825, 48, 84, "Output",ExpressionUUID->"1450e1b5-83dd-4861-bee5-2765954b28f4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[308380, 5858, 177, 3, 28, "Input",ExpressionUUID->"5108fa92-be35-4d71-9a24-8964b6388e0e"],
-Cell[308560, 5863, 167, 2, 32, "Output",ExpressionUUID->"eb6958ed-abc9-4cc2-998c-17f5047782e9"]
+Cell[349934, 6887, 426, 11, 28, "Input",ExpressionUUID->"02a7d11c-63ee-4b96-a530-d56c6865ac19"],
+Cell[350363, 6900, 19972, 377, 180, "Output",ExpressionUUID->"53852f26-2cbb-4e74-81e0-19930de3027f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[308764, 5870, 375, 10, 28, "Input",ExpressionUUID->"0e053e59-84de-4a46-9c1a-46f9c3280957"],
-Cell[309142, 5882, 1990, 42, 382, "Output",ExpressionUUID->"e01d1779-4af8-4981-98b8-33ba2e4f65be"]
+Cell[370372, 7282, 177, 3, 28, "Input",ExpressionUUID->"5108fa92-be35-4d71-9a24-8964b6388e0e"],
+Cell[370552, 7287, 167, 2, 32, "Output",ExpressionUUID->"eb6958ed-abc9-4cc2-998c-17f5047782e9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[311169, 5929, 221, 4, 28, "Input",ExpressionUUID->"56243b06-6981-49da-b980-9d462d7163c9"],
-Cell[311393, 5935, 160, 2, 32, "Output",ExpressionUUID->"2b426863-763f-4139-bb32-4f0610036b0e"]
+Cell[370756, 7294, 375, 10, 28, "Input",ExpressionUUID->"0e053e59-84de-4a46-9c1a-46f9c3280957"],
+Cell[371134, 7306, 1990, 42, 382, "Output",ExpressionUUID->"e01d1779-4af8-4981-98b8-33ba2e4f65be"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[311590, 5942, 239, 4, 48, "Input",ExpressionUUID->"c9480434-1471-4dd9-95da-e0c645d2bfcd"],
-Cell[311832, 5948, 15384, 351, 845, "Output",ExpressionUUID->"5436d824-92aa-4389-9ac4-f3e419862357"],
-Cell[327219, 6301, 813, 15, 32, "Output",ExpressionUUID->"f664b22f-3a61-479e-89dc-34a12f3d312a"]
+Cell[373161, 7353, 221, 4, 28, "Input",ExpressionUUID->"56243b06-6981-49da-b980-9d462d7163c9"],
+Cell[373385, 7359, 160, 2, 32, "Output",ExpressionUUID->"2b426863-763f-4139-bb32-4f0610036b0e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[373582, 7366, 239, 4, 48, "Input",ExpressionUUID->"c9480434-1471-4dd9-95da-e0c645d2bfcd"],
+Cell[373824, 7372, 15384, 351, 845, "Output",ExpressionUUID->"5436d824-92aa-4389-9ac4-f3e419862357"],
+Cell[389211, 7725, 813, 15, 32, "Output",ExpressionUUID->"f664b22f-3a61-479e-89dc-34a12f3d312a"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[328081, 6322, 98, 0, 54, "Subsection",ExpressionUUID->"cd3ec3ff-743b-419a-8f94-6d0dfc39d9a8"],
-Cell[328182, 6324, 276, 6, 35, "Text",ExpressionUUID->"5cc147ee-ee28-42f3-8c07-a7ab2b18c509"],
+Cell[390073, 7746, 98, 0, 54, "Subsection",ExpressionUUID->"cd3ec3ff-743b-419a-8f94-6d0dfc39d9a8"],
+Cell[390174, 7748, 276, 6, 35, "Text",ExpressionUUID->"5cc147ee-ee28-42f3-8c07-a7ab2b18c509"],
 Cell[CellGroupData[{
-Cell[328483, 6334, 279, 7, 28, "Input",ExpressionUUID->"4cb7767a-e006-4c2d-929c-4a015c9d421f"],
-Cell[328765, 6343, 1216, 37, 67, "Output",ExpressionUUID->"84470dec-8d38-4b14-8244-e45e3f0426c4"]
+Cell[390475, 7758, 279, 7, 28, "Input",ExpressionUUID->"4cb7767a-e006-4c2d-929c-4a015c9d421f"],
+Cell[390757, 7767, 1216, 37, 67, "Output",ExpressionUUID->"84470dec-8d38-4b14-8244-e45e3f0426c4"]
 }, Open  ]],
-Cell[329996, 6383, 124, 0, 35, "Text",ExpressionUUID->"63b21403-b531-40e9-a2d4-b8b058e9ea6c"],
+Cell[391988, 7807, 124, 0, 35, "Text",ExpressionUUID->"63b21403-b531-40e9-a2d4-b8b058e9ea6c"],
 Cell[CellGroupData[{
-Cell[330145, 6387, 220, 5, 28, "Input",ExpressionUUID->"f52f77ea-36ed-40f6-8e0e-096db5c1f6f6"],
-Cell[330368, 6394, 2037, 58, 52, "Output",ExpressionUUID->"589adcfd-c0bf-404e-8f51-32650c072042"]
+Cell[392137, 7811, 220, 5, 28, "Input",ExpressionUUID->"f52f77ea-36ed-40f6-8e0e-096db5c1f6f6"],
+Cell[392360, 7818, 2037, 58, 52, "Output",ExpressionUUID->"589adcfd-c0bf-404e-8f51-32650c072042"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[332442, 6457, 296, 5, 28, "Input",ExpressionUUID->"8f38320c-d700-42cf-b0a6-a96cc60f2099"],
-Cell[332741, 6464, 39363, 785, 609, "Output",ExpressionUUID->"e61bbad8-3c8c-4393-965e-40a8e950b28e"]
+Cell[394434, 7881, 296, 5, 28, "Input",ExpressionUUID->"8f38320c-d700-42cf-b0a6-a96cc60f2099"],
+Cell[394733, 7888, 39363, 785, 609, "Output",ExpressionUUID->"e61bbad8-3c8c-4393-965e-40a8e950b28e"]
 }, Open  ]],
-Cell[372119, 7252, 387, 9, 28, "Input",ExpressionUUID->"a036eb93-745a-4935-b03d-bde7f2e53ff2"],
-Cell[372509, 7263, 16553, 478, 360, "Input",ExpressionUUID->"2e034e0b-a659-4a14-aabb-21752a95094f"],
-Cell[389065, 7743, 152, 3, 28, "Input",ExpressionUUID->"6e1a1b3e-552b-476c-99f6-61e710a28e3a"]
+Cell[434111, 8676, 387, 9, 28, "Input",ExpressionUUID->"a036eb93-745a-4935-b03d-bde7f2e53ff2"],
+Cell[434501, 8687, 16553, 478, 360, "Input",ExpressionUUID->"2e034e0b-a659-4a14-aabb-21752a95094f"],
+Cell[451057, 9167, 152, 3, 28, "Input",ExpressionUUID->"6e1a1b3e-552b-476c-99f6-61e710a28e3a"]
 }, Open  ]]
 }, Open  ]]
 }
