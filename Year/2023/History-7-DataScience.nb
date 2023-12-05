@@ -1,0 +1,581 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26081,        573]
+NotebookOptionsPosition[     25380,        552]
+NotebookOutlinePosition[     25780,        568]
+CellTagsIndexPosition[     25737,        565]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Data Science History", "Title",
+ CellChangeTimes->{{3.910803697555803*^9, 
+  3.9108037016565485`*^9}},ExpressionUUID->"49e330c4-8b81-471f-a83d-\
+7790b96a63cd"],
+
+Cell["https://www.wolframalpha.com/docs/timeline", "Text",
+ CellChangeTimes->{
+  3.9108038244198675`*^9},ExpressionUUID->"0c552376-ed3c-4b7a-a0c4-\
+780848b1a913"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"DiscoveryBarChart", "[", "year", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"year", ",", " ", "1994.3799999999999"}], "}"}], ",", " ", 
+     RowBox[{"Dynamic", "[", "range", "]"}], ",", " ", "2010"}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"range", ",", " ", "1900"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1900", " ", "->", " ", "\"\<last century\>\""}], ",", " ", 
+       RowBox[{"1000", " ", "->", " ", "\"\<last millenium\>\""}], ",", " ", 
+       RowBox[{
+        RowBox[{"-", "20000"}], " ", "->", " ", "\"\<all of history\>\""}]}], 
+      "}"}]}], "}"}], ",", " ", "\n", "  ", 
+   RowBox[{"Initialization", " ", ":>", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"DiscoveryBarChart", "[", "year_", "]"}], " ", ":=", " ", 
+       RowBox[{"Labeled", "[", 
+        RowBox[{
+         RowBox[{"BarChart", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"RotateRight", "[", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"Length", "[", 
+                 RowBox[{"Select", "[", 
+                  RowBox[{"#1", ",", " ", 
+                   RowBox[{
+                    RowBox[{"#1", " ", "<", " ", "year"}], " ", "&"}]}], " ", 
+                  "]"}], "]"}], " ", "&"}], " ", ")"}], " ", "/@", " ", 
+              RowBox[{"$ByCountry", "[", 
+               RowBox[{"[", 
+                RowBox[{"All", ",", "2"}], "]"}], "]"}]}], "]"}], " ", "+", 
+            " ", "0.01"}], ",", " ", "\n", "       ", 
+           RowBox[{"ChartBaseStyle", " ", "->", " ", 
+            RowBox[{"EdgeForm", "[", 
+             RowBox[{"{", 
+              RowBox[{"Black", ",", " ", 
+               RowBox[{"Opacity", "[", "0.5", "]"}]}], "}"}], "]"}]}], ",", 
+           " ", 
+           RowBox[{
+           "LabelingFunction", " ", "->", " ", "\"\<RadialCallout\>\""}], ",",
+            " ", 
+           RowBox[{"BaseStyle", " ", "->", " ", 
+            RowBox[{"{", 
+             RowBox[{"10", ",", " ", 
+              RowBox[{"FontFamily", " ", "->", " ", "\"\<Helvetica\>\""}]}], 
+             "}"}]}], ",", " ", 
+           RowBox[{"ImageSize", " ", "->", " ", "300"}], ",", " ", 
+           RowBox[{"PlotRange", " ", "->", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", " ", "80"}], "}"}]}], ",", " ", "\n", 
+           "       ", 
+           RowBox[{"PlotLabel", " ", "->", " ", 
+            RowBox[{"Style", "[", 
+             RowBox[{
+              RowBox[{"Row", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"ToString", "[", 
+                  RowBox[{"Abs", "[", 
+                   RowBox[{"Round", "[", "year", "]"}], "]"}], "]"}], ",", 
+                 " ", 
+                 RowBox[{"Style", "[", 
+                  RowBox[{
+                   RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"year", " ", ">=", " ", "0"}], ",", " ", 
+                    "\"\< AD\>\"", ",", " ", "\"\< BC\>\""}], "]"}], ",", " ",
+                    "Gray"}], "]"}]}], "}"}], "]"}], ",", " ", "Bold", ",", 
+              " ", "15"}], "]"}]}], ",", " ", 
+           RowBox[{"ChartStyle", " ", "->", " ", 
+            RowBox[{"RotateRight", "[", 
+             RowBox[{"$Colors", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "2"}], "]"}], "]"}], "]"}]}]}], "]"}], ",",
+          " ", "$ColorLegend", ",", " ", "Right"}], "]"}]}], ",", " ", "\n", 
+      "    ", 
+      RowBox[{"$ByCountry", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Babylon\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "3500"}], ",", " ", 
+            RowBox[{"-", "3000"}], ",", " ", 
+            RowBox[{"-", "2500"}], ",", " ", 
+            RowBox[{"-", "2150"}], ",", " ", 
+            RowBox[{"-", "1800"}], ",", " ", 
+            RowBox[{"-", "1790"}], ",", " ", 
+            RowBox[{"-", "1700"}], ",", " ", 
+            RowBox[{"-", "500"}]}], "}"}]}], ",", " ", 
+         RowBox[{"\"\<Greece\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "600"}], ",", " ", 
+            RowBox[{"-", "500"}], ",", " ", 
+            RowBox[{"-", "400"}], ",", " ", 
+            RowBox[{"-", "387"}], ",", " ", 
+            RowBox[{"-", "350"}], ",", " ", 
+            RowBox[{"-", "325"}], ",", " ", 
+            RowBox[{"-", "300"}], ",", " ", 
+            RowBox[{"-", "250"}], ",", " ", 
+            RowBox[{"-", "200"}], ",", " ", 
+            RowBox[{"-", "100"}], ",", " ", "125", ",", " ", "150"}], "}"}]}],
+          ",", " ", "\n", "      ", 
+         RowBox[{"\"\<Europe\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+           "550", ",", " ", "1030", ",", " ", "1202", ",", " ", "1230", ",", 
+            " ", "1300", ",", " ", "1350", ",", " ", "1450", ",", " ", "1453",
+             ",", " ", "1582", ",", " ", "1595", ",", " ", "1623", ",", " ", 
+            "1627", ",", " ", "1637", ",", " ", "1684", ",", " ", "1688", ",",
+             " ", "1750", ",", " ", "1795", ",", " ", "1801", ",", " ", 
+            "1817", ",", " ", "1837", ",", " ", "1850", ",", " ", "1865", ",",
+             " ", "1869", ",", " ", "1879", ",", " ", "1889", ",", " ", 
+            "1910", ",", " ", "1954", ",", " ", "\n", "        ", "1993"}], 
+           "}"}]}], ",", " ", 
+         RowBox[{"\"\<UK\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+           "1086", ",", " ", "1538", ",", " ", "1602", ",", " ", "1604", ",", 
+            " ", "1614", ",", " ", "1654", ",", " ", "1659", ",", " ", "1662",
+             ",", " ", "1665", ",", " ", "1668", ",", " ", "1686", ",", " ", 
+            "1687", ",", " ", "1753", ",", " ", "1755", ",", " ", "1768", ",",
+             " ", "1786", ",", " ", "1796", ",", " ", "1802", ",", " ", 
+            "1830", ",", " ", "1837", ",", " ", "1839", ",", " ", "1847", ",",
+             " ", "1849", ",", " ", "1852", ",", " ", "1860", ",", " ", 
+            "1872", ",", " ", "1880", ",", " ", "\n", "        ", "1898", ",",
+             " ", "1900", ",", " ", "1910", ",", " ", "1935", ",", " ", 
+            "1936", ",", " ", "1937", ",", " ", "1946", ",", " ", "1953", ",",
+             " ", "1954", ",", " ", "1966"}], "}"}]}], ",", " ", 
+         RowBox[{"\"\<US\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+           "1732", ",", " ", "1785", ",", " ", "1790", ",", " ", "1792", ",", 
+            " ", "1844", ",", " ", "1865", ",", " ", "1867", ",", " ", "1868",
+             ",", " ", "1873", ",", " ", "1876", ",", " ", "1877", ",", " ", 
+            "1878", ",", " ", "1878", ",", " ", "1879", ",", " ", "1882", ",",
+             " ", "1886", ",", " ", "1890", ",", " ", "1898", ",", " ", "\n", 
+            "        ", "1906", ",", " ", "1907", ",", " ", "1913", ",", " ", 
+            "1913", ",", " ", "1921", ",", " ", "1926", ",", " ", "1931", ",",
+             " ", "1932", ",", " ", "1935", ",", " ", "1935", ",", " ", 
+            "1936", ",", " ", "1939", ",", " ", "1940", ",", " ", "1940", ",",
+             " ", "1942", ",", " ", "1942", ",", " ", "1945", ",", " ", 
+            "1947", ",", " ", "1950", ",", " ", "1950", ",", " ", "1955", ",",
+             " ", "1955", ",", " ", "1957", ",", " ", "1957", ",", " ", 
+            "1960", ",", " ", "1960", ",", " ", "1960", ",", " ", "1962", ",",
+             " ", "1963", ",", " ", "\n", "        ", "1963", ",", " ", 
+            "1963", ",", " ", "1963", ",", " ", "1964", ",", " ", "1966", ",",
+             " ", "1967", ",", " ", "1968", ",", " ", "1975", ",", " ", 
+            "1980", ",", " ", "1980", ",", " ", "1973", ",", " ", "1973", ",",
+             " ", "1973", ",", " ", "1974", ",", " ", "1985", ",", " ", 
+            "1982", ",", " ", "1983", ",", " ", "1984", ",", " ", "1988", ",",
+             " ", "1989", ",", " ", "1990", ",", " ", "1991", ",", " ", 
+            "1991", ",", " ", "1995", ",", " ", "1996", ",", " ", "1998", ",",
+             " ", "2000", ",", " ", "2000", ",", " ", "2001", ",", " ", "\n", 
+            "        ", "2002", ",", " ", "2003", ",", " ", "2004", ",", " ", 
+            "2004", ",", " ", "2009"}], "}"}]}], ",", " ", 
+         RowBox[{"\"\<Other\>\"", " ", "->", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "20000"}], ",", " ", 
+            RowBox[{"-", "15000"}], ",", " ", 
+            RowBox[{"-", "2200"}], ",", " ", 
+            RowBox[{"-", "1250"}], ",", " ", 
+            RowBox[{"-", "1150"}], ",", " ", 
+            RowBox[{"-", "400"}], ",", " ", 
+            RowBox[{"-", "45"}], ",", " ", "78", ",", " ", "80", ",", " ", 
+            "105", ",", " ", "200", ",", " ", "340", ",", " ", "530", ",", 
+            " ", "825", ",", " ", "960", ",", " ", "1403", ",", " ", "1755", 
+            ",", " ", "1830", ",", " ", "1994"}], "}"}]}]}], "}"}]}], ",", 
+      " ", "\n", "    ", 
+      RowBox[{"$Colors", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Babylon\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.5293202105745022", ",", " ", "0.49782558937972077", ",", " ", 
+            "0.6742046234836347"}], "]"}]}], ",", " ", 
+         RowBox[{"\"\<Greece\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.3193865873197528", ",", " ", "0.6416113527122912", ",", " ", 
+            "0.6651560234988937"}], "]"}]}], ",", " ", "\n", "      ", 
+         RowBox[{"\"\<Europe\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.5401235980773632", ",", " ", "0.6334782940413519", ",", " ", 
+            "0.2349279011215381"}], "]"}]}], ",", " ", 
+         RowBox[{"\"\<UK\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.9275959411001755", ",", " ", "0.49364461738002596", ",", " ", 
+            "0."}], "]"}]}], ",", " ", "\n", "      ", 
+         RowBox[{"\"\<US\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.7828030823224231", ",", " ", "0.23186083772030214", ",", " ", 
+            "0."}], "]"}]}], ",", " ", 
+         RowBox[{"\"\<Other\>\"", " ", "->", " ", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+           "0.6696879530022125", ",", " ", "0.6696879530022125", ",", " ", 
+            "0.6696879530022125"}], "]"}]}]}], "}"}]}], ",", " ", "\n", 
+      "    ", 
+      RowBox[{"$ColorLegend", " ", "=", " ", 
+       RowBox[{"Grid", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.5293202105745022", ",", " ", "0.49782558937972077", ",", 
+                   " ", "0.6742046234836347"}], "]"}], ",", " ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", "\n", 
+               "         ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", 
+             RowBox[{"Style", "[", "\"\<Ancient Babylon\>\"", "]"}]}], "}"}], 
+           ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.3193865873197528", ",", " ", "0.6416113527122912", ",", 
+                   " ", "0.6651560234988937"}], "]"}], ",", " ", "\n", 
+                 "          ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", 
+             RowBox[{"Style", "[", "\"\<Ancient Greece\>\"", "]"}]}], "}"}], 
+           ",", " ", "\n", "       ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.5401235980773632", ",", " ", "0.6334782940413519", ",", 
+                   " ", "0.2349279011215381"}], "]"}], ",", " ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", "\n", 
+             "        ", 
+             RowBox[{"Style", "[", "\"\<Continental Europe\>\"", "]"}]}], 
+            "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.9275959411001755", ",", " ", "0.49364461738002596", ",", 
+                   " ", "0."}], "]"}], ",", " ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", "\n", 
+               "         ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", 
+             RowBox[{"Style", "[", "\"\<Britain\>\"", "]"}]}], "}"}], ",", 
+           " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.7828030823224231", ",", " ", "0.23186083772030214", ",", 
+                   " ", "0."}], "]"}], ",", " ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", "\n", "         ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", 
+             RowBox[{"Style", "[", "\"\<United States\>\"", "]"}]}], "}"}], 
+           ",", " ", "\n", "       ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Graphics", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"EdgeForm", "[", "None", "]"}], ",", " ", 
+                 RowBox[{"RGBColor", "[", 
+                  RowBox[{
+                  "0.6696879530022125", ",", " ", "0.6696879530022125", ",", 
+                   " ", "0.6696879530022125"}], "]"}], ",", " ", 
+                 RowBox[{"Rectangle", "[", 
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", " ", "0"}], "}"}], "]"}]}], "}"}], ",", 
+               " ", 
+               RowBox[{"ImageSize", " ", "->", " ", 
+                RowBox[{"{", 
+                 RowBox[{"10", ",", " ", "10"}], "}"}]}], ",", " ", 
+               RowBox[{"BaselinePosition", " ", "->", " ", 
+                RowBox[{"Scaled", "[", 
+                 RowBox[{"-", "0.08"}], "]"}]}]}], "]"}], ",", " ", "\n", 
+             "        ", 
+             RowBox[{"Style", "[", 
+              RowBox[{"Style", "[", 
+               RowBox[{"\"\<other\>\"", ",", " ", 
+                RowBox[{"GrayLevel", "[", "0.5", "]"}]}], "]"}], "]"}]}], 
+            "}"}]}], "}"}], ",", " ", 
+         RowBox[{"Alignment", " ", "->", " ", "Left"}], ",", " ", 
+         RowBox[{"BaseStyle", " ", "->", " ", 
+          RowBox[{"FontFamily", " ", "->", " ", "\"\<Helvetica\>\""}]}], ",", 
+         " ", 
+         RowBox[{"Spacings", " ", "->", " ", "0.4"}]}], "]"}]}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{3.9108036361831713`*^9},
+ FormatType->"InputForm",
+ CellLabel->"In[1]:=",ExpressionUUID->"6895f027-4678-46cd-b448-7a4f0f236db2"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`range$$ = -20000, $CellContext`year$$ = 
+    2010., Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`year$$], 1994.3799999999999`}, 
+      Dynamic[$CellContext`range$$], 2010}, {{
+       Hold[$CellContext`range$$], 1900}, {
+      1900 -> "last century", 1000 -> "last millenium", -20000 -> 
+       "all of history"}}}, Typeset`size$$ = {
+    431.69981052875517`, {102., 107.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`range$$ = 1900, $CellContext`year$$ = 
+        1994.3799999999999`}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> $CellContext`DiscoveryBarChart[$CellContext`year$$], 
+      "Specifications" :> {{{$CellContext`year$$, 1994.3799999999999`}, 
+         Dynamic[$CellContext`range$$], 
+         2010}, {{$CellContext`range$$, 1900}, {
+         1900 -> "last century", 1000 -> "last millenium", -20000 -> 
+          "all of history"}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{480., {156.63403309800196`, 162.36596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`DiscoveryBarChart[
+         Pattern[$CellContext`year, 
+          Blank[]]] := Labeled[
+         BarChart[RotateRight[
+            Map[Length[
+              Select[#, # < $CellContext`year& ]]& , 
+             Part[$CellContext`$ByCountry, All, 2]]] + 0.01, ChartBaseStyle -> 
+          EdgeForm[{Black, 
+             Opacity[0.5]}], LabelingFunction -> "RadialCallout", 
+          BaseStyle -> {10, FontFamily -> "Helvetica"}, ImageSize -> 300, 
+          PlotRange -> {0, 80}, PlotLabel -> Style[
+            Row[{
+              ToString[
+               Abs[
+                Round[$CellContext`year]]], 
+              Style[
+               If[$CellContext`year >= 0, " AD", " BC"], Gray]}], Bold, 15], 
+          ChartStyle -> RotateRight[
+            Part[$CellContext`$Colors, All, 2]]], $CellContext`$ColorLegend, 
+         Right], $CellContext`$ByCountry = {
+        "Babylon" -> {-3500, -3000, -2500, -2150, -1800, -1790, -1700, -500}, 
+         "Greece" -> {-600, -500, -400, -387, -350, -325, -300, -250, -200, \
+-100, 125, 150}, 
+         "Europe" -> {550, 1030, 1202, 1230, 1300, 1350, 1450, 1453, 1582, 
+          1595, 1623, 1627, 1637, 1684, 1688, 1750, 1795, 1801, 1817, 1837, 
+          1850, 1865, 1869, 1879, 1889, 1910, 1954, 1993}, 
+         "UK" -> {1086, 1538, 1602, 1604, 1614, 1654, 1659, 1662, 1665, 1668, 
+          1686, 1687, 1753, 1755, 1768, 1786, 1796, 1802, 1830, 1837, 1839, 
+          1847, 1849, 1852, 1860, 1872, 1880, 1898, 1900, 1910, 1935, 1936, 
+          1937, 1946, 1953, 1954, 1966}, "US" -> CompressedData["
+1:eJxdw7sKgQEcxuG/hetwD25CLJ8cymD4RgPFZLRYKIqUlEVKCAsWOZTDQHJa
+XIpFfsM7yFOP381GMh4zc7jzmr35ofnMAgwyxDAdRhljXBNMMkWXaeaYZ0GL
+LLHMCqtaY50NbWqLbXa0qz3t/xxw+HfEMSeccsGlzn7OueWKa264454HHvXE
+My+86o13PvjUF7/SDjX1
+          "], 
+         "Other" -> {-20000, -15000, -2200, -1250, -1150, -400, -45, 78, 80, 
+          105, 200, 340, 530, 825, 960, 1403, 1755, 1830, 
+          1994}}, $CellContext`$Colors = {
+        "Babylon" -> 
+         RGBColor[
+          0.5293202105745022, 0.49782558937972077`, 0.6742046234836347], 
+         "Greece" -> 
+         RGBColor[0.3193865873197528, 0.6416113527122912, 0.6651560234988937],
+          "Europe" -> 
+         RGBColor[0.5401235980773632, 0.6334782940413519, 0.2349279011215381],
+          "UK" -> RGBColor[0.9275959411001755, 0.49364461738002596`, 0.], 
+         "US" -> RGBColor[0.7828030823224231, 0.23186083772030214`, 0.], 
+         "Other" -> RGBColor[
+          0.6696879530022125, 0.6696879530022125, 
+           0.6696879530022125]}, $CellContext`$ColorLegend = Grid[{{
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[
+             0.5293202105745022, 0.49782558937972077`, 0.6742046234836347], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style["Ancient Babylon"]}, {
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[
+             0.3193865873197528, 0.6416113527122912, 0.6651560234988937], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style["Ancient Greece"]}, {
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[
+             0.5401235980773632, 0.6334782940413519, 0.2349279011215381], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style["Continental Europe"]}, {
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[0.9275959411001755, 0.49364461738002596`, 0.], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style["Britain"]}, {
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[0.7828030823224231, 0.23186083772030214`, 0.], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style["United States"]}, {
+           Graphics[{
+             EdgeForm[None], 
+             RGBColor[
+             0.6696879530022125, 0.6696879530022125, 0.6696879530022125], 
+             Rectangle[{0, 0}]}, ImageSize -> {10, 10}, BaselinePosition -> 
+            Scaled[-0.08]], 
+           Style[
+            Style["other", 
+             GrayLevel[0.5]]]}}, Alignment -> Left, 
+         BaseStyle -> (FontFamily -> "Helvetica"), Spacings -> 0.4]}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.910803647962817*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"a2bed693-b324-4d7f-8759-f34abe0bca0f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1428, 735.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6c072e6d-1c16-4914-8c09-25ee3957d025"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 165, 3, 98, "Title",ExpressionUUID->"49e330c4-8b81-471f-a83d-7790b96a63cd"],
+Cell[748, 27, 162, 3, 35, "Text",ExpressionUUID->"0c552376-ed3c-4b7a-a0c4-780848b1a913"],
+Cell[CellGroupData[{
+Cell[935, 34, 17803, 377, 504, "Input",ExpressionUUID->"6895f027-4678-46cd-b448-7a4f0f236db2"],
+Cell[18741, 413, 6611, 135, 338, "Output",ExpressionUUID->"a2bed693-b324-4d7f-8759-f34abe0bca0f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
