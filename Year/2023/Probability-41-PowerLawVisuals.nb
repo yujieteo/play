@@ -1,0 +1,296 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10441,        288]
+NotebookOptionsPosition[      8086,        241]
+NotebookOutlinePosition[      8488,        257]
+CellTagsIndexPosition[      8445,        254]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Power Law Visualisation", "Title",
+ CellChangeTimes->{{3.9108067154047823`*^9, 
+  3.910806722734547*^9}},ExpressionUUID->"2d8863d4-7bac-4779-80b5-\
+5a6d1d89ada0"],
+
+Cell["\<\
+https://www.youtube.com/watch?v=XhTHG3QmVwM
+
+The information is only valid in the tails for power law class.
+The rare event contributes to most of the properties.
+Below \[Alpha], the tail determines the properties.
+Pull out the inverse survival function of the Pareto distribution.
+Survival function is the probability of exceeding with given parameters.
+You can pull out the threshold with closed form inverse survival function.\
+\>", "Text",
+ CellChangeTimes->{{3.910807061104353*^9, 
+  3.9108071671643133`*^9}},ExpressionUUID->"41713aa4-13ea-4bf9-8237-\
+f727ba61aa91"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"solK", "=", " ", 
+  RowBox[{"Solve", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"FullSimplify", "[", 
+      RowBox[{
+       RowBox[{"SurvivalFunction", "[", 
+        RowBox[{
+         RowBox[{"ParetoDistribution", "[", 
+          RowBox[{"L", ",", "\[Alpha]"}], "]"}], ",", "K"}], "]"}], ",", 
+       RowBox[{"K", ">", "L"}]}], "]"}], " ", "==", " ", "p"}], ",", " ", 
+    "K"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9108067485597315`*^9, 3.9108068057690077`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"786cd33a-88d8-4199-a0b5-d2e303e5f9e2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 17, 21, 20850520402377021631,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9108068069315853`*^9},
+ CellLabel->
+  "During evaluation of \
+In[17]:=",ExpressionUUID->"7ed2b61b-74b0-4eaf-b6cf-3fad307014e4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"K", "\[Rule]", 
+    RowBox[{"L", " ", 
+     SuperscriptBox["p", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", "\[Alpha]"}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.9108068069315853`*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"e7bdfbf3-33b9-4deb-99c2-9f556609ca55"]
+}, Open  ]],
+
+Cell["This is the contribution above that threshold.", "Text",
+ CellChangeTimes->{{3.910807170925518*^9, 
+  3.9108071769143124`*^9}},ExpressionUUID->"7a53a566-69fa-4760-aa3d-\
+c491eeca79bd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mk", " ", "=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Integrate", "[", 
+       RowBox[{
+        RowBox[{"x", " ", 
+         RowBox[{"PDF", " ", "[", 
+          RowBox[{
+           RowBox[{"ParetoDistribution", "[", 
+            RowBox[{"L", ",", "\[Alpha]"}], "]"}], ",", "x"}], "]"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "K", ",", "\[Infinity]"}], "}"}], ",", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"K", ">", "L", ">", "\[Alpha]", ">", "1"}]}]}], "]"}], "/", 
+      RowBox[{"Simplify", "[", 
+       RowBox[{
+        RowBox[{"Mean", "[", 
+         RowBox[{"ParetoDistribution", "[", 
+          RowBox[{"L", ",", "\[Alpha]"}], "]"}], "]"}], ",", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"K", ">", "L", ">", "\[Alpha]", ">", "1"}]}]}], "]"}]}], "/.", 
+     RowBox[{"solK", "[", 
+      RowBox[{"[", "1", "]"}], "]"}]}], " ", "//", " ", "PowerExpand"}], " ", 
+   "//", " ", "FullSimplify"}]}]], "Input",
+ CellChangeTimes->{{3.910806818872161*^9, 3.9108068900876675`*^9}, {
+  3.9108069270054426`*^9, 3.910806965386425*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"43dc30f0-df4d-4070-a1f1-d7d064df6213"],
+
+Cell[BoxData[
+ SuperscriptBox["p", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"-", "1"}], "+", "\[Alpha]"}], "\[Alpha]"]]], "Output",
+ CellChangeTimes->{{3.910806948636295*^9, 3.9108069703802776`*^9}},
+ CellLabel->"Out[19]=",ExpressionUUID->"abe0c9b1-2169-4691-85c6-5de20527ac28"]
+}, Open  ]],
+
+Cell["\<\
+For example, the tail exponent of 1.16 gives the Pareto 80/20 rule.
+The top 20% contributes 80% under \[Alpha] = 1.16.
+This is one way you can find how much does the top percentage contribute to \
+all the properties.\
+\>", "Text",
+ CellChangeTimes->{{3.9108071860055103`*^9, 
+  3.9108072284844985`*^9}},ExpressionUUID->"ebc29339-18c7-4502-af7e-\
+411dc638b78c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"mk", "/.", 
+    RowBox[{"\[Alpha]", "->", "1.16"}]}], " ", "/.", 
+   RowBox[{"p", " ", "->", " ", "0.2"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.910806972263009*^9, 3.9108070170041456`*^9}, {
+  3.9108071819241643`*^9, 3.9108071819743814`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"f89399ab-a53d-40d1-a91d-4437b1c1c283"],
+
+Cell[BoxData["0.8009222232447819`"], "Output",
+ CellChangeTimes->{3.910807018696024*^9, 3.9108071838919973`*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"d68de462-3acc-4682-b02b-b81f691aa175"]
+}, Open  ]],
+
+Cell["\<\
+Under 80/20 rule, the top 1% contributes 53% of the properties.\
+\>", "Text",
+ CellChangeTimes->{{3.910807246037017*^9, 
+  3.9108072585741715`*^9}},ExpressionUUID->"a4b44cb2-2dac-4224-806e-\
+a9224e4ab4f6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"mk", "/.", 
+    RowBox[{"\[Alpha]", "->", "1.16"}]}], " ", "/.", 
+   RowBox[{"p", " ", "->", " ", "0.01"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.910807241184306*^9, 3.910807241934602*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"0ee05d53-116b-4104-81c0-efd8070804fd"],
+
+Cell[BoxData["0.529831690628371`"], "Output",
+ CellChangeTimes->{3.9108072429045005`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"e6616a63-9dc2-4cea-ae21-768552125b69"]
+}, Open  ]],
+
+Cell["\<\
+Of course, you can use Solve to determine the tail exponent associated with \
+particular proportions.\
+\>", "Text",
+ CellChangeTimes->{{3.9108072682244935`*^9, 
+  3.910807290907502*^9}},ExpressionUUID->"925c08d8-44fe-4a64-a5cc-\
+2027ac97c8e2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"mk", "/.", 
+      RowBox[{"p", "->", "0.2"}]}], ")"}], "==", "0.8"}], ",", "\[Alpha]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.9108070204645023`*^9, 3.9108070406445036`*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"ebab6c19-b47c-4861-9d2b-164d4b89d6ec"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"Solve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 21, 23, 20850520402377021631,
+    "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9108070411841764`*^9},
+ CellLabel->
+  "During evaluation of \
+In[21]:=",ExpressionUUID->"d31b7cdc-a8aa-46ce-822f-18bf194a2321"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"\[Alpha]", "\[Rule]", "1.160964047443681`"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9108070411969643`*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"fe514c70-9e8a-4efa-908b-4f0039a6fe58"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"mk", "/.", 
+    RowBox[{"\[Alpha]", "->", "1.01"}]}], " ", "/.", 
+   RowBox[{"p", " ", "->", " ", "0.01"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.910807048384504*^9, 3.91080705140519*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"a0588bac-bbde-45f2-9e0d-4d5a2a4f0300"],
+
+Cell[BoxData["0.9554281212853747`"], "Output",
+ CellChangeTimes->{3.910807051854508*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"3ceeae0b-74a5-49c9-8df0-9452f87b5829"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3fb35f92-6e2a-4e69-bb65-e7263c45e46e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 168, 3, 98, "Title",ExpressionUUID->"2d8863d4-7bac-4779-80b5-5a6d1d89ada0"],
+Cell[751, 27, 581, 12, 196, "Text",ExpressionUUID->"41713aa4-13ea-4bf9-8237-f727ba61aa91"],
+Cell[CellGroupData[{
+Cell[1357, 43, 572, 14, 48, "Input",ExpressionUUID->"786cd33a-88d8-4199-a0b5-d2e303e5f9e2"],
+Cell[1932, 59, 454, 11, 46, "Message",ExpressionUUID->"7ed2b61b-74b0-4eaf-b6cf-3fad307014e4"],
+Cell[2389, 72, 335, 9, 35, "Output",ExpressionUUID->"e7bdfbf3-33b9-4deb-99c2-9f556609ca55"]
+}, Open  ]],
+Cell[2739, 84, 190, 3, 35, "Text",ExpressionUUID->"7a53a566-69fa-4760-aa3d-c491eeca79bd"],
+Cell[CellGroupData[{
+Cell[2954, 91, 1206, 29, 86, "Input",ExpressionUUID->"43dc30f0-df4d-4070-a1f1-d7d064df6213"],
+Cell[4163, 122, 277, 6, 39, "Output",ExpressionUUID->"abe0c9b1-2169-4691-85c6-5de20527ac28"]
+}, Open  ]],
+Cell[4455, 131, 370, 8, 81, "Text",ExpressionUUID->"ebc29339-18c7-4502-af7e-411dc638b78c"],
+Cell[CellGroupData[{
+Cell[4850, 143, 378, 8, 28, "Input",ExpressionUUID->"f89399ab-a53d-40d1-a91d-4437b1c1c283"],
+Cell[5231, 153, 191, 2, 32, "Output",ExpressionUUID->"d68de462-3acc-4682-b02b-b81f691aa175"]
+}, Open  ]],
+Cell[5437, 158, 215, 5, 35, "Text",ExpressionUUID->"a4b44cb2-2dac-4224-806e-a9224e4ab4f6"],
+Cell[CellGroupData[{
+Cell[5677, 167, 324, 7, 28, "Input",ExpressionUUID->"0ee05d53-116b-4104-81c0-efd8070804fd"],
+Cell[6004, 176, 168, 2, 32, "Output",ExpressionUUID->"e6616a63-9dc2-4cea-ae21-768552125b69"]
+}, Open  ]],
+Cell[6187, 181, 253, 6, 58, "Text",ExpressionUUID->"925c08d8-44fe-4a64-a5cc-2027ac97c8e2"],
+Cell[CellGroupData[{
+Cell[6465, 191, 350, 9, 28, "Input",ExpressionUUID->"ebab6c19-b47c-4861-9d2b-164d4b89d6ec"],
+Cell[6818, 202, 454, 11, 46, "Message",ExpressionUUID->"d31b7cdc-a8aa-46ce-822f-18bf194a2321"],
+Cell[7275, 215, 253, 6, 32, "Output",ExpressionUUID->"fe514c70-9e8a-4efa-908b-4f0039a6fe58"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7565, 226, 323, 7, 28, "Input",ExpressionUUID->"a0588bac-bbde-45f2-9e0d-4d5a2a4f0300"],
+Cell[7891, 235, 167, 2, 32, "Output",ExpressionUUID->"3ceeae0b-74a5-49c9-8df0-9452f87b5829"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
