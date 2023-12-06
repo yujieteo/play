@@ -1,0 +1,68 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2185,         60]
+NotebookOptionsPosition[      1827,         46]
+NotebookOutlinePosition[      2233,         62]
+CellTagsIndexPosition[      2190,         59]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ "Sample inaccurate measurements are taken of the length of a stick.\nThe \
+stick has a precise and accurate length 1.00\[Ellipsis] m. \nAll measurement \
+values are real numbers.\nThis inaccurate measurement is taken 1000 times. \n\
+The precision of the measurement is perfect.\nThe absolute mean error in the \
+measured value of the length is precisely 1 cm or 0.01 m.\nThis absolute \
+error is normally distributed. \nThe mean positive error in the measured \
+value of the length is precisely 1 cm or 0.01 m. \nThe mean negative error in \
+the measured value of the length is precisely -1 cm or -0.01 m.\nNot all \
+measurements of the length have the same error. \nFor example, one measured \
+value can be precisely 1.021 m, and another can be precisely 0.9914 m.\nWhat \
+is the (approximate) standard deviation of all measurements of the length?\n\n\
+Answer: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["\[Pi]", "2"], " "}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "6c77a472-bc20-4d77-929d-27953f983811"],
+ "cm"
+}], "Text",
+ CellChangeTimes->{{3.9108415016983633`*^9, 3.910841519993354*^9}, {
+  3.9108415530125265`*^9, 
+  3.9108415638333054`*^9}},ExpressionUUID->"cfdf32c9-8703-41d8-8822-\
+c8a489ab8712"]
+},
+WindowSize->{718.5, 729.75},
+WindowMargins->{{Automatic, 101.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e7ca5076-a602-4e3c-8048-1290a692a064"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1265, 24, 337, "Text",ExpressionUUID->"cfdf32c9-8703-41d8-8822-c8a489ab8712"]
+}
+]
+*)
+
