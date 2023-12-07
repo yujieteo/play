@@ -1,0 +1,147 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4576,        139]
+NotebookOptionsPosition[      3822,        119]
+NotebookOutlinePosition[      4221,        135]
+CellTagsIndexPosition[      4178,        132]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Beta is Correlation for Normalised Variables under Linear Regression\
+\>", "Title",
+ CellChangeTimes->{{3.910949365715827*^9, 
+  3.9109493818738365`*^9}},ExpressionUUID->"64d91ac3-52d1-4859-b342-\
+5ce5c51b70d5"],
+
+Cell["\<\
+https://en.wikipedia.org/wiki/Beta_(finance)#Technical_aspects\
+\>", "Text",
+ CellChangeTimes->{{3.910950519952979*^9, 
+  3.9109505443860826`*^9}},ExpressionUUID->"4de61be0-d246-40aa-b10d-\
+cbb480203f4e"],
+
+Cell[TextData[{
+ "Consider Y = a + b X + c \[Epsilon].\nWe have \[Epsilon] as the standard \
+normally distributed random variable.\nThis means \[Epsilon] \[Distributed] \
+\[ScriptCapitalN](0,1).\nAlso, X is normally distributed X \[Distributed] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalN]", "(", 
+    RowBox[{
+     SubscriptBox["m", "x"], ",", 
+     SubscriptBox["\[Sigma]", "x"]}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "aebf9992-f107-43ce-ae53-d869659fb7df"],
+ ")\n\n\[DoubleStruckCapitalE](Y) = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["m", "y"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "353a0495-ceb3-4d54-a0aa-588e88d2ed26"],
+ " = a + b \[DoubleStruckCapitalE](X) = a + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["bm", "x"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "f4f0e1fd-b150-4b46-ba68-4f69d66ee3f0"]
+}], "Text",
+ CellChangeTimes->{{3.9109493852955847`*^9, 3.910949410046481*^9}, {
+  3.910949538941738*^9, 
+  3.9109497799316387`*^9}},ExpressionUUID->"e7ac5b9c-32c8-4537-a5b9-\
+7af1bdce9b0c"],
+
+Cell[TextData[{
+ "Consider Pearson\[CloseCurlyQuote]s coefficient.\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Rho]", "XY"], " ", "=", " ", 
+    FractionBox[
+     RowBox[{"\[DoubleStruckCapitalE]", "(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"X", "-", 
+         RowBox[{"\[DoubleStruckCapitalE]", "(", "X", ")"}]}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"Y", "-", 
+         RowBox[{"\[DoubleStruckCapitalE]", "(", "Y", ")"}]}], ")"}]}]}], 
+     SqrtBox[
+      RowBox[{
+       RowBox[{"\[DoubleStruckCapitalV]", "(", "X", ")"}], 
+       RowBox[{"\[DoubleStruckCapitalV]", "(", "Y", ")"}]}]]]}], 
+   TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "e39df6db-ff1a-4838-82a5-793f63b925e1"],
+ "\n\nWe have \[DoubleStruckCapitalE][(X-\[DoubleStruckCapitalE](X))(Y-\
+\[DoubleStruckCapitalE](Y))] = ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox[
+    SubscriptBox["b\[Sigma]", "x"], "2"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "9eacfaa3-4a22-4202-a9a5-63d6d5bada4d"]
+}], "Text",
+ CellChangeTimes->{{3.91094978501169*^9, 
+  3.910949927767335*^9}},ExpressionUUID->"2f255e24-0812-492a-93f4-\
+0562b4d16b76"],
+
+Cell[TextData[{
+ "Therefore we have:\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[Rho]", "XY"], "=", 
+    FractionBox[
+     RowBox[{"b", " ", 
+      SubscriptBox["\[Sigma]", "X"]}], 
+     SubscriptBox["\[Sigma]", "Y"]]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "923602e4-6472-4fe2-bbcd-8e1d64150c9f"]
+}], "Text",
+ CellChangeTimes->{{3.9109499340871544`*^9, 
+  3.910949987228447*^9}},ExpressionUUID->"dd7cdae2-d1c7-4486-8b10-\
+b96085d0e376"]
+}, Open  ]]
+},
+WindowSize->{571, 583},
+WindowMargins->{{Automatic, 93}, {6.5, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0af261af-7703-48a6-8c78-a19ec2f3070f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 221, 5, 222, "Title",ExpressionUUID->"64d91ac3-52d1-4859-b342-5ce5c51b70d5"],
+Cell[804, 29, 214, 5, 35, "Text",ExpressionUUID->"4de61be0-d246-40aa-b10d-cbb480203f4e"],
+Cell[1021, 36, 1109, 28, 150, "Text",ExpressionUUID->"e7ac5b9c-32c8-4537-a5b9-7af1bdce9b0c"],
+Cell[2133, 66, 1184, 33, 108, "Text",ExpressionUUID->"2f255e24-0812-492a-93f4-0562b4d16b76"],
+Cell[3320, 101, 486, 15, 61, "Text",ExpressionUUID->"dd7cdae2-d1c7-4486-8b10-b96085d0e376"]
+}, Open  ]]
+}
+]
+*)
+
