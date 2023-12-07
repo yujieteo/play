@@ -1,0 +1,65 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1542,         55]
+NotebookOptionsPosition[      1067,         38]
+NotebookOutlinePosition[      1468,         54]
+CellTagsIndexPosition[      1425,         51]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Fallacies", "Title",
+ CellChangeTimes->{{3.9108706679941387`*^9, 
+  3.910870668911521*^9}},ExpressionUUID->"b2f7d3e3-3e7c-4a70-8b90-\
+25478f34f535"],
+
+Cell["\<\
+Block anybody who prescribes pathologies on another.
+Do so in the case of political divergence.
+
+Examples: Narcissist. Inferiority complex. Superiority complex.\
+\>", "Text",
+ CellChangeTimes->{{3.9108706712023344`*^9, 
+  3.9108707155606146`*^9}},ExpressionUUID->"645eb551-4094-4107-87a6-\
+8fecd003749a"]
+}, Open  ]]
+},
+WindowSize->{638, 645.5},
+WindowMargins->{{Automatic, -4.5}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a479b1e2-eef4-474c-a18c-4d06e61d1b0e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 154, 3, 98, "Title",ExpressionUUID->"b2f7d3e3-3e7c-4a70-8b90-25478f34f535"],
+Cell[737, 27, 314, 8, 104, "Text",ExpressionUUID->"645eb551-4094-4107-87a6-8fecd003749a"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
