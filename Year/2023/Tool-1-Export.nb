@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      3533,        100]
-NotebookOptionsPosition[      3056,         83]
-NotebookOutlinePosition[      3456,         99]
-CellTagsIndexPosition[      3413,         96]
+NotebookDataLength[      3660,        105]
+NotebookOptionsPosition[      3185,         88]
+NotebookOutlinePosition[      3583,        104]
+CellTagsIndexPosition[      3540,        101]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,15 +36,18 @@ Cell[BoxData[
     RowBox[{"notebooks", "=", 
      RowBox[{"Select", "[", 
       RowBox[{
-       RowBox[{"FileNames", "[", "\"\<*.nb\>\"", "]"}], ",", 
+       RowBox[{"FileNames", "[", 
+        RowBox[{"\"\<*.nb\>\"", ",", 
+         RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], ",", 
        RowBox[{
         RowBox[{
          RowBox[{"FileExtension", "[", "#", "]"}], "===", "\"\<nb\>\""}], 
-        "&"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        "&"}]}], "]"}]}], ";"}], "\n", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
     "Export", " ", "each", " ", "notebook", " ", "as", " ", "a", " ", "PDF", 
-     " ", "in", " ", "the", " ", "same", " ", "directory"}], "*)"}], "\n", 
+     " ", "in", " ", "the", " ", "same", " ", "directory"}], "*)"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
      RowBox[{"ExportPDF", "[", "nbPath_", "]"}], ":=", 
@@ -67,22 +70,24 @@ Cell[BoxData[
          RowBox[{"pdfPath", ",", "nb", ",", "\"\<PDF\>\""}], "]"}], ";", 
         "\[IndentingNewLine]", 
         RowBox[{"NotebookClose", "[", "nb", "]"}], ";"}]}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\n", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
     "Apply", " ", "the", " ", "ExportPDF", " ", "function", " ", "to", " ", 
-     "each", " ", "notebook"}], "*)"}], "\n", 
+     "each", " ", "notebook"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{"Map", "[", 
-    RowBox[{"ExportPDF", ",", "notebooks"}], "]"}], "\n", "\n"}]}]], "Input",
+    RowBox[{"ExportPDF", ",", "notebooks"}], "]"}], "\n"}]}]], "Input",
  CellChangeTimes->{{3.910511611848113*^9, 3.9105116118491135`*^9}, {
    3.9105118168224077`*^9, 3.910511821538219*^9}, {3.910511866781248*^9, 
    3.9105119304163904`*^9}, 3.9105119629441776`*^9, {3.9105120139171906`*^9, 
-   3.9105120179804783`*^9}, 3.9105120992104406`*^9, 3.910512290461181*^9},
- CellLabel->"In[18]:=",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"]
+   3.9105120179804783`*^9}, 3.9105120992104406`*^9, 3.910512290461181*^9, {
+   3.9109541125073214`*^9, 3.910954117066347*^9}},
+ CellLabel->
+  "In[150]:=",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"]
 }, Open  ]]
 },
-WindowSize->{1428, 735.75},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{570.5, 641},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"c4b3ee77-0a12-4840-9928-7ff88806e35b"
@@ -100,7 +105,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 166, 3, 98, "Title",ExpressionUUID->"8d1717a2-4db7-4d5d-923f-174941cf4956"],
-Cell[749, 27, 2291, 53, 238, "Input",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"]
+Cell[749, 27, 2420, 58, 276, "Input",ExpressionUUID->"cff830f9-0075-460e-9dad-9d5e313b1625"]
 }, Open  ]]
 }
 ]
