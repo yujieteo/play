@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    979375,      16087]
-NotebookOptionsPosition[    978888,      16070]
-NotebookOutlinePosition[    979293,      16086]
-CellTagsIndexPosition[    979250,      16083]
+NotebookDataLength[    979919,      16099]
+NotebookOptionsPosition[    979336,      16081]
+NotebookOutlinePosition[    979741,      16097]
+CellTagsIndexPosition[    979698,      16094]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -16065,7 +16065,18 @@ RVEURVEURVEURVEURVEURdE86n8BMOrjkQ==
   ImageSize->Automatic,
   ImageSizeRaw->{638., 860.},
   PlotRange->{{0, 638.}, {0, 860.}}]], "Input",ExpressionUUID->"20412703-0660-\
-480a-827f-4b046c263b6a"]
+480a-827f-4b046c263b6a"],
+
+Cell["\<\
+Wittgenstein\[CloseCurlyQuote]s private language argument can be generalised \
+as follows, a language is both cross _____ and temporal. We have this \
+illusion that a lingua franca satisfies the need for scholars and people in \
+____ ______\
+\>", "Text",
+ CellChangeTimes->{{3.9110069887510166`*^9, 3.911007065917637*^9}, {
+  3.9110071185599813`*^9, 
+  3.9110071463887978`*^9}},ExpressionUUID->"b9a2b84d-43f9-4ab6-bfa8-\
+b807c559061b"]
 }, Open  ]]
 },
 WindowSize->{616.5, 610.5},
@@ -16087,11 +16098,10 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 173, 3, 98, "Title",ExpressionUUID->"4188392c-aa68-4f62-a232-14393b082714"],
-Cell[756, 27, 978116, 16040, 626, "Input",ExpressionUUID->"20412703-0660-480a-827f-4b046c263b6a"]
+Cell[756, 27, 978116, 16040, 626, "Input",ExpressionUUID->"20412703-0660-480a-827f-4b046c263b6a"],
+Cell[978875, 16069, 445, 9, 81, "Text",ExpressionUUID->"b9a2b84d-43f9-4ab6-bfa8-b807c559061b"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
