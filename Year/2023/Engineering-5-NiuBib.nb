@@ -1,0 +1,122 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4938,        114]
+NotebookOptionsPosition[      4456,         97]
+NotebookOutlinePosition[      4861,        113]
+CellTagsIndexPosition[      4818,        110]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Engineering Links", "Title",
+ CellChangeTimes->{{3.9112023108684196`*^9, 
+  3.911202315220674*^9}},ExpressionUUID->"c11eed38-13f0-49e8-aec6-\
+072980a93cc3"],
+
+Cell["\<\
+http://www.aircraftdesign.com/other.html
+
+o Analysis and Design of Flight Vehicle Structures 1973 by: E. F. Bruhn
+o Practical Stress Analysis for Design Engineers 1997 by: Jean-Claude Flabel
+o Fundamental of Aircraft Structural Analysis 1997 by: Howard D. Curtis
+o Analysis of Aircraft Structures - An Introduction 1993 by: Bruce K. Donaldson
+o Aircraft Structures (Reprinted) 1982 by: David. J. Peery (First print) 1950
+o Stress in Aircraft and Shell Structures 1956 by: Paul Kuhn
+o Weight-Strength Analysis of Aircraft Structures 1960 by: F. R. Shanley
+o Airplane Structural Analysis and Design 1963 by: E. Sechler and L. Dunn
+o An Introduction to The Theory of Aircraft Structures 1960 by: D. Williams
+o Detail Aircraft Structural Analysis 1945 by: G. N. Mangurian and N. M. \
+Johnston, Jr.
+o Airplane Structures (Vol. I & II) 1938 by: A. S. Niles & J. S. Newell
+o Aircraft Structural Analysis 1947 by: Mangurian and Johnston
+o Aircraft Structures for Engineering Students (2nd Edition) 1990 by: T. H. \
+G. Megson
+o Theory and Analysis of Flight Structures 1969 by: R. M. Rivello
+o Advanced Strength and Applied Stress Analysis 1998 by: Richard G. Budynas
+o Roak\[CloseCurlyQuote]s Formula for Stress and Strain (6th Edition) 1989 \
+by: Warren C. Young
+o Rigid Frame Formulas 1973 by: A. Kleinlogel
+o Beams on Elastic Foundation 1971 by: M. Hetenyi
+o Fundamentals of Flight 1983 by: Richard Shevell
+o Manual on Aircraft Loads 1965 by: J. Taylor
+o Structural Loads Analysis for Commercial Transport Aircraft: Theory and \
+Practice 1996 by: Ted L. Lomax
+o Gust Loads on Aircraft: Concepts and Applications 1988 by: Frederic M. Hoblit
+o Metal Fatigue in Engineering 1980 by: H. Fuchs and R. Stephens
+o Fundamentals of Metal Fatigue Analysis 1989 by: J. A. Bannantine, J. J. \
+Comer and J. L. Handrock
+o The Practical Use of Fracture Mechanics 1991 by: David Broek
+o Stress Concentration Factors 1997 by: R. E. Peterson
+o Corrosion Engineering 1986 by: M. G. Fontana
+o Principles and Prevention of Corrosion 1991 by: Denny A. Jones
+o Lightning Protecion of Aircraft 1990 by: F. A. Fisher and J. A. Plumer
+o Landing Gear Design 1958 by: H. G. Conway
+o Aircraft Landing Gear Design: Principles and Practices 1988 by: Norman S. \
+Currey
+o Synthesis of Subsonic Airplanes Design 1982 by: Egbert Torenbeek (For \
+commercial transport airplanes)
+o Optimum Cruise Performance of Subsonic Transport Aircraft 1998 by: Egbert \
+Torenbeek
+o Aircraft Design: A Conceptual Approach 1989 by: Daniel P. Raymer
+o Prof. Jam Roskam\[CloseCurlyQuote]s Airplane Design Book Series 1990 (Eight \
+books: Part I thru. VIII) (For commuter and general aviation airplanes)
+o Supersonic and Subsonic, STOL and VTOL, Airplane Design 1976 by: Gerald \
+Corning
+o Fundamentals of Aircraft Design 1975 by: Leland M. Nicolai
+o Aerospace Vehicle Design 1968 by: K. D. Wood
+o Fluid-Dynamic Lift 1975 by: S. F. Hoerner and H. V. Borst
+o Fluid-Dynamic Drag 1965 by: S. F. Hoerner
+o Spacecraft Structures and Mechanisms-from Concept to Launch 1997 by: Thomas \
+P. Sarafin
+o Analysis and Design of Missile Structures 1967 by: E. F. Bruhn; J. I. \
+Orlando and J. F. Meyers
+o Structural Design of Missiles and Spacecraft 1962 by: Lewis H. Abraham
+o Spacecraft Structures 1966 by: Carl C. Osgood
+o Theory of Composites Design 1992 by: Stephen W. Tsai
+o Composite Basics 1993 by: A. Marshall
+o Composite Aircraft Design 1982 by: Martin Hollmann
+o Composite Construction for Homebuilt Aircraft 1984 by: Jack Lambie
+o Composite Materials in Aircraft Structures 1990 by: Donald H. Middleton\
+\>", "Text",
+ CellChangeTimes->{{3.911202319457079*^9, 
+  3.9112023363761377`*^9}},ExpressionUUID->"8b170370-2892-4475-ab3c-\
+1586db880140"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ea7398e3-cf6a-4b4d-bca1-1aa72fd93f6b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 162, 3, 98, "Title",ExpressionUUID->"c11eed38-13f0-49e8-aec6-072980a93cc3"],
+Cell[745, 27, 3695, 67, 1553, "Text",ExpressionUUID->"8b170370-2892-4475-ab3c-1586db880140"]
+}, Open  ]]
+}
+]
+*)
+
