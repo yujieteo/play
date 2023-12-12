@@ -1,0 +1,138 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4497,        130]
+NotebookOptionsPosition[      3491,        104]
+NotebookOutlinePosition[      3890,        120]
+CellTagsIndexPosition[      3847,        117]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["How to Buy Stuff", "Title",
+ CellChangeTimes->{{3.91109380842992*^9, 
+  3.9110938102821054`*^9}},ExpressionUUID->"ec2ea152-359e-48f6-a62a-\
+797fd82fb57a"],
+
+Cell["\<\
+What to look out for:
+(1) RELIABILITY AND MAINTENANCE
+(2) SIMPLICITY (because of reliability)
+(3) PRICE
+(4) UTILITY
+\
+\>", "Text",
+ CellChangeTimes->{{3.9110938118174777`*^9, 3.9110938349110765`*^9}, {
+  3.911093884050957*^9, 3.9110938863842697`*^9}, {3.911094308642384*^9, 
+  3.9110943098407707`*^9}},ExpressionUUID->"1476ceed-e370-4301-95b2-\
+87e321475191"],
+
+Cell["\<\
+1. site.amazon.com \[OpenCurlyDoubleQuote]Amazon Best Sellers\
+\[CloseCurlyDoubleQuote] ...
+1.5. Typically, the physically larger the product, the more reliable it is.
+2. See reviews at 2 stars.
+3. Only select if 2 star reviews are all nit-picky. The product is bad if it \
+fails reliability concerns. 
+
+High signal to noise, look out for absorbing barriers.
+
+Also this means buying official Apple chargers for charging (paying the \
+premium for reliability unless there is a cable provably more reliable than \
+official ones, I have yet to find one...)\
+\>", "Text",
+ CellChangeTimes->{{3.9110938470855274`*^9, 3.91109394782583*^9}, {
+  3.9110943146348205`*^9, 3.9110943166206846`*^9}, {3.9110943503976293`*^9, 
+  3.911094358331705*^9}},ExpressionUUID->"875344f0-9f43-4afa-9594-\
+b74c2774162d"],
+
+Cell[CellGroupData[{
+
+Cell["Bad Examples and Mistakes I made (based on Amazon Reviews)", "Section",
+ CellChangeTimes->{{3.911093913433146*^9, 3.9110939151771884`*^9}, {
+  3.9110947909971266`*^9, 
+  3.911094800219782*^9}},ExpressionUUID->"9dc67ffc-03c3-46a2-ae6f-\
+4968b9d92803"],
+
+Cell["\<\
+Buying Redragon Kumara purely due to Amazon reviews (reliability and needing \
+to clean a mechanical keyboard versus a more disposable keyboard with shallow \
+depth that is cheap.)
+
+Buying portable chargers. None of them are reliable.
+
+Buying bulks of pens for economy of scale is not worth it. Some of them will \
+not work. Buy one at a time.
+
+Buying monitor on Amazon. Hard to pick a reliable one.
+
+Umbrellas are not reliable. Always have complaints. Just buy the best for the \
+price.\
+\>", "Text",
+ CellChangeTimes->{{3.911093952386283*^9, 3.9110939800312204`*^9}, {
+  3.91109427151252*^9, 3.911094279990384*^9}, {3.9110947548601365`*^9, 
+  3.911094788860265*^9}, {3.911096518073995*^9, 3.911096537439798*^9}, {
+  3.911097696266861*^9, 3.9110977094029655`*^9}, {3.9111010789568825`*^9, 
+  3.911101091949011*^9}},ExpressionUUID->"6a65e575-f4cf-4c77-8d35-\
+0f80a8f9a339"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Counterexamples", "Section",
+ CellChangeTimes->{{3.911095545753189*^9, 
+  3.911095548513134*^9}},ExpressionUUID->"aff1866c-2c77-4830-a7de-\
+4ff2b5393fdd"],
+
+Cell["Hammermill paper: too expensive.", "Text",
+ CellChangeTimes->{{3.911095549919325*^9, 
+  3.9110955558333473`*^9}},ExpressionUUID->"f67a4f40-fc76-4be2-bc88-\
+0ac86214940f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{571, 598},
+WindowMargins->{{349, Automatic}, {11, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"95c95599-66b4-49ce-8944-67aeb0e91d11"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 160, 3, 98, "Title",ExpressionUUID->"ec2ea152-359e-48f6-a62a-797fd82fb57a"],
+Cell[743, 27, 369, 11, 150, "Text",ExpressionUUID->"1476ceed-e370-4301-95b2-87e321475191"],
+Cell[1115, 40, 805, 17, 265, "Text",ExpressionUUID->"875344f0-9f43-4afa-9594-b74c2774162d"],
+Cell[CellGroupData[{
+Cell[1945, 61, 256, 4, 105, "Section",ExpressionUUID->"9dc67ffc-03c3-46a2-ae6f-4968b9d92803"],
+Cell[2204, 67, 883, 20, 311, "Text",ExpressionUUID->"6a65e575-f4cf-4c77-8d35-0f80a8f9a339"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3124, 92, 160, 3, 67, "Section",ExpressionUUID->"aff1866c-2c77-4830-a7de-4ff2b5393fdd"],
+Cell[3287, 97, 176, 3, 35, "Text",ExpressionUUID->"f67a4f40-fc76-4be2-bc88-0ac86214940f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
