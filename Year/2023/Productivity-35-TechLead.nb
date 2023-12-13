@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     64091,       1182]
-NotebookOptionsPosition[     63385,       1161]
-NotebookOutlinePosition[     63787,       1177]
-CellTagsIndexPosition[     63744,       1174]
+NotebookDataLength[     66998,       1242]
+NotebookOptionsPosition[     65876,       1215]
+NotebookOutlinePosition[     66278,       1231]
+CellTagsIndexPosition[     66235,       1228]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,6 +24,11 @@ Cell["TechLead", "Title",
  CellChangeTimes->{{3.911425608006444*^9, 
   3.911425611457553*^9}},ExpressionUUID->"55b5f499-8993-459f-8a8b-\
 a63e53e1e38b"],
+
+Cell["Keep it simple and focus on execution.", "Subtitle",
+ CellChangeTimes->{{3.9114783468911357`*^9, 
+  3.9114783510241776`*^9}},ExpressionUUID->"c1806df7-6c8c-4b9b-a45c-\
+d7d98fbca871"],
 
 Cell[BoxData[
  RowBox[{
@@ -73,18 +78,23 @@ the wrong direction. Take a step back to make sure you can do 80% of the work \
 with 20% of the effort. Raise your standards. Carefully choose your hobbies. \
 Visualise your future image. Lighting is important. Realising your vision, \
 does not have to succeed but it is used by many people. Visualise yourself as \
-a better person. Sit down and get the work done. 8 pm to 10 pm.\>\""}], ";"}],
-   "\n"}]], "Input",
+a better person. Sit down and get the work done. 8 pm to 10 pm.\n\nJust do \
+one thing per day that obsoletes everything. Parkinson's Law and not learn \
+useless stuff. All information is almost useless, makes it useless. We have a \
+situation of blind leading the blind. You know what you need to do. Ruthless \
+prioritisation. Most productive thing to do is to start a project. The secret \
+to productivity. Everyone has a cool idea. Do not be lulled into a false \
+sense of productivity.\>\""}], ";"}], "\n"}]], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQA2IQPcHE7VSxylvHvomrwfS00zfPg+hlpxIvgehdmfzX
-QbRswKfbIPqgtMYHEP1tf8gXEN01z+MniFb6Us5UAqRbWBTEQPS33X3KIPoK
-1zRtEJ1xRFAPROscuGEMohmvONiAaId+ZQ8QLfOUxRNE7zI86AeiU/6/BdNX
-ts6PAdEilVrlINqAo74VRK8OfdYGog9dVpwMol+pL1gAojcwVm0A0XJHRTeB
-6PmfEg6AaKFfEw6DaBv29ydA9JEFP06Czfsy8QKIfin89DqI1nsqfAdEa9U6
-3APRMwS9foLteW7wH0SrztvPXgqkLdo2coDoRSWigiB6VuRUcRCtZbNdGkSH
-senKg2gAlaemxg==
-  "],
- CellLabel->"In[9]:=",ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"],
+1:eJwdzU0ogwEAxvFtbbYcaGZ22HzMiDbWxMFhh9dljYPkqxT5iKKUg2koKWZJ
+mc3HktgWtWSXUZIp29iKWVmsRsxtRIattcxl9ryHp9/t+QsHxlqHaBQKRZAZ
+1NcpfONl0QadwUZqvHm8hVZf/x10jOSGYGFL/Am6+ZU/MOlsT8AlkzIFSxNq
+miqjhl5SAJNnOhEMZhslcNjDlsIq10MtpAYJOSRWREooiNAboaPG3QwH01HS
+4LG5G+ZPidVQxppdgLaOVy28uBeuwY8KiwXaqdN2WOTlHkFzvM8F8/70l1DO
+/L6CHsvvNfmXMATgOycSgtII5xmKZ4gXuMluSpGdN1kalpuczImM9dpDFtxV
+cdlwq2uDB8XyEz7szKouhl6bYns5o4TbswOti+v70N7LOIC8tlE7DDD2TuHc
+avgcOoSTbhjzx55hTloVhsF53if0a4gv+A81Pdgu
+  "],ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"],
 
 Cell[CellGroupData[{
 
@@ -1156,11 +1166,55 @@ Cell[BoxData[
   3.911427704873232*^9, {3.9114281747774763`*^9, 3.9114281888476934`*^9}, {
    3.911428358938998*^9, 3.911428377837204*^9}, 3.91142859767441*^9},
  CellLabel->"Out[25]=",ExpressionUUID->"63fd5ce4-4940-4d55-a553-15ba348d9f06"]
+}, Open  ]],
+
+Cell[TextData[{
+ "The Secret to Productivity: https://www.youtube.com/watch?v=BBbrLjcrTlw \
+(Hint: executing)\nDo not buy list: anything that cannot be packed in a \
+suitcase, jewelry, real estate, cars, fashion, alcohol, ",
+ StyleBox["anything that is not investment grade. The things you own that end \
+up owning you.",
+  FontWeight->"Bold"],
+ "\n99% of the things does not need to be done. \n\n\
+https://www.youtube.com/watch?v=nhAy0i0jen0\n",
+ StyleBox["Ruthless prioritisation",
+  FontWeight->"Bold"],
+ "\nTake useless class. \nMaintenance mode is bad.\nSign up for gym \
+membership. \nBake muffins.\nGo to beach. \nRepair and wash cars. \nHang out \
+with friends.\nClipping coupons.\nVisit 5 car dealerships.\nConference call \
+with merchant.\nFocus on X-factor.\[LineSeparator]Start with an initial \
+research.\n\nPerverse sense of pride in doing work. People are playing the \
+status game."
+}], "Text",
+ CellChangeTimes->{{3.911479302146482*^9, 3.911479352519525*^9}, {
+  3.9114794495069337`*^9, 3.9114794839036446`*^9}, {3.911479589846587*^9, 
+  3.911479637990349*^9}, {3.9114796810328517`*^9, 3.911479696431073*^9}, {
+  3.911479761623314*^9, 3.9114797942630057`*^9}, {3.911479846233076*^9, 
+  3.9114798688857174`*^9}, {3.9114800378734455`*^9, 3.911480044083084*^9}, {
+  3.9114801569024167`*^9, 
+  3.9114801609725337`*^9}},ExpressionUUID->"0771644d-cde5-410f-82b2-\
+75b03aab08e4"],
+
+Cell[CellGroupData[{
+
+Cell["Self Sabotage", "Section",
+ CellChangeTimes->{{3.911480537125792*^9, 
+  3.911480538820631*^9}},ExpressionUUID->"dfe3c7ca-b880-43eb-bd7b-\
+3f8cdb6a7e84"],
+
+Cell["\<\
+https://www.youtube.com/watch?v=7t2X-kMhPIA
+
+Growth mindset, practice.\
+\>", "Text",
+ CellChangeTimes->{{3.9114805406774287`*^9, 
+  3.9114805495954237`*^9}},ExpressionUUID->"c362e890-57b8-4e3b-94f0-\
+41f83c348269"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440, 741.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"0f855937-2f4c-46d7-892e-be5d8d24f1e3"
@@ -1178,10 +1232,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 151, 3, 98, "Title",ExpressionUUID->"55b5f499-8993-459f-8a8b-a63e53e1e38b"],
-Cell[734, 27, 3990, 59, 695, "Input",ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"],
+Cell[734, 27, 188, 3, 53, "Subtitle",ExpressionUUID->"c1806df7-6c8c-4b9b-a45c-d7d98fbca871"],
+Cell[925, 32, 4476, 64, 1342, "Input",ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"],
 Cell[CellGroupData[{
-Cell[4749, 90, 910, 19, 48, "Input",ExpressionUUID->"3d92955e-115a-408d-836c-8662fc0b1ace"],
-Cell[5662, 111, 57695, 1046, 1282, "Output",ExpressionUUID->"63fd5ce4-4940-4d55-a553-15ba348d9f06"]
+Cell[5426, 100, 910, 19, 86, "Input",ExpressionUUID->"3d92955e-115a-408d-836c-8662fc0b1ace"],
+Cell[6339, 121, 57695, 1046, 585, "Output",ExpressionUUID->"63fd5ce4-4940-4d55-a553-15ba348d9f06"]
+}, Open  ]],
+Cell[64049, 1170, 1389, 25, 495, "Text",ExpressionUUID->"0771644d-cde5-410f-82b2-75b03aab08e4"],
+Cell[CellGroupData[{
+Cell[65463, 1199, 158, 3, 67, "Section",ExpressionUUID->"dfe3c7ca-b880-43eb-bd7b-3f8cdb6a7e84"],
+Cell[65624, 1204, 224, 7, 81, "Text",ExpressionUUID->"c362e890-57b8-4e3b-94f0-41f83c348269"]
 }, Open  ]]
 }, Open  ]]
 }
