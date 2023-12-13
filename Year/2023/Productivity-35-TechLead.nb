@@ -1,0 +1,103 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4562,         95]
+NotebookOptionsPosition[      4075,         78]
+NotebookOutlinePosition[      4484,         94]
+CellTagsIndexPosition[      4441,         91]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["TechLead", "Title",
+ CellChangeTimes->{{3.911425608006444*^9, 
+  3.911425611457553*^9}},ExpressionUUID->"55b5f499-8993-459f-8a8b-\
+a63e53e1e38b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "text", " ", "=", 
+    "\"\<Unicorn startup is leap of faith, but mainly is interesting with \
+more responsibility. You owe it to yourself to see how far you go. So even at \
+Google, people stay 3.2 years. Internal tools in Google. People in the same \
+companies. Plenty of people wanted to feel certified. Think about the overall \
+lifestyle.\n\nKeep commits small. Small size code diffs will change.\nKeep \
+your code modular; submit small, targeted pieces. It helps in code review and \
+ensures you\[CloseCurlyQuote]re on the right track.\nAvoid crazy, tangled \
+code. Write a design doc to plan your code structure and avoid messy logic.\n\
+Focus on effectiveness. Keep an eye on the bigger picture, set goals, and \
+ensure your code ships. Aim for at least one code submission per day.\nMake \
+sure your code ships.\nClear roadblocks for that. Focus on Action Per Minute.\
+\nArrogance leads to over-engineering. Beware of arrogance. Don\
+\[CloseCurlyQuote]t over-complicate your code to look smart. Swallow your \
+pride, ask for help, and learn from experienced developers.\nIdentify and \
+respect your tech lead. It\[CloseCurlyQuote]s crucial to know who holds the \
+lead role and collaborate effectively.\n\nConsistency, experience, and a \
+breadth of knowledge in programming\nis important. A great engineer has \
+validation, impact, entrepreneurship, and marketing are crucial aspects of \
+being a successful coder, going beyond technical skills alone. There is a \
+need for product and marketing focus in today\[CloseCurlyQuote]s competitive \
+environment. A great engineer involves turning skills into products, bringing \
+them to market, and delivering impact. \n\nBody deterioration. Get exercise \
+in and sleep routine. Break every 30 minutes. Go out for lunch to get \
+sunshine. It is like a sport star. Get it done attitude. Get it shipped. Get \
+productive at any Apple store. Open source culture. Keep it simple and \
+consistency. There is a mix of collaboration and solo activity.\n\nCheck \
+official tutorial from the website chapter by chapter. Read the official \
+tutorials. Official language guide has no gaps. Read first few chapters. Skim \
+through advanced topics. Python is on the backend. Swift. Kotlin. Javascript. \
+Every language you will eventually forget.\nReading is faster to jump around.\
+\n\nYou will only have one language and that is the one you used.\>\""}], 
+   ";"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.9114256181939163`*^9, 3.911425621361518*^9}, {
+  3.911425662806102*^9, 3.9114256830559874`*^9}, {3.911425720481656*^9, 
+  3.9114257595722795`*^9}, {3.911425921253388*^9, 3.9114259546484327`*^9}, {
+  3.911425994269353*^9, 3.9114260677485514`*^9}, {3.911426225000551*^9, 
+  3.9114263324604445`*^9}, {3.911426396688822*^9, 3.9114264165552254`*^9}, {
+  3.9114264627734585`*^9, 3.9114265300258794`*^9}, {3.9114266251112366`*^9, 
+  3.9114266321529675`*^9}, {3.91142667803732*^9, 3.9114266794374256`*^9}, {
+  3.911426788990946*^9, 3.91142700132728*^9}, {3.9114271159697495`*^9, 
+  3.9114271271979575`*^9}, {3.9114272250570993`*^9, 3.9114273330048723`*^9}, {
+  3.911427459812706*^9, 3.911427472680312*^9}, {3.911427587029617*^9, 
+  3.911427612530526*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{Automatic, 37.5}, {30.75, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"0f855937-2f4c-46d7-892e-be5d8d24f1e3"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 151, 3, 98, "Title",ExpressionUUID->"55b5f499-8993-459f-8a8b-a63e53e1e38b"],
+Cell[734, 27, 3325, 48, 1113, "Input",ExpressionUUID->"043cfb32-1d65-4581-b77a-fc08b211d470"]
+}, Open  ]]
+}
+]
+*)
+
