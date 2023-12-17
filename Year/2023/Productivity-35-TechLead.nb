@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     66998,       1242]
-NotebookOptionsPosition[     65876,       1215]
-NotebookOutlinePosition[     66278,       1231]
-CellTagsIndexPosition[     66235,       1228]
+NotebookDataLength[     67075,       1243]
+NotebookOptionsPosition[     65954,       1216]
+NotebookOutlinePosition[     66355,       1232]
+CellTagsIndexPosition[     66312,       1229]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1205,16 +1205,17 @@ Cell["Self Sabotage", "Section",
 Cell["\<\
 https://www.youtube.com/watch?v=7t2X-kMhPIA
 
-Growth mindset, practice.\
+10 tips: https://www.youtube.com/watch?v=_2HIkR4aWxU\
 \>", "Text",
- CellChangeTimes->{{3.9114805406774287`*^9, 
-  3.9114805495954237`*^9}},ExpressionUUID->"c362e890-57b8-4e3b-94f0-\
+ CellChangeTimes->{{3.9114805406774287`*^9, 3.9114805495954237`*^9}, {
+  3.9114807779801807`*^9, 
+  3.911480816564329*^9}},ExpressionUUID->"c362e890-57b8-4e3b-94f0-\
 41f83c348269"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{718.5, 735},
-WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+WindowSize->{718.5, 729.75},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"0f855937-2f4c-46d7-892e-be5d8d24f1e3"
@@ -1241,7 +1242,7 @@ Cell[6339, 121, 57695, 1046, 585, "Output",ExpressionUUID->"63fd5ce4-4940-4d55-a
 Cell[64049, 1170, 1389, 25, 495, "Text",ExpressionUUID->"0771644d-cde5-410f-82b2-75b03aab08e4"],
 Cell[CellGroupData[{
 Cell[65463, 1199, 158, 3, 67, "Section",ExpressionUUID->"dfe3c7ca-b880-43eb-bd7b-3f8cdb6a7e84"],
-Cell[65624, 1204, 224, 7, 81, "Text",ExpressionUUID->"c362e890-57b8-4e3b-94f0-41f83c348269"]
+Cell[65624, 1204, 302, 8, 81, "Text",ExpressionUUID->"c362e890-57b8-4e3b-94f0-41f83c348269"]
 }, Open  ]]
 }, Open  ]]
 }

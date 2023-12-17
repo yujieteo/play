@@ -1,0 +1,67 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1720,         59]
+NotebookOptionsPosition[      1151,         41]
+NotebookOutlinePosition[      1556,         57]
+CellTagsIndexPosition[      1513,         54]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Project Ideas", "Title",
+ CellChangeTimes->{{3.9115130260277586`*^9, 
+  3.9115130506267853`*^9}},ExpressionUUID->"23481f12-1c8b-40e8-9aac-\
+0014fced7577"],
+
+Cell["\<\
+Computable notebook for any article. Visualisation and textual analysis of \
+article.\
+\>", "Text",
+ CellChangeTimes->{{3.911513052512597*^9, 
+  3.9115130809754953`*^9}},ExpressionUUID->"5de23bbf-a2f7-4fda-baf3-\
+b90c3bbe4129"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.911513093827952*^9, 
+  3.911513095460978*^9}},ExpressionUUID->"08767559-9dfd-4b1c-aaa9-\
+9c1276b4c484"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9a50f6cc-0479-4f53-95c4-baf832242669"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 160, 3, 98, "Title",ExpressionUUID->"23481f12-1c8b-40e8-9aac-0014fced7577"],
+Cell[743, 27, 237, 6, 58, "Text",ExpressionUUID->"5de23bbf-a2f7-4fda-baf3-b90c3bbe4129"],
+Cell[983, 35, 152, 3, 28, "Input",ExpressionUUID->"08767559-9dfd-4b1c-aaa9-9c1276b4c484"]
+}, Open  ]]
+}
+]
+*)
+
