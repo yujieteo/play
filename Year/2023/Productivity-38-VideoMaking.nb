@@ -1,0 +1,85 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2476,         77]
+NotebookOptionsPosition[      1998,         60]
+NotebookOutlinePosition[      2400,         76]
+CellTagsIndexPosition[      2357,         73]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["How to Produce a How-To Video", "Title",
+ CellChangeTimes->{{3.911993175890645*^9, 
+  3.9119931795243597`*^9}},ExpressionUUID->"dcda7704-8a5f-4d02-97c8-\
+2baa26fa241c"],
+
+Cell["\<\
+https://www.youtube.com/watch?v=PRSoRkM8GcM 
+
+Think about the transcript. Write the transcript.
+Start with before and after.
+
+State the tools you need.
+Ensure that the tools are (1) common, (2) easy to use, (3) inexpensive.
+
+Break-down in step by step.
+
+Then state typical questions. Address the questions in the video.
+
+1. Preparation
+1.1 Lay out your tools.
+1.2 Safety equipment to wear, safety steps to do.
+1.3 Thinks to make it easier and safer and ensure peace of mind. 
+Explain why these preparation steps are important. Use causal mechanism only.
+1.4 Do all the checks.
+
+Continue with steps 2, 3, 4. Explain. Layout tools. Explain what each tool is \
+for. Explain why this tool is used. Suggest alternative tools. Keep showing \
+before and afters. Give tips in between. Perform the steps while filming. \
+Show how the tools are used. Also, details matter. Then summarise in one \
+sentence for each step. Give timings for each step. Cut out the long period \
+of time. \
+\>", "Text",
+ CellChangeTimes->{{3.911993184610194*^9, 3.911993491381318*^9}, {
+  3.9119935563830376`*^9, 3.9119935659939604`*^9}, {3.9119936177739186`*^9, 
+  3.911993639137391*^9}},ExpressionUUID->"96ad551e-88e5-4e52-9540-\
+68f3e965ac02"]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"7ebcb921-ee05-47f5-9abf-3814ced75e39"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 174, 3, 98, "Title",ExpressionUUID->"dcda7704-8a5f-4d02-97c8-2baa26fa241c"],
+Cell[757, 27, 1225, 30, 564, "Text",ExpressionUUID->"96ad551e-88e5-4e52-9540-68f3e965ac02"]
+}, Open  ]]
+}
+]
+*)
+
