@@ -1,0 +1,116 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3174,        108]
+NotebookOptionsPosition[      2377,         86]
+NotebookOutlinePosition[      2788,        102]
+CellTagsIndexPosition[      2745,         99]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Checklists Tinkering", "Title",
+ CellChangeTimes->{{3.912923862626523*^9, 3.912923873807207*^9}, {
+  3.912924598847456*^9, 
+  3.9129246000689545`*^9}},ExpressionUUID->"c1551e46-259a-4dd5-8445-\
+942c15fb61bf"],
+
+Cell["\<\
+Need to measure the time.
+Used only as a reference.\
+\>", "Text",
+ CellChangeTimes->{{3.912924096588415*^9, 3.9129241103359284`*^9}, {
+  3.9129241826780233`*^9, 
+  3.9129241927134356`*^9}},ExpressionUUID->"489b328c-e47a-4977-b0d8-\
+2cfb2b034ceb"],
+
+Cell["\<\
+Desk ergonomics
+
+WRISTS Straight
+FEET Flat
+BODY Vertical line
+
+Tweaking this one:
+
+Put the most counterintuitive thing in front.
+
+PHONE Charge
+WATER Top Up (this takes substantial amounts of time)
+TIMER 30 minutes
+SCREEN Record (Should I trim this? There are stuff that are confidential)
+DESKTOP Clear
+LIGHT On\
+\>", "Text",
+ CellChangeTimes->{{3.9129238766818485`*^9, 3.912923879452235*^9}, {
+   3.9129239502420745`*^9, 3.9129239860763445`*^9}, {3.9129240447638135`*^9, 
+   3.9129240722094088`*^9}, {3.912924501947939*^9, 3.912924592314543*^9}, {
+   3.912924695790783*^9, 3.91292470943115*^9}, 3.912924838608831*^9, {
+   3.9129250999488726`*^9, 
+   3.912925111836153*^9}},ExpressionUUID->"c23a1060-407f-480d-a65a-\
+1dc8b313ef6d"],
+
+Cell[CellGroupData[{
+
+Cell["First Day at Work", "Section",
+ CellChangeTimes->{{3.9129252022251763`*^9, 
+  3.912925204640125*^9}},ExpressionUUID->"2fba4b85-356c-4554-9a24-\
+7ebbe35a0d3b"],
+
+Cell["\<\
+EXPLORE Internal Systems
+VERIFY Enrolment Details
+TEST Computer
+CONTACT Exchange
+GIT Filing System, like Wolfram
+MENTORS Identify
+THANKS For smooth onboarding\
+\>", "Text",
+ CellChangeTimes->{{3.9129251300568085`*^9, 3.9129252328831344`*^9}, {
+  3.912925264573809*^9, 
+  3.912925279943581*^9}},ExpressionUUID->"babe9c9f-4322-416a-8318-\
+eb57b107eee5"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{569.25, 609.75},
+WindowMargins->{{Automatic, 248.25}, {Automatic, 59.25}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"30b5a2ed-bb24-4aa1-aed8-644f4aa1d60c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 214, 4, 98, "Title",ExpressionUUID->"c1551e46-259a-4dd5-8445-942c15fb61bf"],
+Cell[797, 28, 256, 7, 58, "Text",ExpressionUUID->"489b328c-e47a-4977-b0d8-2cfb2b034ceb"],
+Cell[1056, 37, 740, 24, 380, "Text",ExpressionUUID->"c23a1060-407f-480d-a65a-1dc8b313ef6d"],
+Cell[CellGroupData[{
+Cell[1821, 65, 164, 3, 67, "Section",ExpressionUUID->"2fba4b85-356c-4554-9a24-7ebbe35a0d3b"],
+Cell[1988, 70, 361, 12, 173, "Text",ExpressionUUID->"babe9c9f-4322-416a-8318-eb57b107eee5"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
