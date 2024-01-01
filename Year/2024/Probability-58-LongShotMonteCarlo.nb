@@ -1,0 +1,225 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8190,        217]
+NotebookOptionsPosition[      6404,        181]
+NotebookOutlinePosition[      6806,        197]
+CellTagsIndexPosition[      6763,        194]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Long Shot Monte-Carlo", "Title",
+ CellChangeTimes->{{3.913104009379381*^9, 
+  3.913104012939078*^9}},ExpressionUUID->"192f222e-a847-4a73-9efe-\
+1f99a0a96df4"],
+
+Cell["https://twitter.com/nntaleb/status/729407020105895937", "Text",
+ CellChangeTimes->{
+  3.9131042934071026`*^9},ExpressionUUID->"48792aad-c59f-4640-9c0e-\
+7d32bd5f296f"],
+
+Cell["\<\
+Trade with 2% odds if you have a percentage error on probability of +- 50%. \
+\>", "Text",
+ CellChangeTimes->{{3.913104040521564*^9, 3.91310405637461*^9}, {
+  3.913104242454807*^9, 
+  3.913104282036025*^9}},ExpressionUUID->"6921946e-79ec-4f97-a703-\
+7c4ac1b78e90"],
+
+Cell["\<\
+You run a Monte Carlo simulation on the Bernoulli with 2% odds. The odds \
+ratio you get is 50.\
+\>", "Text",
+ CellChangeTimes->{{3.9131058856580048`*^9, 
+  3.913105903002801*^9}},ExpressionUUID->"ae5916c4-ada7-418d-b8e9-\
+55b0a610ca88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "/", 
+   RowBox[{"Mean", "[", 
+    RowBox[{
+     RowBox[{"RandomVariate", "[", 
+      RowBox[{
+       RowBox[{"BernoulliDistribution", "[", "p", "]"}], ",", 
+       RowBox[{"{", 
+        SuperscriptBox["10", "7"], "}"}]}], "]"}], "/.", 
+     RowBox[{"p", "->", "0.02"}]}], "]"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.9131040141775618`*^9, 3.9131040385928917`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"2377afbf-a51e-4d10-bd5e-f5edbeba8705"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "BernoulliDistribution", "probprm", 
+   "\"Parameter \\!\\(\\*RowBox[{\\\"p\\\"}]\\) at position \\!\\(\\*RowBox[{\
+\\\"1\\\"}]\\) in \\!\\(\\*RowBox[{\\\"BernoulliDistribution\\\", \\\"[\\\", \
+\\\"p\\\", \\\"]\\\"}]\\) is expected to be between 0 and 1 inclusive.\"", 2, 
+   2, 2, 20865584559937774644, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.9131040592441206`*^9, 3.9131040711370153`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"2061a2a5-c115-4be7-9857-dfb1a870673b"],
+
+Cell[BoxData["50.14517026792564`"], "Output",
+ CellChangeTimes->{{3.9131040593851433`*^9, 3.9131040712090244`*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"71b31c5c-62d2-40e9-bc0c-9a1b99f6ec41"]
+}, Open  ]],
+
+Cell["\<\
+If you include a 50% error rate, you should be using an odds ratio of 66.67\
+\>", "Text",
+ CellChangeTimes->{{3.913105911722055*^9, 
+  3.913105932030688*^9}},ExpressionUUID->"d4917112-615d-4fa6-9e95-\
+2740ffdb800c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "2"], 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"1", "/", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"RandomVariate", "[", 
+         RowBox[{
+          RowBox[{"BernoulliDistribution", "[", 
+           RowBox[{"p", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "\[Delta]"}], ")"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           SuperscriptBox["10", "7"], "}"}]}], "]"}], "]"}]}], " ", "+", "  ", 
+      RowBox[{"1", "/", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"RandomVariate", "[", 
+         RowBox[{
+          RowBox[{"BernoulliDistribution", "[", 
+           RowBox[{"p", 
+            RowBox[{"(", 
+             RowBox[{"1", "-", "\[Delta]"}], ")"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           SuperscriptBox["10", "7"], "}"}]}], "]"}], "]"}]}]}], " ", ")"}]}],
+    "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p", "->", "0.02"}], ",", 
+     RowBox[{"\[Delta]", "->", "0.5"}]}], "}"}]}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.913104085965867*^9, 3.91310421702001*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"b2f86cc7-7a8c-49d8-bffc-a5dde1e32941"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "BernoulliDistribution", "probprm", 
+   "\"Parameter \\!\\(\\*RowBox[{\\\"p\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{\\\"1\\\", \\\"+\\\", \\\"\[Delta]\\\"}], \\\")\\\"}]}]\\) at \
+position \\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"BernoulliDistribution\\\", \\\"[\\\", RowBox[{\\\"p\\\", \
+\\\" \\\", RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"+\\\", \
+\\\"\[Delta]\\\"}], \\\")\\\"}]}], \\\"]\\\"}]\\) is expected to be between 0 \
+and 1 inclusive.\"", 2, 3, 3, 20865584559937774644, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.913104218039477*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"ccd2b626-7aeb-4bd3-89d3-45ce4fb0d7e8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "BernoulliDistribution", "probprm", 
+   "\"Parameter \\!\\(\\*RowBox[{\\\"p\\\", \\\" \\\", RowBox[{\\\"(\\\", \
+RowBox[{\\\"1\\\", \\\"-\\\", \\\"\[Delta]\\\"}], \\\")\\\"}]}]\\) at \
+position \\!\\(\\*RowBox[{\\\"1\\\"}]\\) in \
+\\!\\(\\*RowBox[{\\\"BernoulliDistribution\\\", \\\"[\\\", RowBox[{\\\"p\\\", \
+\\\" \\\", RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"\[Delta]\\\"}], \\\")\\\"}]}], \\\"]\\\"}]\\) is expected to be between 0 \
+and 1 inclusive.\"", 2, 3, 4, 20865584559937774644, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.913104218117483*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"65b43acf-c5fe-48dd-b586-cc2c5e536cdd"],
+
+Cell[BoxData["66.68002314639001`"], "Output",
+ CellChangeTimes->{3.913104218211627*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"f00210ce-749f-4a76-8104-73a61277f5fe"]
+}, Open  ]],
+
+Cell["This is actually about 1.5% odds. ", "Text",
+ CellChangeTimes->{{3.913104252145295*^9, 
+  3.913104259781863*^9}},ExpressionUUID->"8143c017-6575-465d-863f-\
+ccba6569ff8c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"1", "/", "%"}]], "Input",
+ CellChangeTimes->{{3.9131042221630974`*^9, 3.9131042250799828`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"dd0400e4-b752-4a08-96e2-db01bdc07d0f"],
+
+Cell[BoxData["0.014996995394026628`"], "Output",
+ CellChangeTimes->{3.913104225565775*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"53ebdedb-7509-4871-a32a-30229b8e771c"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{718.5, 735},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e2459e20-0edb-4625-b9f0-33c62372f615"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 164, 3, 98, "Title",ExpressionUUID->"192f222e-a847-4a73-9efe-1f99a0a96df4"],
+Cell[747, 27, 173, 3, 35, "Text",ExpressionUUID->"48792aad-c59f-4640-9c0e-7d32bd5f296f"],
+Cell[923, 32, 274, 6, 35, "Text",ExpressionUUID->"6921946e-79ec-4f97-a703-7c4ac1b78e90"],
+Cell[1200, 40, 247, 6, 35, "Text",ExpressionUUID->"ae5916c4-ada7-418d-b8e9-55b0a610ca88"],
+Cell[CellGroupData[{
+Cell[1472, 50, 491, 12, 31, "Input",ExpressionUUID->"2377afbf-a51e-4d10-bd5e-f5edbeba8705"],
+Cell[1966, 64, 560, 11, 28, "Message",ExpressionUUID->"2061a2a5-c115-4be7-9857-dfb1a870673b"],
+Cell[2529, 77, 193, 2, 32, "Output",ExpressionUUID->"71b31c5c-62d2-40e9-bc0c-9a1b99f6ec41"]
+}, Open  ]],
+Cell[2737, 82, 225, 5, 35, "Text",ExpressionUUID->"d4917112-615d-4fa6-9e95-2740ffdb800c"],
+Cell[CellGroupData[{
+Cell[2987, 91, 1167, 33, 87, "Input",ExpressionUUID->"b2f86cc7-7a8c-49d8-bffc-a5dde1e32941"],
+Cell[4157, 126, 732, 14, 46, "Message",ExpressionUUID->"ccd2b626-7aeb-4bd3-89d3-45ce4fb0d7e8"],
+Cell[4892, 142, 732, 14, 46, "Message",ExpressionUUID->"65b43acf-c5fe-48dd-b586-cc2c5e536cdd"],
+Cell[5627, 158, 165, 2, 32, "Output",ExpressionUUID->"f00210ce-749f-4a76-8104-73a61277f5fe"]
+}, Open  ]],
+Cell[5807, 163, 176, 3, 35, "Text",ExpressionUUID->"8143c017-6575-465d-863f-ccba6569ff8c"],
+Cell[CellGroupData[{
+Cell[6008, 170, 197, 3, 28, "Input",ExpressionUUID->"dd0400e4-b752-4a08-96e2-db01bdc07d0f"],
+Cell[6208, 175, 168, 2, 55, "Output",ExpressionUUID->"53ebdedb-7509-4871-a32a-30229b8e771c"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

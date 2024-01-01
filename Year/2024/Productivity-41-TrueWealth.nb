@@ -1,0 +1,87 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2709,         79]
+NotebookOptionsPosition[      2041,         60]
+NotebookOutlinePosition[      2451,         76]
+CellTagsIndexPosition[      2408,         73]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["True Wealth", "Title",
+ CellChangeTimes->{{3.9131081415418105`*^9, 
+  3.913108144946227*^9}},ExpressionUUID->"bb94a291-0c61-40c4-a4c5-\
+a36269d9c0d1"],
+
+Cell[TextData[{
+ StyleBox["TRUE WEALTH\n", "Section"],
+ "\nWorriless sleeping\nClear conscience\nReciprocal gratitude\nAbsence of \
+envy\nMuscle strength\nFrequent laughs\nNo meals alone\nNo gym classes\nGood \
+digestive functions\nNo meeting rooms\nPeriodic surprises\nFoamy coffee\n\
+Crusty bread\nAbility to nap\nAccess to a hammock"
+}], "Text",
+ CellChangeTimes->{{3.913108139000616*^9, 
+  3.9131081589979625`*^9}},ExpressionUUID->"da4648fa-f4d2-4002-98a2-\
+e572f1143977"],
+
+Cell[TextData[{
+ StyleBox["TRUE WEALTH (2nd Ed)", "Section"],
+ "\n\nWorriless sleeping\nClear conscience\nReciprocal gratitude\nAbsence of \
+envy\nFoamy coffee\nCrusty bread\nInexperienced enemies\nFrequent laughs\nNo \
+meals alone\nNo gym classes\nGravel bicycling\nGood digestive functions\nNo \
+Zoom meetings\nPeriodic surprises\nNothing to hide: financial and fiscal \
+tranquility\nMuscular strength & endurance\nAbility to nap\nAccess to a \
+hammock"
+}], "Text",
+ CellChangeTimes->{
+  3.913108113201542*^9},ExpressionUUID->"ab550003-dbe3-4683-929c-\
+5b9b7b64c1de"],
+
+Cell[TextData[{
+ StyleBox["TRUE WEALTH (3rd Ed)", "Section"],
+ "\n\nYou don\[CloseCurlyQuote]t envy anyone for anything."
+}], "Text",
+ CellChangeTimes->{
+  3.913108126924348*^9},ExpressionUUID->"b2971d22-0818-4f40-ba73-\
+4564c5ae7c3f"]
+}, Open  ]]
+},
+WindowSize->{569.25, 609.75},
+WindowMargins->{{Automatic, 87.75}, {35.25, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"56a990f2-5259-430e-9ae1-dce549b68871"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 156, 3, 98, "Title",ExpressionUUID->"bb94a291-0c61-40c4-a4c5-a36269d9c0d1"],
+Cell[739, 27, 476, 9, 419, "Text",ExpressionUUID->"da4648fa-f4d2-4002-98a2-e572f1143977"],
+Cell[1218, 38, 569, 11, 488, "Text",ExpressionUUID->"ab550003-dbe3-4683-929c-5b9b7b64c1de"],
+Cell[1790, 51, 235, 6, 97, "Text",ExpressionUUID->"b2971d22-0818-4f40-ba73-4564c5ae7c3f"]
+}, Open  ]]
+}
+]
+*)
+
