@@ -1,0 +1,652 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26716,        644]
+NotebookOptionsPosition[     25117,        607]
+NotebookOutlinePosition[     25517,        623]
+CellTagsIndexPosition[     25474,        620]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Stable Distribution", "Title",
+ CellChangeTimes->{{3.910950046937626*^9, 
+  3.91095004958939*^9}},ExpressionUUID->"0d77aee1-c364-431e-bea1-\
+4bc81281f520"],
+
+Cell["The typical example of a stable distribution.", "Text",
+ CellChangeTimes->{{3.910950066374614*^9, 
+  3.910950073571354*^9}},ExpressionUUID->"b92c9adb-e15f-49e7-a9ad-\
+6cdae1025526"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "StableDistribution"}]], "Input",
+ CellChangeTimes->{{3.9109500542624435`*^9, 3.9109500559559727`*^9}},
+ CellLabel->
+  "In[116]:=",ExpressionUUID->"1eb66d03-3f16-4817-bea6-99d9548184d7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StableDistribution",
+              ButtonNote->"paclet:ref/StableDistribution"],
+             "\"paclet:ref/StableDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StableDistribution\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"type\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\
+\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Beta]\\\", \
+\\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"], \\\",\\\", \
+StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents the \
+stable distribution \\!\\(\\*SubscriptBox[StyleBox[\\\"S\\\", \\\"TI\\\"], \
+StyleBox[\\\"type\\\", \\\"TI\\\"]]\\) with index of stability \
+\\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"]\\), skewness parameter \\!\\(\
+\\*StyleBox[\\\"\[Beta]\\\", \\\"TR\\\"]\\), location parameter \
+\\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\), and scale parameter \
+\\!\\(\\*StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", 
+                    "paclet:ref/StableDistribution", 
+                    "paclet:ref/StableDistribution", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/\
+StableDistribution.html"], None}, 
+                    "http://reference.wolfram.com/language/ref/\
+StableDistribution.html", "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    "NHoldFirst", ",", "Protected", ",", "ReadProtected"}], 
+                    "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`StableDistribution\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/StableDistribution",
+              ButtonNote->"paclet:ref/StableDistribution"],
+             "\"paclet:ref/StableDistribution\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"StableDistribution\\\", \
+\\\"[\\\", RowBox[{StyleBox[\\\"type\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\
+\"\[Alpha]\\\", \\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Beta]\\\", \
+\\\"TR\\\"], \\\",\\\", StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"], \\\",\\\", \
+StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) represents the \
+stable distribution \\!\\(\\*SubscriptBox[StyleBox[\\\"S\\\", \\\"TI\\\"], \
+StyleBox[\\\"type\\\", \\\"TI\\\"]]\\) with index of stability \
+\\!\\(\\*StyleBox[\\\"\[Alpha]\\\", \\\"TR\\\"]\\), skewness parameter \\!\\(\
+\\*StyleBox[\\\"\[Beta]\\\", \\\"TR\\\"]\\), location parameter \
+\\!\\(\\*StyleBox[\\\"\[Mu]\\\", \\\"TR\\\"]\\), and scale parameter \
+\\!\\(\\*StyleBox[\\\"\[Sigma]\\\", \\\"TR\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"StableDistribution\", \"[\", RowBox[{StyleBox[\"type\", \
+\"TI\"], \",\", StyleBox[\"\[Alpha]\", \"TR\"], \",\", StyleBox[\"\[Beta]\", \
+\"TR\"], \",\", StyleBox[\"\[Mu]\", \"TR\"], \",\", StyleBox[\"\[Sigma]\", \
+\"TR\"]}], \"]\"}]\) represents the stable distribution \
+\!\(\*SubscriptBox[StyleBox[\"S\", \"TI\"], StyleBox[\"type\", \"TI\"]]\) \
+with index of stability \!\(\*StyleBox[\"\[Alpha]\", \"TR\"]\), skewness \
+parameter \!\(\*StyleBox[\"\[Beta]\", \"TR\"]\), location parameter \
+\!\(\*StyleBox[\"\[Mu]\", \"TR\"]\), and scale parameter \!\(\*StyleBox[\"\
+\[Sigma]\", \"TR\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/StableDistribution", "Web" -> 
+      "http://reference.wolfram.com/language/ref/StableDistribution.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, "Options" -> None, 
+    "Attributes" -> {NHoldFirst, Protected, ReadProtected}, "FullName" -> 
+    "System`StableDistribution"|>, False]]], "Output",
+ CellChangeTimes->{3.910950057691201*^9},
+ CellLabel->
+  "Out[116]=",ExpressionUUID->"96602154-99ff-4e19-82b5-fe9da5f46901"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"StableDistribution", "[", 
+        RowBox[{"1", ",", "0", ",", "\[Mu]", ",", "1"}], "]"}], ",", "x"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "30"}], ",", "30"}], "}"}], ",", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Mu]", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.910582992176642*^9, 3.9105830457405043`*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"7a14faea-589a-485d-8228-907ce9af3299"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Mu]$$ = 1.4800000000000004`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Mu]$$], -5, 5}}, Typeset`size$$ = {
+    360., {110., 114.97220508635903`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`\[Mu]$$ = -5}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         StableDistribution[
+         1, 0, $CellContext`\[Mu]$$, 
+          1], $CellContext`x], {$CellContext`x, -30, 30}, PlotRange -> All], 
+      "Specifications" :> {{$CellContext`\[Mu]$$, -5, 5}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {152.634033203125, 158.365966796875}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.9105830374574375`*^9, 3.9105830476697946`*^9}},
+ CellLabel->"Out[69]=",ExpressionUUID->"ced6b9eb-737b-40e7-8a03-ebfdd2e6347d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"StableDistribution", "[", 
+        RowBox[{"1", ",", "0", ",", "0", ",", "\[Sigma]"}], "]"}], ",", "x"}],
+       "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "30"}], ",", "30"}], "}"}], ",", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Sigma]", ",", "0.3", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.910583056930334*^9, 3.91058308221942*^9}},
+ CellLabel->"In[71]:=",ExpressionUUID->"bbc43cc2-5ccd-4fa1-8182-d60d17929c3f"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Sigma]$$ = 2.5549999999999997`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Sigma]$$], 0.3, 3}}, Typeset`size$$ = {
+    360., {110., 114.972205086359}}, Typeset`update$$ = 0, Typeset`initDone$$,
+     Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`\[Sigma]$$ = 0.3}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         StableDistribution[
+         1, 0, 0, $CellContext`\[Sigma]$$], $CellContext`x], {$CellContext`x, \
+-30, 30}, PlotRange -> All], 
+      "Specifications" :> {{$CellContext`\[Sigma]$$, 0.3, 3}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {152.634033203125, 158.365966796875}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.9105830783222947`*^9, 3.910583082482257*^9}},
+ CellLabel->"Out[71]=",ExpressionUUID->"1dc09c5e-c59b-4962-8335-78491918146e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"StableDistribution", "[", 
+        RowBox[{"1", ",", "\[Beta]", ",", "0", ",", "1"}], "]"}], ",", "x"}], 
+      "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "30"}], ",", "30"}], "}"}], ",", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Beta]", ",", 
+     RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9105830988764224`*^9, 3.9105831170173845`*^9}},
+ CellLabel->"In[72]:=",ExpressionUUID->"9e7c79f7-55c9-4557-aca8-f8720b8af13d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Beta]$$ = -0.16500000000000004`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Beta]$$], -1, 1}}, Typeset`size$$ = {
+    360., {110., 114.97220508635905`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`\[Beta]$$ = -1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         StableDistribution[
+         1, $CellContext`\[Beta]$$, 0, 
+          1], $CellContext`x], {$CellContext`x, -30, 30}, PlotRange -> All], 
+      "Specifications" :> {{$CellContext`\[Beta]$$, -1, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {152.634033203125, 158.365966796875}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.9105831195917816`*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"3695423e-6083-43b8-b7cc-5e457feb17fe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"PDF", "[", 
+      RowBox[{
+       RowBox[{"StableDistribution", "[", 
+        RowBox[{"\[Alpha]", ",", "0", ",", "0", ",", "1"}], "]"}], ",", "x"}],
+       "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "30"}], ",", "30"}], "}"}], ",", 
+     RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Alpha]", ",", "0.1", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9105831425106773`*^9, 3.910583153790572*^9}},
+ CellLabel->"In[73]:=",ExpressionUUID->"db14454a-3798-4f6d-a581-df3f575cc983"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[Alpha]$$ = 0.79, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[Alpha]$$], 0.1, 2}}, Typeset`size$$ = {
+    360., {110., 114.97220508635897`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`\[Alpha]$$ = 0.1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        PDF[
+         StableDistribution[$CellContext`\[Alpha]$$, 0, 0, 
+          1], $CellContext`x], {$CellContext`x, -30, 30}, PlotRange -> All], 
+      "Specifications" :> {{$CellContext`\[Alpha]$$, 0.1, 2}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {152.634033203125, 158.365966796875}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.9105831565645714`*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"51f825dd-d578-412f-977f-a5e06b6615e3"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{571, 583},
+WindowMargins->{{Automatic, 108}, {-30, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e7da2c98-3c65-43fa-b8fd-68b00a15de18"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 98, "Title",ExpressionUUID->"0d77aee1-c364-431e-bea1-4bc81281f520"],
+Cell[744, 27, 187, 3, 35, "Text",ExpressionUUID->"b92c9adb-e15f-49e7-a9ad-6cdae1025526"],
+Cell[CellGroupData[{
+Cell[956, 34, 214, 4, 28, "Input",ExpressionUUID->"1eb66d03-3f16-4817-bea6-99d9548184d7"],
+Cell[1173, 40, 13966, 322, 147, "Output",ExpressionUUID->"96602154-99ff-4e19-82b5-fe9da5f46901"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15176, 367, 679, 18, 48, "Input",ExpressionUUID->"7a14faea-589a-485d-8228-907ce9af3299"],
+Cell[15858, 387, 1785, 36, 330, "Output",ExpressionUUID->"ced6b9eb-737b-40e7-8a03-ebfdd2e6347d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17680, 428, 663, 17, 48, "Input",ExpressionUUID->"bbc43cc2-5ccd-4fa1-8182-d60d17929c3f"],
+Cell[18346, 447, 1789, 36, 330, "Output",ExpressionUUID->"1dc09c5e-c59b-4962-8335-78491918146e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20172, 488, 685, 18, 48, "Input",ExpressionUUID->"9e7c79f7-55c9-4557-aca8-f8720b8af13d"],
+Cell[20860, 508, 1771, 36, 330, "Output",ExpressionUUID->"3695423e-6083-43b8-b7cc-5e457feb17fe"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22668, 549, 666, 17, 48, "Input",ExpressionUUID->"db14454a-3798-4f6d-a581-df3f575cc983"],
+Cell[23337, 568, 1752, 35, 330, "Output",ExpressionUUID->"51f825dd-d578-412f-977f-a5e06b6615e3"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

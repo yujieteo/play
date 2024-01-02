@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     60094,       1426]
-NotebookOptionsPosition[     48797,       1220]
-NotebookOutlinePosition[     49408,       1240]
-CellTagsIndexPosition[     49365,       1237]
+NotebookDataLength[     60142,       1426]
+NotebookOptionsPosition[     48845,       1220]
+NotebookOutlinePosition[     49456,       1240]
+CellTagsIndexPosition[     49413,       1237]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1208,12 +1208,12 @@ Incerto
 Fallacies
 Principia Politica
 Essays on Religion
-Covid Forecasting PAper
+COVID Forecasting Paper
 Russian War (Empire vs NATO)\
 \>", "Text",
  CellChangeTimes->{{3.907839187242967*^9, 3.907839211325529*^9}, {
-  3.9079993099624796`*^9, 
-  3.907999311029281*^9}},ExpressionUUID->"2e46d8e6-169a-424f-becf-\
+  3.9079993099624796`*^9, 3.907999311029281*^9}, {3.9131976819237823`*^9, 
+  3.913197684987647*^9}},ExpressionUUID->"2e46d8e6-169a-424f-becf-\
 418ac3e80d71"]
 }, Open  ]]
 }, Open  ]]
@@ -1425,7 +1425,7 @@ Cell[47931, 1188, 281, 6, 35, "Text",ExpressionUUID->"c6796a36-2967-4cca-84ed-51
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[48249, 1199, 162, 3, 67, "Section",ExpressionUUID->"0badddb8-a43a-4151-968e-37c8ea48b8ab"],
-Cell[48414, 1204, 355, 12, 173, "Text",ExpressionUUID->"2e46d8e6-169a-424f-becf-418ac3e80d71"]
+Cell[48414, 1204, 403, 12, 173, "Text",ExpressionUUID->"2e46d8e6-169a-424f-becf-418ac3e80d71"]
 }, Open  ]]
 }, Open  ]]
 }
