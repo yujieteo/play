@@ -1,0 +1,465 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16957,        457]
+NotebookOptionsPosition[     15800,        428]
+NotebookOutlinePosition[     16205,        444]
+CellTagsIndexPosition[     16162,        441]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Work Prep in Advance", "Title",
+ CellChangeTimes->{{3.913470751353667*^9, 
+  3.9134707542179127`*^9}},ExpressionUUID->"bc487083-2dea-4bd4-a7de-\
+dfad6a711e6a"],
+
+Cell["\<\
+Professional Interaction and Communication:
+
+Eat with everyone you work with:
+
+Actionable: Schedule regular team lunches or break sessions to foster \
+camaraderie and teamwork.
+Biweekly check-in with boss:
+
+Actionable: Set recurring biweekly meetings with your boss to discuss work \
+progress and address any concerns.
+Monthly check-in with boss\[CloseCurlyQuote]s boss:
+
+Actionable: Schedule monthly meetings with your boss\[CloseCurlyQuote]s boss \
+to provide updates on your projects and seek feedback.
+Repeat back the mistakes:
+
+Actionable: Develop a habit of summarizing and confirming any errors made to \
+ensure clarity and avoid repeated mistakes.
+Ask for clarifications:
+
+Actionable: When faced with uncertainty, proactively seek clarification from \
+relevant parties to avoid misunderstandings.
+Compile additional questions in e-mail:
+
+Actionable: Keep a running list of questions and concerns, then compile them \
+into a clear and concise email for efficient communication.
+Wait before offering opinions or solutions:
+
+Actionable: Practice patience and thoughtful consideration before presenting \
+opinions or solutions during meetings or discussions.
+Say \[OpenCurlyQuote]no\[CloseCurlyQuote] when you do not have time:
+
+Actionable: Politely decline additional tasks when your schedule is full to \
+ensure you can fulfill existing responsibilities effectively.
+Professional Conduct:
+9. No gossiping:
+
+Actionable: Refrain from engaging in gossip and focus on constructive \
+conversations about work-related matters.
+Be courteous:
+
+Actionable: Cultivate a habit of politeness and respect in all interactions \
+with colleagues, superiors, and subordinates.
+Set boundaries:
+
+Actionable: Clearly define and communicate personal and professional \
+boundaries to maintain a healthy work-life balance.
+Protect your life and privacy:
+
+Actionable: Be mindful of what personal information is shared at work and \
+prioritize privacy to maintain a professional image.
+Communication and Documentation:
+13. Ask for everything in writing:
+- Actionable: Request important information or instructions via written \
+communication to maintain a clear record of expectations.
+
+Send follow-up emails:
+
+Actionable: After meetings or discussions, send follow-up emails summarizing \
+key points, agreements, and action items.
+Create a how-to reference document:
+
+Actionable: Develop a comprehensive reference document with contact \
+information, website links, and essential documents for easy access.
+Read everything on the shared drive:
+
+Actionable: Regularly review and familiarize yourself with the content on \
+shared drives to stay informed about relevant materials.
+Create an email file:
+
+Actionable: Organize your emails, including follow-ups and confirmations, in \
+a systematic file for easy retrieval and reference.
+Build a zettelkasten:
+
+Actionable: Implement a structured note-taking system to organize and connect \
+information for effective knowledge management.
+Work Preparation and Efficiency:
+19. Packing a lunch means preparation:
+- Actionable: Plan and prepare your lunches in advance to save time and \
+maintain focus during work hours.
+
+Check the weather, bus/train times, lay out your clothes:
+
+Actionable: Streamline your morning routine by checking weather forecasts, \
+transportation schedules, and preparing your attire the night before.
+Switch your phone to silent mode:
+
+Actionable: Minimize disruptions and maintain focus by setting your phone to \
+silent mode during work hours.
+Meet your co-workers in the office:
+
+Actionable: Actively engage with colleagues in the office to build \
+connections and foster a positive work environment.
+Avoid talking about work issues during lunchtime:
+
+Actionable: Use lunch breaks as an opportunity for relaxation and \
+socialization, steering clear of work-related discussions.
+Bring a notebook and pen in and out with you:
+
+Actionable: Carry a notebook and pen at all times to jot down important \
+information and maintain organized notes.
+Read all company policies and manuals:
+
+Actionable: Dedicate time to thoroughly read and understand company policies \
+and manuals for compliance and awareness.
+Set up a task tracker:
+
+Actionable: Implement a task-tracking system to organize and prioritize your \
+responsibilities, promoting efficiency and time management.
+Write down compliments for people:
+
+Actionable: Acknowledge and appreciate colleagues by jotting down compliments \
+for timely recognition.
+Figure out what are my job responsibilities:
+
+Actionable: Clearly define and document your job responsibilities to maintain \
+focus and set realistic boundaries.
+Do not rush through training; take lots of notes and master the material:
+
+Actionable: Approach training deliberately, take thorough notes, and ensure a \
+deep understanding of the material for effective performance.
+Do not vent to people at work:
+
+Actionable: Seek external outlets for venting frustrations to maintain a \
+positive and professional atmosphere at work.\
+\>", "Text",
+ CellChangeTimes->{{3.9134707812733603`*^9, 
+  3.9134707817602825`*^9}},ExpressionUUID->"e113770b-3292-487d-94be-\
+06294a1e6c08"],
+
+Cell[CellGroupData[{
+
+Cell["Actionables Summary", "Section",
+ CellChangeTimes->{{3.9134707965458913`*^9, 
+  3.9134708010265694`*^9}},ExpressionUUID->"c844ad17-cea4-44b3-98f3-\
+d4184f9fdae4"],
+
+Cell["\<\
+Packing a lunch means preparation:
+
+Actionable: Plan and prepare your lunches in advance to save time and \
+maintain focus during work hours.
+Check the weather, bus/train times, lay out your clothes:
+
+Actionable: Streamline your morning routine by checking weather forecasts, \
+transportation schedules, and preparing your attire the night before.
+Switch your phone to silent mode:
+
+Actionable: Minimize disruptions and maintain focus by setting your phone to \
+silent mode during work hours.
+Read all company policies and manuals:
+
+Actionable: Dedicate time to thoroughly read and understand company policies \
+and manuals for compliance and awareness.
+Set up a task tracker:
+
+Actionable: Implement a task-tracking system to organize and prioritize your \
+responsibilities, promoting efficiency and time management.
+Figure out what are my job responsibilities:
+
+Actionable: Clearly define and document your job responsibilities to maintain \
+focus and set realistic boundaries.
+Build a zettelkasten:
+
+Actionable: Implement a structured note-taking system to organize and connect \
+information for effective knowledge management.
+Create a how-to reference document:
+
+Actionable: Develop a comprehensive reference document with contact \
+information, website links, and essential documents for easy access.
+Create an email file:
+
+Actionable: Organize your emails, including follow-ups and confirmations, in \
+a systematic file for easy retrieval and reference.
+Set up file management system:
+
+Actionable: Establish a well-organized file management system for easy access \
+to important documents and information.
+Set up an e-mail signature:
+
+Actionable: Create a professional and informative email signature that can be \
+set up in advance to save time.
+Set up your e-mail calendar:
+
+Actionable: Pre-set your email calendar with reminders and important dates to \
+stay organized and on top of deadlines.
+Meet your co-workers in the office:
+
+Actionable: Initiate introductions and connections with co-workers in advance \
+to build positive relationships in the workplace.
+Acknowledge people\[CloseCurlyQuote]s birthday:
+
+Actionable: Prepare in advance by noting colleagues\[CloseCurlyQuote] \
+birthdays and setting up a system to acknowledge them in a timely manner.
+Create a how-to reference document:
+
+Actionable: Develop a comprehensive reference document with contact \
+information, website links, and essential documents for easy access.\
+\>", "Text",
+ CellChangeTimes->{
+  3.9134708044612494`*^9},ExpressionUUID->"c43646de-da4e-472e-b7a5-\
+f3388782b942"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Other Work stuff", "Section",
+ CellChangeTimes->{{3.9134708218943872`*^9, 
+  3.9134708235091667`*^9}},ExpressionUUID->"c34b6f13-1256-4c54-80d5-\
+719efaf73528"],
+
+Cell["\<\
+Certainly! Here are additional items you can prepare in advance before the \
+workday:
+
+Prepare a to-do list:
+
+Actionable: Create a to-do list the night before, prioritizing tasks for the \
+next day.
+Pack your bag:
+
+Actionable: Ensure you have all necessary items, such as laptop, charger, \
+notebook, and pens, packed and ready to go.
+Check and charge electronic devices:
+
+Actionable: Charge your phone, laptop, and any other electronic devices you\
+\[CloseCurlyQuote]ll need for the day.
+Select and lay out your outfit:
+
+Actionable: Choose and set out your work attire the night before to save time \
+in the morning.
+Prepare a healthy breakfast:
+
+Actionable: If possible, prepare or plan a nutritious breakfast to kickstart \
+your day.
+Review the day\[CloseCurlyQuote]s schedule:
+
+Actionable: Familiarize yourself with your calendar and schedule for the day \
+ahead.
+Prep your lunch:
+
+Actionable: If you didn\[CloseCurlyQuote]t prepare it the night before, \
+assemble or pack your lunch in the morning.
+Set goals for the day:
+
+Actionable: Define your priorities and set specific goals for the day to \
+guide your focus.
+Check transportation options:
+
+Actionable: Verify transportation schedules and plan your commute in advance.
+Review meeting agendas and materials:
+
+Actionable: If you have upcoming meetings, review agendas and gather any \
+materials you may need.
+Clear your workspace:
+
+Actionable: Organize and declutter your workspace the night before for a \
+clean start.
+Prepare a positive mindset:
+
+Actionable: Take a moment to reflect on positive aspects of the upcoming day \
+and visualize a successful workday.
+Double-check deadlines:
+
+Actionable: Confirm any upcoming deadlines and ensure you\[CloseCurlyQuote]re \
+on track to meet them.
+Set up morning routines:
+
+Actionable: Establish morning routines that promote productivity and set a \
+positive tone for the day.
+Check and respond to urgent emails:
+
+Actionable: Quickly review and respond to any urgent emails that may require \
+immediate attention.
+Ensure necessary tools and software are ready:
+
+Actionable: Open necessary tools and software on your computer to avoid \
+delays in starting your tasks.
+Update project status:
+
+Actionable: Review the status of ongoing projects and update any progress \
+reports or documentation.
+Prepare for potential interruptions:
+
+Actionable: Anticipate potential interruptions and have a plan in place to \
+address them without derailing your focus.
+Set up an out-of-office message if needed:
+
+Actionable: If you\[CloseCurlyQuote]ll be away from your desk, set up an \
+out-of-office message to manage expectations.
+Practice mindfulness or meditation:
+
+Actionable: Engage in a brief mindfulness or meditation practice to start the \
+day with a calm and focused mindset.\
+\>", "Text",
+ CellChangeTimes->{
+  3.913470825472784*^9},ExpressionUUID->"e319d834-1beb-4f58-a098-\
+ae67fd09cf80"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MOST IMPORTANT STUFF", "Section",
+ CellChangeTimes->{{3.913470838618577*^9, 
+  3.9134708438173256`*^9}},ExpressionUUID->"60abef4e-f405-49e9-8012-\
+7e884b45ab53"],
+
+Cell["\<\
+Create a Standardized Morning Routine:
+
+Actionable: Develop a morning routine that aligns with your preferences and \
+optimizes your productivity. This could include activities like stretching, \
+reading, or meditation.
+Establish Weekly Meal Plans:
+
+Actionable: Plan your meals for the week, including lunches and snacks. This \
+allows you to shop for groceries in advance and ensures you have nutritious \
+options readily available.
+Maintain an Organized Workspace:
+
+Actionable: Regularly declutter and organize your workspace, making it a \
+habit to file documents, clean surfaces, and arrange tools systematically.
+Build a Personal Knowledge Base:
+
+Actionable: Create a digital or physical repository of useful information, \
+including industry insights, tips, and reference materials, for quick access \
+when needed.
+Develop a Wardrobe Rotation:
+
+Actionable: Organize your wardrobe with a rotation of work-appropriate \
+outfits. This minimizes decision-making in the morning and ensures a polished \
+appearance.
+Compile Frequently Used Templates:
+
+Actionable: Create templates for common documents, emails, or reports you \
+frequently use, streamlining the process and saving time.
+Set Up Automated Bill Payments:
+
+Actionable: Automate bill payments to ensure they are settled on time, \
+reducing stress and allowing you to focus on work responsibilities.
+Create a Standardized Grocery List:
+
+Actionable: Develop a grocery list template that includes staple items, \
+making it easier to shop efficiently and avoid last-minute runs to the store.
+Establish a Digital Filing System:
+
+Actionable: Set up a comprehensive digital filing system on your computer for \
+documents, ensuring easy retrieval and organization.
+Build a Professional Network:
+
+Actionable: Cultivate relationships with professionals in your industry by \
+attending networking events, joining online forums, and maintaining \
+connections over time.
+Develop a Weekend Review Routine:
+
+Actionable: Use weekends to review the past week, set goals for the upcoming \
+one, and ensure you\[CloseCurlyQuote]re well-prepared for Monday.
+Maintain a Tech Toolkit:
+
+Actionable: Assemble a toolkit of essential tech accessories (chargers, \
+adapters, etc.) that you may need for work, keeping them organized and easily \
+accessible.
+Create Emergency Kits:
+
+Actionable: Assemble kits for potential emergencies, including first aid \
+supplies, spare clothing, and any other items relevant to your workplace.
+Establish Daily Exercise Habits:
+
+Actionable: Develop a consistent exercise routine that can be done at home or \
+in a nearby gym, promoting physical well-being and energy.
+Build a Personal Development Library:
+
+Actionable: Accumulate a library of books, courses, or online resources \
+related to your professional development, fostering continuous learning.
+Set Up Subscription Services:
+
+Actionable: Subscribe to services that can simplify your life, such as meal \
+kit deliveries, online news subscriptions, or productivity tools.
+Create Backup Plans:
+
+Actionable: Develop contingency plans for common disruptions, such as a power \
+outage or commuting issues, to mitigate potential challenges.
+Establish Financial Tracking Systems:
+
+Actionable: Set up systems to track your expenses, monitor your budget, and \
+plan for financial goals well in advance.
+Create a Self-Care Toolkit:
+
+Actionable: Prepare a self-care toolkit with items like aromatherapy oils, \
+stress-relief tools, or a favorite book to promote well-being during breaks.
+Develop a Long-Term Career Plan:
+
+Actionable: Outline your long-term career goals, creating a plan that \
+includes skill development, networking, and milestones for advancement.\
+\>", "Text",
+ CellChangeTimes->{
+  3.91347084521595*^9},ExpressionUUID->"b35355e8-8404-4c49-b182-f894058e83b1"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{429, Automatic}, {42, Automatic}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"43adc589-3c24-465a-a4f2-5f67090ca74e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 165, 3, 98, "Title",ExpressionUUID->"bc487083-2dea-4bd4-a7de-dfad6a711e6a"],
+Cell[748, 27, 5145, 129, 2910, "Text",ExpressionUUID->"e113770b-3292-487d-94be-06294a1e6c08"],
+Cell[CellGroupData[{
+Cell[5918, 160, 168, 3, 67, "Section",ExpressionUUID->"c844ad17-cea4-44b3-98f3-d4184f9fdae4"],
+Cell[6089, 165, 2568, 64, 1415, "Text",ExpressionUUID->"c43646de-da4e-472e-b7a5-f3388782b942"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8694, 234, 165, 3, 67, "Section",ExpressionUUID->"c34b6f13-1256-4c54-80d5-719efaf73528"],
+Cell[8862, 239, 2899, 86, 1921, "Text",ExpressionUUID->"e319d834-1beb-4f58-a098-ae67fd09cf80"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11798, 330, 167, 3, 67, "Section",ExpressionUUID->"60abef4e-f405-49e9-8012-7e884b45ab53"],
+Cell[11968, 335, 3804, 89, 2082, "Text",ExpressionUUID->"b35355e8-8404-4c49-b182-f894058e83b1"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
