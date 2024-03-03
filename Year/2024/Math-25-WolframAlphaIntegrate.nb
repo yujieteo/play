@@ -1,0 +1,785 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     30543,        777]
+NotebookOptionsPosition[     29888,        756]
+NotebookOutlinePosition[     30336,        773]
+CellTagsIndexPosition[     30293,        770]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Integration", "Title",
+ CellChangeTimes->{{3.918425731353632*^9, 
+  3.918425734701393*^9}},ExpressionUUID->"3a68f863-b530-fd4b-9168-\
+7a056590e269"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WolframAlpha", "[", 
+  RowBox[{"\"\<integrate 1/(1+cos(x)^2)\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<IndefiniteIntegral\>\"", ",", "2"}], "}"}], ",", 
+     "\"\<Content\>\""}], "}"}], ",", 
+   RowBox[{"PodStates", "->", 
+    RowBox[{
+    "{", "\"\<IndefiniteIntegral__Step-by-step solution\>\"", "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.918425698209963*^9, 3.918425740558649*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"4308a23c-2657-5447-9ac8-762662cd3997"],
+
+Cell[BoxData[
+ StyleBox[
+  FormBox[
+   StyleBox[GridBox[{
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[StyleBox["Take the integral:",
+            StripOnInput->False,
+            LineColor->GrayLevel[0.3],
+            FrontFaceColor->GrayLevel[0.3],
+            BackFaceColor->GrayLevel[0.3],
+            GraphicsColor->GrayLevel[0.3],
+            FontColor->GrayLevel[0.3]]],ExpressionUUID->
+            "5de80a44-b1d5-eb4b-80ca-8d88df1527b4"]},
+          {
+           RowBox[{"\[Integral]", 
+            RowBox[{
+             FractionBox["1", 
+              RowBox[{
+               RowBox[{
+                SuperscriptBox["cos", "2"], "(", "x", ")"}], "+", "1"}]], 
+             RowBox[{"\[DifferentialD]", "x"}]}]}]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+         GridBoxSpacings->{"Columns" -> {{None}}, "Rows" -> {{0.5}}}], 
+        "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["Multiply numerator and denominator of ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["1", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["cos", "2"], "(", "x", ")"}], "+", "1"}]], 
+              TraditionalForm]],ExpressionUUID->
+             "1235bdc4-c955-a541-ba99-eb80a9fe820d"],
+            StyleBox[" by ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{
+               SuperscriptBox["sec", "2"], "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"b5617356-9b29-9f44-a149-f85fb01eeee4"],
+            StyleBox["\[NoBreak]",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"a7daa02d-ff60-bf4b-82da-119794b013b1"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{"\[Integral]", 
+               RowBox[{
+                 FractionBox[
+                  RowBox[{
+                    SuperscriptBox["sec", "2"], "(", "x", ")"}], 
+                  RowBox[{
+                    RowBox[{
+                    SuperscriptBox["sec", "2"], "(", "x", ")"}], "+", "1"}]], 
+                 RowBox[{"\[DifferentialD]", "x"}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["Prepare to substitute ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["u", TraditionalForm]],ExpressionUUID->
+             "a2aeb5bd-6ab5-1946-b7cc-b71ca23dc1bd"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"tan", "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"8f1a6ce6-63a6-cd41-8568-1fb32707dc87"],
+            StyleBox[". Rewrite ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["sec", "2"], "(", "x", ")"}], 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["sec", "2"], "(", "x", ")"}], "+", "1"}]], 
+              TraditionalForm]],ExpressionUUID->
+             "102d4cf1-525e-9246-ae4a-5097e1ec7dc8"],
+            StyleBox[" using ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{
+               SuperscriptBox["sec", "2"], "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"785d8f34-b423-fc4b-9a0c-0645f7095bad"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{
+               RowBox[{
+                SuperscriptBox["tan", "2"], "(", "x", ")"}], "+", "1"}], 
+              TraditionalForm]],ExpressionUUID->
+             "7fa34501-032e-154d-a5d2-cc8801615a02"],
+            StyleBox["\[NoBreak]",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"a1574f65-26f0-764f-8687-6c2a5342838c"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{"\[Integral]", 
+               RowBox[{
+                 TagBox[
+                  FractionBox[
+                   RowBox[{
+                    SuperscriptBox["sec", "2"], "(", "x", ")"}], 
+                   RowBox[{"2", "+", 
+                    RowBox[{
+                    SuperscriptBox["tan", "2"], "(", "x", ")"}]}]], HoldForm], 
+                 RowBox[{"\[DifferentialD]", "x"}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["For the integrand ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox[
+               RowBox[{
+                SuperscriptBox["sec", "2"], "(", "x", ")"}], 
+               RowBox[{"2", "+", 
+                RowBox[{
+                 SuperscriptBox["tan", "2"], "(", "x", ")"}]}]], 
+              TraditionalForm]],ExpressionUUID->
+             "670ac9c3-dfa9-754e-b181-c34c315bc804"],
+            StyleBox[", substitute ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["u", TraditionalForm]],ExpressionUUID->
+             "a783fc65-b1ad-9743-b27d-14110f822bb6"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"tan", "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"b4c1a3c4-1251-8046-9a63-15d573070ef5"],
+            StyleBox[" and ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"\[DifferentialD]", "u"}], TraditionalForm]],
+             ExpressionUUID->"c63aa261-6e9a-e745-942d-83d738abdec8"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{
+               SuperscriptBox["sec", "2"], "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"0f3575c8-8763-1a4f-a7e5-2ff84855bf69"],
+            StyleBox["\[ThinSpace]",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"\[DifferentialD]", "x"}], TraditionalForm]],
+             ExpressionUUID->"f51b9199-3d0d-fb4d-8cb3-924231cb8278"],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"aa2c4376-1141-8245-9260-b4593d651601"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{"\[Integral]", 
+               RowBox[{
+                 FractionBox["1", 
+                  RowBox[{
+                    SuperscriptBox["u", "2"], "+", "2"}]], 
+                 RowBox[{"\[DifferentialD]", "u"}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["Factor ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["2", TraditionalForm]],ExpressionUUID->
+             "d555762f-84da-8d40-acc9-ae037dea9a8c"],
+            StyleBox[" from the denominator:",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"9562a6bf-7723-3b47-a7a2-a23d60230224"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{"\[Integral]", 
+               RowBox[{
+                 FractionBox["1", 
+                  RowBox[{"2", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    FractionBox[
+                    SuperscriptBox["u", "2"], "2"], "+", "1"}], ")"}]}]], 
+                 RowBox[{"\[DifferentialD]", "u"}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[StyleBox["Factor out constants:",
+            StripOnInput->False,
+            LineColor->GrayLevel[0.3],
+            FrontFaceColor->GrayLevel[0.3],
+            BackFaceColor->GrayLevel[0.3],
+            GraphicsColor->GrayLevel[0.3],
+            FontColor->GrayLevel[0.3]]],ExpressionUUID->
+            "c8d3a615-5cdb-634d-a75a-46d18a631c21"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{
+               FractionBox["1", "2"], 
+               RowBox[{"\[Integral]", 
+                 RowBox[{
+                   FractionBox["1", 
+                    RowBox[{
+                    FractionBox[
+                    SuperscriptBox["u", "2"], "2"], "+", "1"}]], 
+                   RowBox[{"\[DifferentialD]", "u"}]}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["For the integrand ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["1", 
+               RowBox[{
+                FractionBox[
+                 SuperscriptBox["u", "2"], "2"], "+", "1"}]], 
+              TraditionalForm]],ExpressionUUID->
+             "ccc7287d-783f-3440-9c84-5f3fe8ac311a"],
+            StyleBox[", substitute ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["s", TraditionalForm]],ExpressionUUID->
+             "c9d549ba-bb3b-9a46-a2de-429dc23f3d90"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["u", 
+               SqrtBox["2"]], TraditionalForm]],ExpressionUUID->
+             "df52f711-f040-0747-a34f-6fdea300df41"],
+            StyleBox[" and ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"\[DifferentialD]", "s"}], TraditionalForm]],
+             ExpressionUUID->"fff5ea92-b8fb-8349-b819-d0536c74f0a0"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["1", 
+               SqrtBox["2"]], TraditionalForm]],ExpressionUUID->
+             "7ceaceb4-b2cd-0c4a-b4cf-a27d6796eeb4"],
+            StyleBox["\[ThinSpace]",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"\[DifferentialD]", "u"}], TraditionalForm]],
+             ExpressionUUID->"5c33bc91-c37f-9f41-8f7b-bcc616d835f6"],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"84c59fa6-9b7d-c14d-8e45-42509ed0b3ec"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             RowBox[{
+               FractionBox["1", 
+                SqrtBox["2"]], 
+               RowBox[{"\[Integral]", 
+                 RowBox[{
+                   FractionBox["1", 
+                    RowBox[{
+                    SuperscriptBox["s", "2"], "+", "1"}]], 
+                   RowBox[{"\[DifferentialD]", "s"}]}]}]}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["The integral of ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["1", 
+               RowBox[{
+                SuperscriptBox["s", "2"], "+", "1"}]], TraditionalForm]],
+             ExpressionUUID->"41bb713a-2f04-7941-86c4-dece642e7e4c"],
+            StyleBox[" is ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{
+               SuperscriptBox["tan", 
+                RowBox[{"-", "1"}]], "(", "s", ")"}], TraditionalForm]],
+             ExpressionUUID->"1e515067-199a-f841-9473-ee90ba693af6"],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"e83bcc0e-0582-5d48-8169-562b6f06b5f2"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             StyleBox[
+              RowBox[{
+                StyleBox[
+                 FractionBox[
+                  RowBox[{
+                    SuperscriptBox["tan", 
+                    RowBox[{"-", "1"}]], "(", "s", ")"}], 
+                  SqrtBox["2"]], {
+                  GrayLevel[0], LinebreakAdjustments -> {1, 100, 1, 0, 100}, 
+                  LineIndent -> 0}], "+", 
+                StyleBox[
+                "\"constant\"", {
+                 Magnification -> 0.9 Inherited, FontFamily -> "Roboto", 
+                  FontSize -> Inherited, 
+                  LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                  0}]}], {
+               GrayLevel[0.6], LinebreakAdjustments -> {1, 100, 1, 0, 100}, 
+               LineIndent -> 0}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["Substitute back for ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["s", TraditionalForm]],ExpressionUUID->
+             "c9f2de6e-dd75-3847-bb83-c05db0fadefa"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              FractionBox["u", 
+               SqrtBox["2"]], TraditionalForm]],ExpressionUUID->
+             "fec15fa9-f0b2-794a-a76d-5058c6f3b963"],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"6f937776-a7a6-8149-a90b-c12a453a48e0"]},
+          {
+           TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+             StyleBox[
+              RowBox[{
+                StyleBox[
+                 FractionBox[
+                  RowBox[{
+                    SuperscriptBox["tan", 
+                    RowBox[{"-", "1"}]], "(", 
+                    FractionBox["u", 
+                    SqrtBox["2"]], ")"}], 
+                  SqrtBox["2"]], {
+                  GrayLevel[0], LinebreakAdjustments -> {1, 100, 1, 0, 100}, 
+                  LineIndent -> 0}], "+", 
+                StyleBox[
+                "\"constant\"", {
+                 Magnification -> 0.9 Inherited, FontFamily -> "Roboto", 
+                  FontSize -> Inherited, 
+                  LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                  0}]}], {
+               GrayLevel[0.6], LinebreakAdjustments -> {1, 100, 1, 0, 100}, 
+               LineIndent -> 0}]},
+            "RowDefault"]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]},
+      {
+       StyleBox[GridBox[{
+          {Cell[TextData[{
+            StyleBox["Substitute back for ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox["u", TraditionalForm]],ExpressionUUID->
+             "9b37d381-828a-8b44-9a89-0e89b1462999"],
+            StyleBox["\[ThinSpace]\[LongEqual] ",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]],
+            Cell[BoxData[
+             FormBox[
+              RowBox[{"tan", "(", "x", ")"}], TraditionalForm]],
+             ExpressionUUID->"e52e8c64-90f2-7547-8708-f570ec88f35a"],
+            StyleBox[":",
+             StripOnInput->False,
+             LineColor->GrayLevel[0.3],
+             FrontFaceColor->GrayLevel[0.3],
+             BackFaceColor->GrayLevel[0.3],
+             GraphicsColor->GrayLevel[0.3],
+             FontColor->GrayLevel[0.3]]
+           }],ExpressionUUID->"362bb902-2258-4c42-a29a-b2af1a984303"]},
+          {
+           FrameBox[
+            StyleBox[GridBox[{
+               {
+                StyleBox[
+                 TemplateBox[{"\"Answer:\""},
+                  "RowDefault"],
+                 StripOnInput->False,
+                 FontFamily->"Roboto",
+                 FontSize->12], "\[SpanFromLeft]"},
+               {"\<\"\"\>", 
+                TemplateBox[{"\" \"", "\"\[LongEqual] \"", 
+                  StyleBox[
+                   RowBox[{
+                    StyleBox[
+                    FractionBox[
+                    RowBox[{
+                    SuperscriptBox["tan", 
+                    RowBox[{"-", "1"}]], "(", 
+                    FractionBox[
+                    RowBox[{"tan", "(", "x", ")"}], 
+                    SqrtBox["2"]], ")"}], 
+                    SqrtBox["2"]], {
+                    GrayLevel[0], LinebreakAdjustments -> {1, 100, 1, 0, 100},
+                     LineIndent -> 0}], "+", 
+                    StyleBox[
+                    "\"constant\"", {
+                    Magnification -> 0.9 Inherited, FontFamily -> "Roboto", 
+                    FontSize -> Inherited, 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]}], {
+                    GrayLevel[0.6], 
+                    LinebreakAdjustments -> {1, 100, 1, 0, 100}, LineIndent -> 
+                    0}]},
+                 "RowDefault"]}
+              },
+              AllowScriptLevelChange->False,
+              AutoDelete->False,
+              
+              GridBoxAlignment->{
+               "Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+              GridBoxItemSize->{"Columns" -> {2.5, Automatic}},
+              
+              GridBoxSpacings->{
+               "Columns" -> {2, 0, 3}, "Rows" -> {1.5, 1, 2}}], "Grid"],
+            Background->RGBColor[0.91, 0.98, 1],
+            FrameMargins->12,
+            FrameStyle->Directive[
+              AbsoluteThickness[1], 
+              RGBColor[0.52, 0.76, 0.86]],
+            RoundingRadius->3,
+            StripOnInput->False]}
+         },
+         AllowScriptLevelChange->False,
+         DefaultBaseStyle->"Column",
+         GridBoxAlignment->{"Columns" -> {{Left}}},
+         GridBoxItemSize->{
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"]}
+     },
+     AllowScriptLevelChange->False,
+     DefaultBaseStyle->"Column",
+     FrameStyle->GrayLevel[0.7],
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "Rows" -> {False, {True}, False}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+     GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{3}}}], 
+    "Column"],
+   TraditionalForm], "Output",
+  CellSize->{550, Automatic},
+  AutoStyleOptions->{"HighlightFormattingErrors"->False},
+  ScriptLevel->0,
+  NumberPoint->".",
+  RenderingOptions->{"3DRenderingMethod"->"BSPTreeOrDepthBuffer"},
+  FontFamily->"Times",
+  FontSize->14,
+  Background->None,
+  GraphicsBoxOptions->{DefaultAxesStyle->Directive[
+    GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 1, 
+    "GraphicsAxes"],
+  DefaultBaseStyle->{FontFamily -> "Times", "Graphics"},
+  DefaultFrameStyle->Directive[
+    GrayLevel[0, 0.35], FontColor -> GrayLevel[0.25], FontOpacity -> 1, 
+    "GraphicsFrame"],
+  DefaultFrameTicksStyle->Directive[
+   FontFamily -> "Times", FontSize -> 10, "GraphicsFrameTicks"],
+  DefaultTicksStyle->Directive[
+   FontFamily -> "Times", FontSize -> 10, "GraphicsTicks"]},
+  Graphics3DBoxOptions->{
+  DefaultBaseStyle->{FontFamily -> "Times", "Graphics3D"}}]], "Output",
+ CellChangeTimes->{3.918425750129366*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"3d17de09-1440-6144-a354-b47efe1296c7"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1440, 741.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c92d8379-35ae-fc4f-94cd-ac3b043259d4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 154, 3, 98, "Title",ExpressionUUID->"3a68f863-b530-fd4b-9168-7a056590e269"],
+Cell[CellGroupData[{
+Cell[759, 29, 534, 13, 28, "Input",ExpressionUUID->"4308a23c-2657-5447-9ac8-762662cd3997"],
+Cell[1296, 44, 28564, 708, 1164, "Output",ExpressionUUID->"3d17de09-1440-6144-a354-b47efe1296c7"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
