@@ -1,0 +1,21 @@
+- Get config files
+- Data science projects on studies
+- Understand sorts.
+- Runtime analyser?
+- Veri-log project
+- PyTorch
+- Discover frameworks, ready for that moment
+- Assembly, C, Python, Haskell, VHDL
+- Data Driven Programming. This is the oldest one I think. They call it AI but I have seen it.
+- Control. Capture the flags
+- Simple ray tracer
+- Sysadmin
+- Data structures
+- Nand2tetris
+- CTFs
+- Robotics
+- Databases
+- Karpathy micrograd
+- Tiniest possible implementation of advanced stuff
+- Simple webapp
+- Designing data intensive applications.
