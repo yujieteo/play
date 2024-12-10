@@ -564,7 +564,7 @@ Snake lemma: three tensor products _ M exact sequences columns with (module) M e
 
 Symmetry of Tor(A,B), not obvious because resolutions are taken first. Construct three sequence by on 0 to Zm to Zn to A to 0 by tensoring (already) Zs, Zt, B where 0 to Zs to Zt to B to 0 is exact. Gives well defined zigzag at last steps since final images vanish, warning not well defined at intermediates. So Tor(A,B) to Tor(B,A) is homomorphism. By symmetry, isomorphism.
 
-Uniqueness of Tor under different resolutions: start with different resolutions, note that A to A is isomorphic. We are stuck with Z^(m1) to Z(m2) and Z^(n1) to Z^(n2) as maps called f - g. No problem, defined boundary maps by abuse of notation to be d, and lifts from Z^(n2) to Z^(m1) to be s. Consider f-g ‎ =  sd by bottom right triangle, and f-g ‎ = ds by top right triangle. Gives argument that f-g ‎ = ds + sd, the commutator sum. Therefore f and g are homotopic. Upon taking tensor products of B to give Tor(A, B) or Tor’(A,B) via the typical sequence 0 to Tor(A, B) to B^(m1) to B^(n1) to zero, due to homotopy of f-g, there is homomorphism of Tor(A, B) and Tor’(A,B). Symmetric argument makes this CANONICAL isomorphism.
+Uniqueness of Tor under different resolutions: start with different resolutions, note that A to A is isomorphic. We are stuck with Z^(m1) to Z(m2) and Z^(n1) to Z^(n2) as maps called f - g. No problem, defined boundary maps by abuse of notation to be d, and lifts from Z^(n2) to Z^(m1) to be s. Consider f-g =  sd by bottom right triangle, and f-g = ds by top right triangle. Gives argument that f-g = ds + sd, the commutator sum. Therefore f and g are homotopic. Upon taking tensor products of B to give Tor(A, B) or Tor’(A,B) via the typical sequence 0 to Tor(A, B) to B^(m1) to B^(n1) to zero, due to homotopy of f-g, there is homomorphism of Tor(A, B) and Tor’(A,B). Symmetric argument makes this CANONICAL isomorphism.
 
 Tor distributes over the left and right: proof is easy over bad isomorphism to tensor product of abelian groups for a module.
 
@@ -671,8 +671,8 @@ Direct image with compact support, consider morphism of schemes, consider sectio
 
 Pontrjagin dual: easy example is additive on integers to circle group, take products of roots of unity gives Fourier theory. Circle group is compact and connected, integers must be discrete and torsion free by Pontrjagin duality. The exponential maps gives self duality of the additive reals (sums of powers of exponential)
 
-Eckhmann-Hinton duality
-The most basic duality by reversing arrows in category theory.
+Eckhmann-Hinton duality: The most basic duality by reversing arrows in category theory.
+
 Fuks duality: take endofunctors of compact pointed (important for suspensions) Hausdorff spaces. Duality is expressed between loop space and suspension space. Endofunctor of loop space gives suspension space. Endofunctor of suspension space gives loop space.
 This works heuristically for: homotopy dual to cohomology, mapping cylinder to mapping cocylinder, fibration to cofibration.
 
@@ -788,10 +788,7 @@ Function type is analogous to Cartesian product since both can used as primitive
 
 Spectrum: representation of cohomology by Brown representability theorem
 
-Fields:
-
-- every element is invertible
-- Every module (vector space) over fields are free or have basis (need Zorn’s)
+Fields: every element is invertible, every module (vector space) over fields are free or have basis (need Zorn’s)
 
 Smash product generalised tensor product which is a product that is bilinear since a ring is a monoid with tensor product of abelian groups. Tensor product corresponds to Tor.
 
