@@ -1,5 +1,7 @@
 UNDERSTOOD
 
+Assumptions in linear models: I used the Schrodinger's coloured cat pill test to remember this: (1) relationship is linear (regressor, relationship, non-varying in time), (2) error is expected to be zero, (3) error has constant variance, no autocorrelation, (4) observations do not affect the experiment (Schrodinger's come in), (5) bad case of number of observations + extra independent variables > number of independent variables assumed. See book by Peter Kennedy on this
+
 Sigma-algebra: motivation is probability, closed under complements, countable unions and intersections. Complements because of not event, closure of countable unions and intersections because of stone duality, corresponding to probability of countably infinitely many events (ergodicity without killing rate) being decidable in logic. If you take sigma-semiring, this can be used in ergodic analysis in my opinion.
 
 Algebras are closed under finite unions and intersections, need not be closed under countably many, see example take Boolean algebra, infinite negation corresponds to Grandi series, truth is not decidable, then apply Stone duality, corresponds to Grandi series -1 + 1 - 1 + 1 - 1…
