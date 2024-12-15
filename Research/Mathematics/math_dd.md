@@ -20,8 +20,6 @@ Implicit function theorem?  Versus inverse function theorem?
 
 Cauchy integral formula?
 
-Unipotent?
-
 Galois field in algebraic codes?
 
 Maximum modulus principle?
