@@ -1,5 +1,23 @@
 DAYDREAM
 
+Can you use the maximum modulus principle to define holomorphic function?
+
+We can use a compact topological group like a circle to show how symmetry is related to groups. Why must lines be straight through center for a group law?
+
+Charts?
+
+Why classification of compact, connected and simply connected Lie group is so simple?
+
+Embedding? General examples?
+
+Notes on field of fractions of half line functions to give distribution theory?
+
+How are analytic functions related to the completions of a commutative ring?
+
+How do holomorphic function in complex analysis related to regular functions in algebraic geometry?
+
+Eisenstein criterion?
+
 Why does one define the product topology with all but finitely many opens in components space are equal to the component space? 
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
@@ -18,8 +36,6 @@ Implicit function theorem?  Versus inverse function theorem?
 
 Cauchy integral formula?
 
-Unipotent?
-
 Galois field in algebraic codes?
 
 Maximum modulus principle?
@@ -28,21 +44,21 @@ Von Neumann algebra vs C* algebra?
 
 Make the definition of a class using logical predicates make sense (or distinguish it from a set somehow).
 
-What are semi simple Lie groups and Lie algebras? 
+Semisimple Lie groups and Lie algebras? 
 
-What are Christoffel symbols and why do people commit effort to compute them?
+Christoffel symbols?
 
 What are covariant derivatives? What is parallel transport in this context?
 
 Why is separatedness the condition such that intersection of affines is an affine?
 
-What is Lp space duality?
+Lp space duality?
 
 How to understand Lie’s three laws? It is apparently some realisation from some functor but it is not really clear?
 
 How does one prove that the continuum hypothesis is independent are ZFC.
 
-What is Clariauts theorem and why is it true?
+What is Clariaut's theorem and why is it true?
 
 What is the conjugation operation for ideals? Is it multiplication on the left giving 0.
 
@@ -77,13 +93,15 @@ What is the motivation for Jaffard domains, and Prufer domains?
 
 Do not understand the definition of Prufer domains: Prufer domain: commutative ring without zero divisors, such that every non zero finitely generated ideal is invertible.
 
-What is the weak star topology?
+Weak star topology?
 
-What is the Fourier-Mukai transform and why should I care about it?
+Fourier-Mukai transform?
 
 What does it mean for the Fourier transform to turn multiples of powers of x into derivatives? Is it a functor? How is this related to the distribution theory?
 
-What are orbits in group theory? What is the orbit stabiliser theorem?
+What are orbits in group theory? 
+
+What is the orbit stabiliser theorem?
 
 What are covering sieves? What are Grothendieck constructions? How did Scholze define the plus construction?
 
