@@ -1,5 +1,15 @@
 UNDERSTOOD
 
+Example of derivation: consider multivariable polynomial ring, there is a derivation for each nth variable called the partial derivative.
+
+n-ary operation: suppose U is forgetful from commutative R- algebra to set, then it is an operation such that U^n to U. This is quite a whacko thing to define polynomials.
+
+Dual graph: points are faces, faces are points of the graph. Draw points at each face (including outside edge), draw lines passing through each edge
+
+Noetherian: condition so you can do induction over ideals. The ascending chain condition.
+
+Base change: pullback over morphism of fields
+
 Z[x] is not a PID. Example (x) and (x, 7) are prime ideals, contradiction derived as (x) = (p) since (x,7) = (p) assuming PID
 
 Lie group: group that is also a differentiable manifold. Group multiplication and inverses are differentiable.

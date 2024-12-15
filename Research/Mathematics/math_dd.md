@@ -1,5 +1,33 @@
 DAYDREAM
 
+Mean value theorem?
+
+Canonical isomorphism?
+
+Limit defined up to isomorphism in 1 category? But limit defined only up to equivalence in infinity category?
+
+Complementary slackness
+
+Problem and dual problem? CCCP?
+
+Which distributions best model which problems? Create a list.
+
+What is the difference between a polynomial and a polynomial functions?
+
+Eigenspace?
+
+Hodge theorem?
+
+Laurent series?
+
+Degree? And Euclidean functions? For Euclidean domain?
+
+Polynomial: element in a polynomial ring. Vector: element in vector space Object: element in some structure. Is there a formal word for this?
+
+Centraliser? Centraliser of an element?
+
+What does it mean by a base change being the pullback of a morphism of fields?
+
 Can you use the maximum modulus principle to define holomorphic function?
 
 We can use a compact topological group like a circle to show how symmetry is related to groups. Why must lines be straight through center for a group law?
