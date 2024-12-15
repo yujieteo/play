@@ -2,8 +2,6 @@ DAYDREAM
 
 Eisenstein criterion?
 
-Field of fractions?
-
 Why does one define the product topology with all but finitely many opens in components space are equal to the component space? 
 
 Moduli spaces, spaces corresponding to object? Represent a contravariant functor of interest. This usually means that they represent a contravariant functor that we're interested in. For example, Vakil constructs the Grassmannian as a scheme that represents the contravariant functor that takes a scheme $X$ to the set of  surjective morphisms $O_X^n \rightarrow E$, where $E$ is locally free of rank $k$. Make this make sense?
