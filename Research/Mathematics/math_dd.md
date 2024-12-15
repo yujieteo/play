@@ -1,5 +1,21 @@
 DAYDREAM
 
+Can you use the maximum modulus principle to define holomorphic function?
+
+We can use a compact topological group like a circle to show how symmetry is related to groups. Why must lines be straight through center for a group law?
+
+Charts?
+
+Why classification of compact, connected and simply connected Lie group is so simple?
+
+Embedding? General examples?
+
+Notes on field of fractions of half line functions to give distribution theory?
+
+How are analytic functions related to the completions of a commutative ring?
+
+How do holomorphic function in complex analysis related to regular functions in algebraic geometry?
+
 Eisenstein criterion?
 
 Why does one define the product topology with all but finitely many opens in components space are equal to the component space? 
